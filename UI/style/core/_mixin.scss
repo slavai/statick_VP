@@ -1,0 +1,163 @@
+
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+@mixin font-Medium($fontSize){
+  font-family: $font-Medium;
+  font-size: $fontSize;
+}
+
+@mixin font-Regular($fontSize){
+  font-family:$font-Regular;
+  font-size: $fontSize;
+}
+
+@mixin font-Lighter($fontSize){
+  font-family: $font-Lighter;
+  font-size: $fontSize;
+}
+
+
+@mixin transition($transition : 0.2s, $transition_style: ease-in-out){
+  -webkit-transition:all $transition $transition_style;
+  -moz-transition:all $transition $transition_style;
+  -o-transition:all $transition $transition_style;
+  transition:all $transition $transition_style;
+}
+
+
+
+
+@mixin size($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+
+@mixin hyphens($mode: auto) {
+  white-space: nowrap;
+  overflow: hidden;
+  -ms-word-break: break-all;
+  word-break: break-all;
+
+  // Non standard for webkit
+  word-break: break-word;
+
+  -webkit-hyphens: $mode;
+  -moz-hyphens: $mode;
+  -ms-hyphens: $mode; // IE10+
+  -o-hyphens: $mode;
+  hyphens: $mode;
+
+}
+
+
+$spaceamounts: (5, 10, 15, 20, 25, 30);
+
+@mixin generate-margin-bottom() {
+  @each $space in $spaceamounts {
+    .mb-#{$space} {
+      margin-bottom: #{$space}px;
+    }
+  }
+}
+@mixin generate-margin-right() {
+  @each $space in $spaceamounts {
+    .mr-#{$space} {
+      margin-right: #{$space}px;
+    }
+  }
+}
+@mixin generate-margin-top() {
+  @each $space in $spaceamounts {
+    .mt-#{$space} {
+      margin-top: #{$space}px;
+    }
+  }
+}
+@mixin generate-padding-top() {
+  @each $space in $spaceamounts {
+    .pt-#{$space} {
+      padding-top: #{$space}px;
+    }
+  }
+}
+@mixin generate-padding-bottom() {
+  @each $space in $spaceamounts {
+    .pb-#{$space} {
+      padding-bottom: #{$space}px;
+    }
+  }
+}
+@mixin generate-padding-left() {
+  @each $space in $spaceamounts {
+    .pt-#{$space} {
+      padding-left: #{$space}px;
+    }
+  }
+}
+@mixin generate-padding-right() {
+  @each $space in $spaceamounts {
+    .pb-#{$space} {
+      padding-right: #{$space}px;
+    }
+  }
+}
+
+
+@mixin breakpoint($point) {
+  @if $point == mama-bear {
+    @media (max-width: 1250px) { @content; }
+  }
+  @if $point == baby-bear {
+    @media (max-width: 800px) { @content; }
+  }
+  @if $point == reverso-baby-bear {
+    @media (min-width: 800px) { @content; }
+  }
+  @if $point == reverso-mama-bear {
+    @media (min-width: 1250px) { @content; }
+  }
+}
+
+
+@mixin keyframes($animation-name) {
+  @-webkit-keyframes #{$animation-name} {
+    @content;
+  }
+  @-moz-keyframes #{$animation-name} {
+    @content;
+  }
+  @-ms-keyframes #{$animation-name} {
+    @content;
+  }
+  @-o-keyframes #{$animation-name} {
+    @content;
+  }
+  @keyframes #{$animation-name} {
+    @content;
+  }
+}
+//example
+//@include keyframes(slide-down) {
+//  0% { opacity: 1; }
+//  90% { opacity: 0; }
+//}
+@mixin animation($str) {
+  -webkit-animation: #{$str};
+  -moz-animation: #{$str};
+  -ms-animation: #{$str};
+  -o-animation: #{$str};
+  animation: #{$str};
+}
+//example
+//.element {
+//  @include animation('slide-down 5s 3');
+//}

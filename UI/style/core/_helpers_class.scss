@@ -1,0 +1,87 @@
+.pull-right {
+  float: right;
+}
+.pull-left {
+  float: left;
+}
+
+.d-block {
+  display: block !important;
+}
+.d-inline-block {
+  display: inline-block !important;
+}
+.d-inline {
+  display: inline !important;
+}
+
+.vertical-midle{
+  vertical-align: middle !important;
+}
+.vertical-sub{
+  vertical-align: super !important;
+}
+.vertical-top{
+  vertical-align: top !important;
+}
+
+.clearfix{
+  @include clearfix();
+}
+
+$column: 5;
+$length: length(5);
+
+
+@for $i from 5 through 10{
+
+
+  .padding-left-#{$length}{
+    width: (1 * $length)rem;
+  }
+  $length: $length * 1;
+}
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  &.focusable:active, &.focusable:focus {
+    /* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: h5bp.com/p */
+    clip: auto;
+    height: auto;
+    overflow: visible;
+    position: static;
+    width: auto;
+  }
+}
+
+.invisible {
+  visibility: hidden;
+}
+.full_size{
+  width: 100%;
+  height: 100%;
+}
+.parent-forVH-align {
+  position: relative;
+}
+.child-forVH-align {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@include generate-margin-bottom();
+@include generate-margin-right();
+@include generate-margin-top();
+@include generate-padding-bottom();
+@include generate-padding-top();
+@include generate-padding-left();
+@include generate-padding-right();

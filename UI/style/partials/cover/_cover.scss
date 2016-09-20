@@ -1,0 +1,67 @@
+.cover{
+  .left-part, .right-part{
+    background: -moz-linear-gradient(45deg, rgba(29,124,171,1) 0%, rgba(35,92,135,0.98) 43%, rgba(19,41,79,0.96) 100%);
+    background: -webkit-linear-gradient(45deg, rgba(29,124,171,1) 0%,rgba(35,92,135,0.98) 43%,rgba(19,41,79,0.96) 100%);
+    background: linear-gradient(45deg, rgba(29,124,171,1) 0%,rgba(35,92,135,0.98) 43%,rgba(19,41,79,0.96) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1d7cab', endColorstr='#f513294f',GradientType=1 );
+    background-attachment: fixed;
+    background-clip: border-box;
+    background-origin: padding-box;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    height: 100%;
+    min-height: $videoclientMinHeight;
+    position: absolute;
+    top: 0;
+    @extend .full_size;
+    @include transition();
+
+  }
+  .left-part{
+    width: 50%;
+    left: 0;
+  }
+  .right-part{
+    width: 50%;
+    right: 0;
+  }
+  .content{
+    @include transition();
+  }
+}
+.showVideo{
+  .cover{
+    .left-part, .right-part{
+      @include animation('slideOutRight 500ms both');
+    }
+  }
+  .content{
+    @include animation('fade-out 500ms both');
+  }
+
+}
+
+@include keyframes(slideOutRight){
+  0% {
+    opacity: 1;
+  }
+  90%{
+    width: 0;
+    opacity: 0.9;
+  }
+  100% {
+    width: 0;
+    opacity: 0.5;
+    visibility: hidden;
+    display: none;
+  }
+}
+@include keyframes(fade-out){
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
