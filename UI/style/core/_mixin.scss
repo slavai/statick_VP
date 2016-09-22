@@ -57,56 +57,63 @@
   hyphens: $mode;
 
 }
+$fontSizeMounts: (0.8, 1, 1.2, 1.4, 1.8, 1.6, 2, 2.4);
+@mixin generate-fontSize() {
+  @each $fontSize in $fontSizeMounts {
+    .fs#{$fontSize * 10} {
+     font-size: #{$fontSize}rem;
+    }
+  }
+}
 
-
-$spaceamounts: (5, 10, 15, 20, 25, 30);
+$spaceamounts: (0.5, 1, 1.5, 2, 2.5, 3, 5, 10);
 
 @mixin generate-margin-bottom() {
   @each $space in $spaceamounts {
-    .mb-#{$space} {
-      margin-bottom: #{$space}px;
+    .mb#{$space * 10} {
+      margin-bottom: #{$space}rem;
     }
   }
 }
 @mixin generate-margin-right() {
   @each $space in $spaceamounts {
-    .mr-#{$space} {
-      margin-right: #{$space}px;
+    .mr#{$space * 10} {
+      margin-right: #{$space}rem;
     }
   }
 }
 @mixin generate-margin-top() {
   @each $space in $spaceamounts {
-    .mt-#{$space} {
-      margin-top: #{$space}px;
+    .mt#{$space * 10} {
+      margin-top: #{$space}rem;
     }
   }
 }
 @mixin generate-padding-top() {
   @each $space in $spaceamounts {
-    .pt-#{$space} {
-      padding-top: #{$space}px;
+    .pt#{$space * 10} {
+      padding-top: #{$space}rem;
     }
   }
 }
 @mixin generate-padding-bottom() {
   @each $space in $spaceamounts {
-    .pb-#{$space} {
-      padding-bottom: #{$space}px;
+    .pb#{$space * 10} {
+      padding-bottom: #{$space}rem;
     }
   }
 }
 @mixin generate-padding-left() {
   @each $space in $spaceamounts {
-    .pt-#{$space} {
-      padding-left: #{$space}px;
+    .pt#{$space * 10} {
+      padding-left: #{$space}rem;
     }
   }
 }
 @mixin generate-padding-right() {
   @each $space in $spaceamounts {
-    .pb-#{$space} {
-      padding-right: #{$space}px;
+    .pb#{$space * 10} {
+      padding-right: #{$space}rem;
     }
   }
 }
@@ -150,6 +157,8 @@ $spaceamounts: (5, 10, 15, 20, 25, 30);
 //  0% { opacity: 1; }
 //  90% { opacity: 0; }
 //}
+
+
 @mixin animation($str) {
   -webkit-animation: #{$str};
   -moz-animation: #{$str};

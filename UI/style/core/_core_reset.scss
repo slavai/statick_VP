@@ -9,9 +9,25 @@
   vertical-align: baseline;
 }
 
-*{
+*, *::before, *::after {
+  box-sizing: border-box;
   font-family: inherit;
 }
+
+a, a:focus, a:hover, a:active {
+  outline: medium none !important;
+  text-decoration: none;
+  color: inherit;
+}
+
+a.textAnchor{
+  @include transition();
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+  &:hover {
+    border-bottom: 1px solid #fff;
+  }
+}
+
 html {
   [type="button"] {
   }

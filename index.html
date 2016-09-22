@@ -4,16 +4,85 @@
     <link href='UI/core.css' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet'>
   </head>
-  <body class='VideoClient showVideo'>
-    <div class='cover parent-forVH-align full_size'>
+  <body class='VideoClient'>
+    <div class='cover full_size'>
       <div class='left-part'></div>
       <div class='right-part'></div>
-      <div class='content child-forVH-align'>
-        <img src='UI/img/logo/video_loader_logo_white_small.png'>
-        <div class='load-block'></div>
-        <div class='step1-block' style='display:none'></div>
-        <div class='step2-block' style='display:none'></div>
-        <div class='step3-block' style='display:none'></div>
+      <div class='content chrome_plugin_install text-center text-color-white'>
+        <img class='d-inline-block mt100' src='UI/img/logo/video_loader_logo_white_small.png'>
+        <div class='loadSpin hide' id='circleG'>
+          <div class='mt50'></div>
+          <div class='fs20'>
+            Welcome
+          </div>
+          <small>Please wait...</small>
+          <div class='loadSpin' id='circleG'>
+            <span class='circleG' id='circleG_1'></span>
+            <span class='circleG' id='circleG_2'></span>
+            <span class='circleG' id='circleG_3'></span>
+          </div>
+        </div>
+        <div class='step1'>
+          <p class='mb20'>Immerss extension is required to continue.</p>
+          <div class='mb20'>
+            <div class='bluButon bigBtn' onclick="window.open('https://chrome.google.com/webstore/detail/jbagnbabffebnloeajochhpipcjhpamb', '', 'width=1020, height=300');window.clicked_by_install=true">
+              INSTALL
+            </div>
+          </div>
+          <div>
+            Click Above to install the extension.
+            <br>
+            By installing you are accepting the
+            <a class='textAnchor' href='#'>terms and conditions.</a>
+          </div>
+        </div>
+        <div class='step2 active'>
+          <div class='GO_LINE GO_LINE_UP mb50'>
+            <i class='VideoClientIcon-navigate-up-arrow'></i>
+            <i class='VideoClientIcon-navigate-up-arrow'></i>
+            <i class='VideoClientIcon-navigate-up-arrow'></i>
+          </div>
+          <div>
+            Click
+            <span class='btn-grey-small'>add extention</span>
+            button to install the
+            <br>
+            button to install the Immerss extension
+          </div>
+        </div>
+        <div class='step3'>
+          <aside class='position_s-w'>
+            <div class='row'>
+              <div class='col-md-3'>
+                <div class='GO_LINE GO_LINE_DOWN'>
+                  <i class='VideoClientIcon-navigate-down-arrow'></i>
+                  <i class='VideoClientIcon-navigate-down-arrow'></i>
+                  <i class='VideoClientIcon-navigate-down-arrow'></i>
+                </div>
+              </div>
+              <div class='col-md-9 text-left nowrap'>
+                The plugin will be downloaded
+                <br>
+                in a moment.
+                <br>
+                <br>
+                If the download doesn’t start
+                <br>
+              </div>
+            </div>
+          </aside>
+        </div>
+        <div class='step4'>
+          Welcome to Immerss
+          <br>
+          <div class='mb20'></div>
+          <small>Please wait...</small>
+          <div class='loadSpin' id='circleG'>
+            <span class='circleG' id='circleG_1'></span>
+            <span class='circleG' id='circleG_2'></span>
+            <span class='circleG' id='circleG_3'></span>
+          </div>
+        </div>
       </div>
     </div>
     <div class='V-header'></div>

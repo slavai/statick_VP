@@ -4,4 +4,14 @@ html, body{
   position: relative;
   overflow: hidden;
   background: $bodyBackground;
+  font-family: 'Lato', sans-serif;
+  font-weight: 200;
+}
+html{
+  font-size: 62.5%;
+}
+body{
+  font-size: 1.5rem;
+  line-height: 1.6;
+  font-weight: 200;
 }

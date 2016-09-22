@@ -14,7 +14,9 @@
 .d-inline {
   display: inline !important;
 }
-
+.hide{
+  display: none !important;
+}
 .vertical-midle{
   vertical-align: middle !important;
 }
@@ -28,18 +30,20 @@
 .clearfix{
   @include clearfix();
 }
-
+.text-center{
+  text-align: center;
+}
+.text-right{
+  text-align: right;
+}
+.text-left{
+  text-align: left;
+}
 $column: 5;
 $length: length(5);
 
-
-@for $i from 5 through 10{
-
-
-  .padding-left-#{$length}{
-    width: (1 * $length)rem;
-  }
-  $length: $length * 1;
+.text-color-white{
+  color: $video-volor-white;
 }
 
 .visuallyhidden {
@@ -77,6 +81,7 @@ $length: length(5);
   left: 50%;
   transform: translate(-50%, -50%);
 }
+@include generate-fontSize();
 
 @include generate-margin-bottom();
 @include generate-margin-right();

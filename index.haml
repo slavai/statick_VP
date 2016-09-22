@@ -3,17 +3,76 @@
   %head
     %link{rel:'stylesheet', href:'UI/core.css'}
     %link{href:"https://fonts.googleapis.com/css?family=Lato:300,400,700",  rel:"stylesheet"}
-  %body.VideoClient.showVideo
-    .cover.parent-forVH-align.full_size
+  %body.VideoClient
+    -#.showVideo add to body for remove cover
+    .cover.full_size
       .left-part
       .right-part
-      .content.child-forVH-align
-        %img{src:'UI/img/logo/video_loader_logo_white_small.png'}
-        .load-block
+      .content.chrome_plugin_install.text-center.text-color-white
+        %img.d-inline-block.mt100{src:'UI/img/logo/video_loader_logo_white_small.png'}
+        .loadSpin#circleG.hide
+          .mt50
+          .fs20
+            Welcome
+          %small Please wait...
+          .loadSpin#circleG
+            %span.circleG#circleG_1
+            %span.circleG#circleG_2
+            %span.circleG#circleG_3
 
-        .step1-block{style:'display:none'}
-        .step2-block{style:'display:none'}
-        .step3-block{style:'display:none'}
+        .step1
+          %p.mb20 Immerss extension is required to continue.
+          %div.mb20
+            .bluButon.bigBtn{onclick: "window.open('https://chrome.google.com/webstore/detail/jbagnbabffebnloeajochhpipcjhpamb', '', 'width=1020, height=300');window.clicked_by_install=true"}
+              INSTALL
+          %div
+            Click Above to install the extension.
+            %br
+            By installing you are accepting the
+            %a.textAnchor{href: '#'} terms and conditions.
+        .step2.active
+          .GO_LINE.GO_LINE_UP.mb50
+            %i.VideoClientIcon-navigate-up-arrow
+            %i.VideoClientIcon-navigate-up-arrow
+            %i.VideoClientIcon-navigate-up-arrow
+          %div
+            Click
+            %span.btn-grey-small add extention
+            button to install the
+            %br
+            button to install the Immerss extension
+        .step3
+          %aside.position_s-w
+            .row
+              .col-md-3
+                .GO_LINE.GO_LINE_DOWN
+                  %i.VideoClientIcon-navigate-down-arrow
+                  %i.VideoClientIcon-navigate-down-arrow
+                  %i.VideoClientIcon-navigate-down-arrow
+              .col-md-9.text-left.nowrap
+                The plugin will be downloaded
+                %br
+                in a moment.
+                %br
+                %br
+                If the download doesn’t start
+                %br
+                -#- if browser.chrome?
+                -#  - if browser.platform.mac?
+                -#    = link_to 'click here', download_client_profile_path(client: :chrome_web_mac), class: 'download_me'
+                -#  - if browser.platform.windows? || browser.platform.windows_x64?
+                -#    = link_to 'click here', download_client_profile_path(client: :chrome_web_win), class: 'download_me'
+
+        .step4
+          Welcome to Immerss
+          %br
+          .mb20
+          %small Please wait...
+          .loadSpin#circleG
+            %span.circleG#circleG_1
+            %span.circleG#circleG_2
+            %span.circleG#circleG_3
+
     .V-header
     .V-right-panel
     .V-VideoContainer

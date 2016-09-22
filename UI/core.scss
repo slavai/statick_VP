@@ -1,9 +1,14 @@
 @import "style/variables";
 @import "style/core/mixin";
-@import "style/core/fonts";
 @import "style/core/core_reset";
+@import "style/core/fonts";
+@import "style/partials/buttons";
+@import "style/core/grid";
 @import "style/core/helpers_class";
 @import "style/core/main";
 @import "style/partials/cover/cover";
+@import "style/partials/loader";
+@import "style/partials/SUB_page/before_start/before_start_sub_page";
+
 
 @import "style/core/mixin";

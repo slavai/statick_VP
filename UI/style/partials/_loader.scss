@@ -1,0 +1,141 @@
+.loadSpin{
+  color: #FFFFFF;
+}
+
+
+#circleG{
+  display: block;
+  margin: 0px auto;
+  padding: 10px 0;
+  text-align: center;
+
+}
+
+.circleG{
+  background-color:#3d9ed3;
+  opacity: 0.2;
+  height:10px;
+  margin-left:10px;
+  width:10px;
+  display: inline-block;
+  -moz-animation-name:bounce_circleG;
+  -moz-animation-duration:6.55s;
+  -moz-animation-iteration-count:infinite;
+  -moz-animation-direction:linear;
+  -moz-animation-fill-mode: forwards;
+  -moz-border-radius:8px;
+  -webkit-animation-name:bounce_circleG;
+  -webkit-animation-duration:6.55s;
+  -webkit-animation-iteration-count:infinite;
+  -webkit-animation-direction:linear;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-border-radius:8px;
+  -o-animation-name:bounce_circleG;
+  -o-animation-duration:6.55s;
+  -o-animation-iteration-count:infinite;
+  -o-animation-direction:linear;
+  -o-animation-fill-mode: forwards;
+  -o-border-radius:8px;
+  -ms-animation-name:bounce_circleG;
+  -ms-animation-duration:6.55s;
+  -ms-animation-iteration-count:infinite;
+  -ms-animation-direction:linear;
+  -ms-animation-fill-mode: forwards;
+  -ms-border-radius:8px;
+  animation-name:bounce_circleG;
+  animation-duration:6.55s;
+  animation-iteration-count:infinite;
+  animation-direction:linear;
+  animation-fill-mode: forwards;
+  border-radius:8px;
+  &:first-child{
+    margin-left: 0;
+  }
+}
+
+#circleG_1{
+  -moz-animation-delay:0.8s;
+  -webkit-animation-delay:0.8s;
+  -o-animation-delay:0.8s;
+  -ms-animation-delay:0.8s;
+  animation-delay:0.8s;
+}
+
+#circleG_2{
+  -moz-animation-delay:1.6s;
+  -webkit-animation-delay:1.6s;
+  -o-animation-delay:1.6s;
+  -ms-animation-delay:1.6s;
+  animation-delay:1.6s;
+}
+
+#circleG_3{
+  -moz-animation-delay:2.4s;
+  -webkit-animation-delay:2.4s;
+  -o-animation-delay:2.4s;
+  -ms-animation-delay:2.4s;
+  animation-delay:2.4s;
+}
+
+
+@-moz-keyframes bounce_circleG{
+  0%{
+  }
+
+  50%{
+    background-color: $siteColorMain;
+    opacity: 1;
+  }
+
+  100%{
+  }
+
+}
+
+@-webkit-keyframes bounce_circleG{
+  0%{
+  }
+
+  50%{
+    background-color:$siteColorMain;opacity: 1;}
+
+  100%{
+  }
+
+}
+
+@-o-keyframes bounce_circleG{
+  0%{
+  }
+
+  50%{
+    background-color:$siteColorMain;opacity: 1;}
+
+  100%{
+  }
+
+}
+
+@-ms-keyframes bounce_circleG{
+  0%{
+  }
+
+  50%{
+    background-color:$siteColorMain;opacity: 1;}
+
+  100%{
+  }
+
+}
+
+@keyframes bounce_circleG{
+  0%{
+  }
+
+  50%{
+    background-color:$siteColorMain;opacity: 1;}
+
+  100%{
+  }
+
+}
