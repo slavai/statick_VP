@@ -9,11 +9,34 @@
       <div class='left-part'></div>
       <div class='right-part'></div>
       <div class='content chrome_plugin_install text-center text-color-white'>
-        <img class='d-inline-block mt100' src='UI/img/logo/video_loader_logo_white_small.png'>
+        <div class='animatedObject-wrapper'>
+          <div class='clouds'></div>
+          <div class='field_for_buble'></div>
+          <div class='shark'></div>
+          <div class='whake'></div>
+          <div class='animatedObject'>
+            <div class='sunduk'></div>
+            <div class='island1'></div>
+            <div class='island2'></div>
+            <div class='sunshine'>
+              <span class='first-half'></span>
+              <span class='second-half'></span>
+            </div>
+            <div class='ship-1'></div>
+            <div class='ship-2'></div>
+            <div class='ship-3'></div>
+            <div class='fish1-r'></div>
+            <div class='fish2-r'></div>
+            <div class='fish1-l'></div>
+            <div class='fish2-l'></div>
+            <div class='crab'></div>
+          </div>
+        </div>
+        <img class='d-inline-block mt30 mb100' src='UI/img/logo/video_loader_logo_whiteMK2.png'>
         <div class='loadSpin hide' id='circleG'>
           <div class='mt50'></div>
           <div class='fs20'>
-            Welcome
+            Welcome(WORK IN PROGRESS)
           </div>
           <small>Please wait...</small>
           <div class='loadSpin' id='circleG'>
@@ -22,8 +45,14 @@
             <span class='circleG' id='circleG_3'></span>
           </div>
         </div>
-        <div class='step1'>
-          <p class='mb20'>Immerss extension is required to continue.</p>
+        <div class='step1 active'>
+          <div class='diver_block DRpos1'>
+            <div class='diver'></div>
+            <div class='yyykor-wrapp'>
+              <div class='yyykor'></div>
+            </div>
+          </div>
+          <p class='mb20 fs20 font-bold'>Immerss extension is required to continue.</p>
           <div class='mb20'>
             <div class='bluButon bigBtn' onclick="window.open('https://chrome.google.com/webstore/detail/jbagnbabffebnloeajochhpipcjhpamb', '', 'width=1020, height=300');window.clicked_by_install=true">
               INSTALL
@@ -33,10 +62,10 @@
             Click Above to install the extension.
             <br>
             By installing you are accepting the
-            <a class='textAnchor' href='#'>terms and conditions.</a>
+            <a href='#'>terms and conditions.</a>
           </div>
         </div>
-        <div class='step2 active'>
+        <div class='step2'>
           <div class='GO_LINE GO_LINE_UP mb50'>
             <i class='VideoClientIcon-navigate-up-arrow'></i>
             <i class='VideoClientIcon-navigate-up-arrow'></i>
@@ -66,7 +95,7 @@
                 in a moment.
                 <br>
                 <br>
-                If the download doesn’t start
+                If the download doesn't start
                 <br>
               </div>
             </div>
@@ -88,5 +117,34 @@
     <div class='V-header'></div>
     <div class='V-right-panel'></div>
     <div class='V-VideoContainer'></div>
+    <script crossorigin='anonymous' integrity='sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=' src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+    <script>
+      $(function(){
+      
+        var winHeight;
+        var field = $(".field_for_buble");
+      
+        winRsize();
+        $(window).resize(function() {
+          winRsize();
+        });
+        function winRsize() {
+          winHeight = $(window).height();
+          field.height(winHeight);
+        }
+      
+      
+        var items = 100;
+        for (var i=0; i<=items; i++) {
+          var move = Math.ceil( Math.random()*50 );
+          var pos = Math.ceil( Math.random()*50 );
+          var scale = Math.ceil( Math.random()*10 );
+          var stretch = Math.ceil( Math.random()*5 );
+          var shake = Math.ceil( Math.random()*5 );
+          field.append('<div class="bubble move'+move+' pos'+pos+'"><div class="scale'+scale+'"><div class="shake'+shake+'"><span class="item stretch'+stretch+'"></span></div></div>');
+        }
+      
+      });
+    </script>
   </body>
 </html>

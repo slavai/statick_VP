@@ -1,0 +1,58 @@
+.diver_block{
+  padding-bottom: 40px;
+  margin-bottom: 70px;
+  position: relative;
+  z-index: -1;
+  .diver{
+    margin: -5rem auto 0;
+    width: 7.6rem;
+    height: 8.8rem;
+    background: url("img/blue_diver.png") no-repeat center;
+    z-index: 19;
+    position: relative;
+  }
+  .yyykor-wrapp{
+    position: absolute;
+    z-index: 9;
+    background: red;
+    width: 100px;
+    top: 50px;
+    bottom: 0;
+    left: calc(50% - 50px);
+    background: url("img/rope.png") repeat-y center top;
+    @include transition();
+    animation-name: spin;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+  }
+  .yyykor{
+    position: absolute;
+    bottom: -4.4rem;
+    left: calc(50% - 28px);
+    width: 58px;
+    height: 63px;
+    background: url("img/anchor.png") no-repeat center top;
+  }
+  &.DRpos1{
+
+  }
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform:rotate(-4deg);
+  }
+  100% {
+    -webkit-transform:rotate(4deg);
+  }
+}
+@keyframes spin {
+  0% {
+    transform:rotate(-4deg);
+  }
+  100% {
+    transform:rotate(4deg);
+  }
+}

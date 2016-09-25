@@ -9,19 +9,44 @@
       .left-part
       .right-part
       .content.chrome_plugin_install.text-center.text-color-white
-        %img.d-inline-block.mt100{src:'UI/img/logo/video_loader_logo_white_small.png'}
+
+        .animatedObject-wrapper
+          .clouds
+          .field_for_buble
+          .shark
+          .whake
+          .animatedObject
+            .sunduk
+            .island1
+            .island2
+            .sunshine
+              %span.first-half
+              %span.second-half
+            .ship-1
+            .ship-2
+            .ship-3
+            .fish1-r
+            .fish2-r
+            .fish1-l
+            .fish2-l
+            .crab
+        %img.d-inline-block.mt30.mb100{src:'UI/img/logo/video_loader_logo_whiteMK2.png'}
         .loadSpin#circleG.hide
           .mt50
           .fs20
-            Welcome
+            Welcome(WORK IN PROGRESS)
           %small Please wait...
           .loadSpin#circleG
             %span.circleG#circleG_1
             %span.circleG#circleG_2
             %span.circleG#circleG_3
 
-        .step1
-          %p.mb20 Immerss extension is required to continue.
+        .step1.active
+          .diver_block.DRpos1
+            .diver
+            .yyykor-wrapp
+              .yyykor
+          %p.mb20.fs20.font-bold Immerss extension is required to continue.
           %div.mb20
             .bluButon.bigBtn{onclick: "window.open('https://chrome.google.com/webstore/detail/jbagnbabffebnloeajochhpipcjhpamb', '', 'width=1020, height=300');window.clicked_by_install=true"}
               INSTALL
@@ -29,8 +54,8 @@
             Click Above to install the extension.
             %br
             By installing you are accepting the
-            %a.textAnchor{href: '#'} terms and conditions.
-        .step2.active
+            %a{href: '#'} terms and conditions.
+        .step2
           .GO_LINE.GO_LINE_UP.mb50
             %i.VideoClientIcon-navigate-up-arrow
             %i.VideoClientIcon-navigate-up-arrow
@@ -55,7 +80,7 @@
                 in a moment.
                 %br
                 %br
-                If the download doesn’t start
+                If the download doesn't start
                 %br
                 -#- if browser.chrome?
                 -#  - if browser.platform.mac?
@@ -76,3 +101,33 @@
     .V-header
     .V-right-panel
     .V-VideoContainer
+
+
+    %script{:crossorigin => "anonymous", :integrity => "sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=", :src => "https://code.jquery.com/jquery-2.2.4.min.js"}
+    :javascript
+      $(function(){
+
+        var winHeight;
+        var field = $(".field_for_buble");
+
+        winRsize();
+        $(window).resize(function() {
+          winRsize();
+        });
+        function winRsize() {
+          winHeight = $(window).height();
+          field.height(winHeight);
+        }
+
+
+        var items = 100;
+        for (var i=0; i<=items; i++) {
+          var move = Math.ceil( Math.random()*50 );
+          var pos = Math.ceil( Math.random()*50 );
+          var scale = Math.ceil( Math.random()*10 );
+          var stretch = Math.ceil( Math.random()*5 );
+          var shake = Math.ceil( Math.random()*5 );
+          field.append('<div class="bubble move'+move+' pos'+pos+'"><div class="scale'+scale+'"><div class="shake'+shake+'"><span class="item stretch'+stretch+'"></span></div></div>');
+        }
+
+      });

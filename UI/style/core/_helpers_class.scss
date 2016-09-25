@@ -64,7 +64,9 @@ $length: length(5);
     width: auto;
   }
 }
-
+.font-bold{
+  font-weight: bold !important;
+}
 .invisible {
   visibility: hidden;
 }

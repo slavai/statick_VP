@@ -66,7 +66,7 @@ $fontSizeMounts: (0.8, 1, 1.2, 1.4, 1.8, 1.6, 2, 2.4);
   }
 }
 
-$spaceamounts: (0.5, 1, 1.5, 2, 2.5, 3, 5, 10);
+$spaceamounts: (0.5, 1, 1.5, 2, 2.5, 3, 5, 10, 20);
 
 @mixin generate-margin-bottom() {
   @each $space in $spaceamounts {

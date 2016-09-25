@@ -1,14 +1,19 @@
+@import "animations_object/sun_shine";
+@import "animations_object/fish";
+@import "animations_object/crab";
+@import "animations_object/ships";
+@import "animations_object/clouds";
+@import "animations_object/islands";
+@import "animations_object/buble";
+@import "animations_object/shark";
+@import "animations_object/wgake";
+@import "diver_block";
+
 .cover{
+  height: auto !important;
+
   .left-part, .right-part{
-    background: -moz-linear-gradient(45deg, rgba(29,124,171,1) 0%, rgba(35,92,135,0.98) 43%, rgba(19,41,79,0.96) 100%);
-    background: -webkit-linear-gradient(45deg, rgba(29,124,171,1) 0%,rgba(35,92,135,0.98) 43%,rgba(19,41,79,0.96) 100%);
-    background: linear-gradient(45deg, rgba(29,124,171,1) 0%,rgba(35,92,135,0.98) 43%,rgba(19,41,79,0.96) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1d7cab', endColorstr='#f513294f',GradientType=1 );
-    background-attachment: fixed;
-    background-clip: border-box;
-    background-origin: padding-box;
-    background-position: 0 0;
-    background-repeat: no-repeat;
+    background: #132c44;
     height: 100%;
     min-height: $videoclientMinHeight;
     position: absolute;
@@ -26,7 +31,17 @@
     right: 0;
   }
   .content{
-    @include transition();
+    background-image: url("img/bg.jpeg");
+    background-repeat: repeat-x;
+    background-position:  center  top;
+    height: 76.8rem;
+    [class^="step"], [class*=" step"]{
+      z-index: 999;
+      position: relative;
+      aside{
+        min-width: 33rem;
+      }
+    }
   }
 }
 .showVideo{
@@ -64,4 +79,22 @@
     opacity: 0;
     display: none;
   }
+}
+.animatedObject{
+  position: absolute;
+  width: 114rem;
+  height: 76rem;
+  margin-left: -58rem;
+  top: 0;
+  left: 50%;
+  z-index: 99;
+}
+.sunduk{
+  background: rgba(0, 0, 0, 0) url("img/box.png") repeat scroll 0 0;
+  bottom: 0;
+  height: 3.9rem;
+  left: 50%;
+  margin-left: -1.1rem;
+  position: absolute;
+  width: 4.2rem;
 }
