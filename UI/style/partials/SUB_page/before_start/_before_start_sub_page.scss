@@ -131,3 +131,32 @@ $durationGO-GO_TOP:2.5s;
 .step1, .step2, .step3, .step4{
   padding-top: 7.8rem;
 }
+.step3{
+  .yyykor-wrapp{
+    animation: none !important;
+    -webkit-animation: none !important;
+    height: 35rem;
+  }
+}
+.step4{
+  padding-top: 15rem;
+  .yyykor-wrapp{
+    animation: none !important;
+    -webkit-animation: none !important;
+    top: 3rem;
+  }
+  .diver_block{
+    left: 51%;
+    position: absolute;
+    top: 45rem;
+  }
+  .yyykor{
+    -moz-transform: rotate(-40deg);
+    -webkit-transform: rotate(-40deg);
+    -o-transform: rotate(-40deg);
+    -ms-transform: rotate(-40deg);
+    transform: rotate(-40deg);
+    height: 6.6rem;
+    left: calc(50% - 2.1rem);
+  }
+}

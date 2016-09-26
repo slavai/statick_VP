@@ -1,6 +1,6 @@
 .island1{
   position: absolute;
-  background: url("img/ilands1.png") no-repeat;
+  background: url("img/ilands1.png") no-repeat bottom/contain;
   width: 9.5rem;
   height: 3rem;
   top: 25.7rem;
@@ -9,7 +9,7 @@
 }
 .island2{
   position: absolute;
-  background: url("img/ilands2.png") no-repeat;
+  background: url("img/ilands2.png") no-repeat bottom/contain;
   width: 38rem;
   height: 13.8rem;
   top: 17rem;

@@ -36,7 +36,7 @@
         <div class='loadSpin hide' id='circleG'>
           <div class='mt50'></div>
           <div class='fs20'>
-            Welcome(WORK IN PROGRESS)
+            Welcome
           </div>
           <small>Please wait...</small>
           <div class='loadSpin' id='circleG'>
@@ -49,14 +49,14 @@
           <div class='diver_block DRpos1'>
             <div class='diver'></div>
             <div class='yyykor-wrapp'>
-              <div class='yyykor'></div>
+              <div class='yyykor' onclick="$('body').addClass('showVideo')"></div>
             </div>
           </div>
           <p class='mb20 fs20 font-bold'>Immerss extension is required to continue.</p>
           <div class='mb20'>
-            <div class='bluButon bigBtn' onclick="window.open('https://chrome.google.com/webstore/detail/jbagnbabffebnloeajochhpipcjhpamb', '', 'width=1020, height=300');window.clicked_by_install=true">
+            <a class='bluButon bigBtn' onclick="$('.step1').removeClass('active');$('.step2').addClass('active');">
               INSTALL
-            </div>
+            </a>
           </div>
           <div>
             Click Above to install the extension.
@@ -66,6 +66,12 @@
           </div>
         </div>
         <div class='step2'>
+          <div class='diver_block DRpos1'>
+            <div class='diver'></div>
+            <div class='yyykor-wrapp'>
+              <div class='yyykor'></div>
+            </div>
+          </div>
           <div class='GO_LINE GO_LINE_UP mb50'>
             <i class='VideoClientIcon-navigate-up-arrow'></i>
             <i class='VideoClientIcon-navigate-up-arrow'></i>
@@ -73,13 +79,17 @@
           </div>
           <div>
             Click
-            <span class='btn-grey-small'>add extention</span>
-            button to install the
-            <br>
-            button to install the Immerss extension
+            <a class='greyBn' href='#' onclick="$('.step2').removeClass('active');$('.step3').addClass('active');">add extention</a>
+            button to install the extension cord
           </div>
         </div>
         <div class='step3'>
+          <div class='diver_block DRpos1'>
+            <div class='diver'></div>
+            <div class='yyykor-wrapp'>
+              <div class='yyykor'></div>
+            </div>
+          </div>
           <aside class='position_s-w'>
             <div class='row'>
               <div class='col-md-3'>
@@ -97,13 +107,26 @@
                 <br>
                 If the download doesn't start
                 <br>
+                <a href='#' onclick="$('.step3').removeClass('active');$('.step4').addClass('active');">click here.</a>
               </div>
             </div>
           </aside>
         </div>
         <div class='step4'>
-          Welcome to Immerss
-          <br>
+          <div class='diver_block DRpos1'>
+            <div class='diver'></div>
+            <div class='yyykor-wrapp'>
+              <div class='yyykor'></div>
+            </div>
+          </div>
+          <div class='font-bold fs18'>
+            Welcome to Immerss
+            <div class='div'>
+              <a class='bluButon bigBtn' onclick="$('body').addClass('showVideo')">
+                start demo
+              </a>
+            </div>
+          </div>
           <div class='mb20'></div>
           <small>Please wait...</small>
           <div class='loadSpin' id='circleG'>
@@ -114,9 +137,16 @@
         </div>
       </div>
     </div>
-    <div class='V-header'></div>
-    <div class='V-right-panel'></div>
-    <div class='V-VideoContainer'></div>
+    <div class='main-section'>
+      <div class='V-header'>
+        <div class='logo'></div>
+        <div class='oneThird'></div>
+        <div class='twoThird'></div>
+        <div class='threeThird'></div>
+      </div>
+      <div class='V-right-panel'></div>
+      <div class='V-VideoContainer'></div>
+    </div>
     <script crossorigin='anonymous' integrity='sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=' src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
     <script>
       $(function(){

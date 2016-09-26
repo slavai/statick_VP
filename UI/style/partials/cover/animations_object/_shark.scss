@@ -9,6 +9,7 @@
     background-image: url("img/shark.png");
     background-repeat: no-repeat;
     background-position: -2% 0;
+    background-size: contain;
     opacity: 0.1;
     @include animation('shark_swim 60s ease-out 0s infinite');
   }

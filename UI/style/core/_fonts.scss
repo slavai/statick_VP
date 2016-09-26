@@ -26,6 +26,87 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.VideoClientIcon-dot-and-circle:before {
+  content: "\e938";
+}
+.VideoClientIcon-expand2:before {
+  content: "\e939";
+}
+.VideoClientIcon-float:before {
+  content: "\e93a";
+}
+.VideoClientIcon-hand-showing-palm-outline:before {
+  content: "\e93b";
+}
+.VideoClientIcon-headset:before {
+  content: "\e93c";
+}
+.VideoClientIcon-high-five:before {
+  content: "\e93d";
+}
+.VideoClientIcon-live-share .path1:before {
+  content: "\e93e";
+  color: rgb(0, 0, 0);
+}
+.VideoClientIcon-live-share .path2:before {
+  content: "\e93f";
+  margin-left: -1em;
+  color: rgb(3, 1, 4);
+}
+.VideoClientIcon-live-share .path3:before {
+  content: "\e940";
+  margin-left: -1em;
+  color: rgb(3, 1, 4);
+}
+.VideoClientIcon-log-out:before {
+  content: "\e941";
+}
+.VideoClientIcon-movie-player-play-button:before {
+  content: "\e942";
+}
+.VideoClientIcon-network-cam:before {
+  content: "\e943";
+}
+.VideoClientIcon-pause-button:before {
+  content: "\e944";
+}
+.VideoClientIcon-share2:before {
+  content: "\e945";
+}
+.VideoClientIcon-three-quarters-of-an-hour:before {
+  content: "\e946";
+}
+.VideoClientIcon-three-users:before {
+  content: "\e947";
+}
+.VideoClientIcon-unlock2:before {
+  content: "\e948";
+}
+.VideoClientIcon-wireless-conection:before {
+  content: "\e949";
+}
+.VideoClientIcon-category:before {
+  content: "\e935";
+}
+.VideoClientIcon-classic-calendar-view:before {
+  content: "\e936";
+}
+.VideoClientIcon-presentation-style:before {
+  content: "\e937";
+}
+.VideoClientIcon-follower:before {
+  content: "\e931";
+}
+.VideoClientIcon-following:before {
+  content: "\e932";
+}
+.VideoClientIcon-placeholder-filled-point:before {
+  content: "\e933";
+}
+.VideoClientIcon-speaking:before {
+  content: "\e934";
+}
 .VideoClientIcon-navigate-up-arrow:before {
   content: "\e92f";
 }

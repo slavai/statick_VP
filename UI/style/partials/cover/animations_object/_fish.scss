@@ -30,6 +30,7 @@ $StartDurationForFish: 80s;
     display: block;
     background-repeat: no-repeat;
     background-position: top left;
+    background-size: contain;
     transform-style: preserve-3d;
 
     -webkit-animation-name:fish-animation-l-flip;
@@ -90,8 +91,8 @@ $StartDurationForFish: 80s;
 
 }
 .fish1-r{
-  width: 7.1rem;
-  height: 5rem;
+  width: 2.8rem;
+  height: 2rem;
   top: 50rem;
   left: 23rem;
   -webkit-animation-name:fish-animation-r;
@@ -108,8 +109,8 @@ $StartDurationForFish: 80s;
   }
 }
 .fish2-r{
-  width: 4.9rem;
-  height: 4.5rem;
+  width: 2.4rem;
+  height: 1.8rem;
   top: 68rem;
   left: 1rem;
   -webkit-animation-name:fish-animation-r;

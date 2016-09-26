@@ -11,7 +11,7 @@ $StartDurationForSunshine: 5s;
       display: block;
       background-image: url("img/shun_laight.png");
       background-repeat: repeat-x;
-      background-size: cover;
+      background-size: contain;
       background-position: top left;
 
       -moz-animation-name:bounce_Sunshine;

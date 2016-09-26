@@ -34,7 +34,7 @@
         .loadSpin#circleG.hide
           .mt50
           .fs20
-            Welcome(WORK IN PROGRESS)
+            Welcome
           %small Please wait...
           .loadSpin#circleG
             %span.circleG#circleG_1
@@ -45,10 +45,10 @@
           .diver_block.DRpos1
             .diver
             .yyykor-wrapp
-              .yyykor
+              .yyykor{onclick: "$('body').addClass('showVideo')"}
           %p.mb20.fs20.font-bold Immerss extension is required to continue.
           %div.mb20
-            .bluButon.bigBtn{onclick: "window.open('https://chrome.google.com/webstore/detail/jbagnbabffebnloeajochhpipcjhpamb', '', 'width=1020, height=300');window.clicked_by_install=true"}
+            %a.bluButon.bigBtn{onclick: "$('.step1').removeClass('active');$('.step2').addClass('active');"}
               INSTALL
           %div
             Click Above to install the extension.
@@ -56,17 +56,23 @@
             By installing you are accepting the
             %a{href: '#'} terms and conditions.
         .step2
+          .diver_block.DRpos1
+            .diver
+            .yyykor-wrapp
+              .yyykor
           .GO_LINE.GO_LINE_UP.mb50
             %i.VideoClientIcon-navigate-up-arrow
             %i.VideoClientIcon-navigate-up-arrow
             %i.VideoClientIcon-navigate-up-arrow
           %div
             Click
-            %span.btn-grey-small add extention
-            button to install the
-            %br
-            button to install the Immerss extension
+            %a.greyBn{href:'#', onclick: "$('.step2').removeClass('active');$('.step3').addClass('active');"} add extention
+            button to install the extension cord
         .step3
+          .diver_block.DRpos1
+            .diver
+            .yyykor-wrapp
+              .yyykor
           %aside.position_s-w
             .row
               .col-md-3
@@ -82,25 +88,32 @@
                 %br
                 If the download doesn't start
                 %br
-                -#- if browser.chrome?
-                -#  - if browser.platform.mac?
-                -#    = link_to 'click here', download_client_profile_path(client: :chrome_web_mac), class: 'download_me'
-                -#  - if browser.platform.windows? || browser.platform.windows_x64?
-                -#    = link_to 'click here', download_client_profile_path(client: :chrome_web_win), class: 'download_me'
+                %a{href:'#', onclick: "$('.step3').removeClass('active');$('.step4').addClass('active');"} click here.
 
         .step4
-          Welcome to Immerss
-          %br
+          .diver_block.DRpos1
+            .diver
+            .yyykor-wrapp
+              .yyykor
+          .font-bold.fs18
+            Welcome to Immerss
+            .div
+              %a.bluButon.bigBtn{onclick: "$('body').addClass('showVideo')"}
+                start demo
           .mb20
           %small Please wait...
           .loadSpin#circleG
             %span.circleG#circleG_1
             %span.circleG#circleG_2
             %span.circleG#circleG_3
-
-    .V-header
-    .V-right-panel
-    .V-VideoContainer
+    .main-section
+      .V-header
+        .logo
+        .oneThird
+        .twoThird
+        .threeThird
+      .V-right-panel
+      .V-VideoContainer
 
 
     %script{:crossorigin => "anonymous", :integrity => "sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=", :src => "https://code.jquery.com/jquery-2.2.4.min.js"}

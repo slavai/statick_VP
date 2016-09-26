@@ -1,13 +1,13 @@
 .diver_block{
-  padding-bottom: 40px;
-  margin-bottom: 70px;
+  padding-bottom: 4rem;
+  margin-bottom: 7rem;
   position: relative;
   z-index: -1;
   .diver{
     margin: -5rem auto 0;
     width: 7.6rem;
     height: 8.8rem;
-    background: url("img/blue_diver.png") no-repeat center;
+    background: url("img/blue_diver.png") no-repeat center/contain;
     z-index: 19;
     position: relative;
   }
@@ -15,10 +15,10 @@
     position: absolute;
     z-index: 9;
     background: red;
-    width: 100px;
-    top: 50px;
+    width: 10rem;
+    top: 5rem;
     bottom: 0;
-    left: calc(50% - 50px);
+    left: calc(50% - 5rem);
     background: url("img/rope.png") repeat-y center top;
     @include transition();
     animation-name: spin;
@@ -30,10 +30,10 @@
   .yyykor{
     position: absolute;
     bottom: -4.4rem;
-    left: calc(50% - 28px);
-    width: 58px;
-    height: 63px;
-    background: url("img/anchor.png") no-repeat center top;
+    left: calc(50% - 2.8rem);
+    width: 5.8rem;
+    height: 6.3rem;
+    background: url("img/anchor.png") no-repeat top/contain;
   }
   &.DRpos1{
 

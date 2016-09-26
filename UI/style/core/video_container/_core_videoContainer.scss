@@ -1,0 +1,18 @@
+.main-section{
+  opacity: 0;
+  visibility: hidden;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  padding: $header-height 0 0 0;
+  z-index: 1;
+  left: 0;
+  top: 0;
+}
+.showVideo{
+  .main-section{
+    opacity: 1;
+    visibility: visible;
+  }
+}

@@ -1,326 +1,417 @@
 @font-face {
-    font-family: 'VideoClientIcon-V2';
-    src:
-        url('fonts/VideoClientIcon-V2.ttf?paripx') format('truetype'),
-        url('fonts/VideoClientIcon-V2.woff?paripx') format('woff'),
-        url('fonts/VideoClientIcon-V2.svg?paripx#VideoClientIcon-V2') format('svg');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'VideoClientIcon-V2';
+  src:
+    url('fonts/VideoClientIcon-V2.ttf?imvklm') format('truetype'),
+    url('fonts/VideoClientIcon-V2.woff?imvklm') format('woff'),
+    url('fonts/VideoClientIcon-V2.svg?imvklm#VideoClientIcon-V2') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
 [class^="VideoClientIcon-"], [class*=" VideoClientIcon-"] {
-    /* use !important to prevent issues with browser extensions that change fonts */
-    font-family: 'VideoClientIcon-V2' !important;
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'VideoClientIcon-V2' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
 
-    /* Better Font Rendering =========== */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
+.VideoClientIcon-dot-and-circle:before {
+  content: "\e938";
+}
+.VideoClientIcon-expand2:before {
+  content: "\e939";
+}
+.VideoClientIcon-float:before {
+  content: "\e93a";
+}
+.VideoClientIcon-hand-showing-palm-outline:before {
+  content: "\e93b";
+}
+.VideoClientIcon-headset:before {
+  content: "\e93c";
+}
+.VideoClientIcon-high-five:before {
+  content: "\e93d";
+}
+.VideoClientIcon-live-share .path1:before {
+  content: "\e93e";
+  color: rgb(0, 0, 0);
+}
+.VideoClientIcon-live-share .path2:before {
+  content: "\e93f";
+  margin-left: -1em;
+  color: rgb(3, 1, 4);
+}
+.VideoClientIcon-live-share .path3:before {
+  content: "\e940";
+  margin-left: -1em;
+  color: rgb(3, 1, 4);
+}
+.VideoClientIcon-log-out:before {
+  content: "\e941";
+}
+.VideoClientIcon-movie-player-play-button:before {
+  content: "\e942";
+}
+.VideoClientIcon-network-cam:before {
+  content: "\e943";
+}
+.VideoClientIcon-pause-button:before {
+  content: "\e944";
+}
+.VideoClientIcon-share2:before {
+  content: "\e945";
+}
+.VideoClientIcon-three-quarters-of-an-hour:before {
+  content: "\e946";
+}
+.VideoClientIcon-three-users:before {
+  content: "\e947";
+}
+.VideoClientIcon-unlock2:before {
+  content: "\e948";
+}
+.VideoClientIcon-wireless-conection:before {
+  content: "\e949";
+}
+.VideoClientIcon-category:before {
+  content: "\e935";
+}
+.VideoClientIcon-classic-calendar-view:before {
+  content: "\e936";
+}
+.VideoClientIcon-presentation-style:before {
+  content: "\e937";
+}
+.VideoClientIcon-follower:before {
+  content: "\e931";
+}
+.VideoClientIcon-following:before {
+  content: "\e932";
+}
+.VideoClientIcon-placeholder-filled-point:before {
+  content: "\e933";
+}
+.VideoClientIcon-speaking:before {
+  content: "\e934";
+}
 .VideoClientIcon-navigate-up-arrow:before {
-    content: "\e92f";
+  content: "\e92f";
 }
 .VideoClientIcon-navigate-down-arrow:before {
-    content: "\e930";
+  content: "\e930";
 }
 .VideoClientIcon-clockwise-rotating-circular-arrow:before {
-    content: "\e92c";
+  content: "\e92c";
 }
 .VideoClientIcon-clockwise-rotating-circular-arrow2:before {
-    content: "\e92d";
+  content: "\e92d";
 }
 .VideoClientIcon-remove:before {
-    content: "\e92e";
+  content: "\e92e";
 }
 .VideoClientIcon-group2:before {
-    content: "\e923";
+  content: "\e923";
 }
 .VideoClientIcon-layout1:before {
-    content: "\e924";
+  content: "\e924";
 }
 .VideoClientIcon-layout2:before {
-    content: "\e925";
+  content: "\e925";
 }
 .VideoClientIcon-layout3:before {
-    content: "\e926";
+  content: "\e926";
 }
 .VideoClientIcon-layout4:before {
-    content: "\e927";
+  content: "\e927";
 }
 .VideoClientIcon-lecture2:before {
-    content: "\e928";
+  content: "\e928";
 }
 .VideoClientIcon-microphone:before {
-    content: "\e929";
+  content: "\e929";
 }
 .VideoClientIcon-sound:before {
-    content: "\e92a";
+  content: "\e92a";
 }
 .VideoClientIcon-video:before {
-    content: "\e92b";
+  content: "\e92b";
 }
 .VideoClientIcon-addparticipant:before {
-    content: "\e916";
+  content: "\e916";
 }
 .VideoClientIcon-manageparticipants:before {
-    content: "\e917";
+  content: "\e917";
 }
 .VideoClientIcon-minimize:before {
-    content: "\e918";
+  content: "\e918";
 }
 .VideoClientIcon-unlock:before {
-    content: "\e919";
+  content: "\e919";
 }
 .VideoClientIcon-add:before {
-    content: "\e91a";
+  content: "\e91a";
 }
 .VideoClientIcon-facebook_2:before {
-    content: "\e91b";
+  content: "\e91b";
 }
 .VideoClientIcon-google_2:before {
-    content: "\e91c";
+  content: "\e91c";
 }
 .VideoClientIcon-linkedin_2:before {
-    content: "\e91d";
+  content: "\e91d";
 }
 .VideoClientIcon-message:before {
-    content: "\e91e";
+  content: "\e91e";
 }
 .VideoClientIcon-share:before {
-    content: "\e91f";
+  content: "\e91f";
 }
 .VideoClientIcon-tumblr_2:before {
-    content: "\e920";
+  content: "\e920";
 }
 .VideoClientIcon-twitter_2:before {
-    content: "\e921";
+  content: "\e921";
 }
 .VideoClientIcon-web:before {
-    content: "\e922";
+  content: "\e922";
 }
 .VideoClientIcon-stopwatch:before {
-    content: "\e904";
+  content: "\e904";
 }
 .VideoClientIcon-stanchios:before {
-    content: "\e905";
+  content: "\e905";
 }
 .VideoClientIcon-stopwatch2:before {
-    content: "\e906";
+  content: "\e906";
 }
 .VideoClientIcon-addperson:before {
-    content: "\e907";
+  content: "\e907";
 }
 .VideoClientIcon-circle:before {
-    content: "\e908";
+  content: "\e908";
 }
 .VideoClientIcon-close:before {
-    content: "\e909";
+  content: "\e909";
 }
 .VideoClientIcon-donation:before {
-    content: "\e90a";
+  content: "\e90a";
 }
 .VideoClientIcon-downloading:before {
-    content: "\e90b";
+  content: "\e90b";
 }
 .VideoClientIcon-expand:before {
-    content: "\e90c";
+  content: "\e90c";
 }
 .VideoClientIcon-lock:before {
-    content: "\e90d";
+  content: "\e90d";
 }
 .VideoClientIcon-more:before {
-    content: "\e90e";
+  content: "\e90e";
 }
 .VideoClientIcon-multiplescreens:before {
-    content: "\e90f";
+  content: "\e90f";
 }
 .VideoClientIcon-pollstatistics:before {
-    content: "\e910";
+  content: "\e910";
 }
 .VideoClientIcon-signalbars:before {
-    content: "\e911";
+  content: "\e911";
 }
 .VideoClientIcon-speechbubble:before {
-    content: "\e912";
+  content: "\e912";
 }
 .VideoClientIcon-tool:before {
-    content: "\e913";
+  content: "\e913";
 }
 .VideoClientIcon-twitter:before {
-    content: "\e914";
+  content: "\e914";
 }
 .VideoClientIcon-wifisignal:before {
-    content: "\e915";
+  content: "\e915";
 }
 .VideoClientIcon-add73:before {
-    content: "\e900";
+  content: "\e900";
 }
 .VideoClientIcon-email131:before {
-    content: "\e901";
+  content: "\e901";
 }
 .VideoClientIcon-loving1:before {
-    content: "\e902";
+  content: "\e902";
 }
 .VideoClientIcon-share57:before {
-    content: "\e903";
+  content: "\e903";
 }
 .VideoClientIcon-LiveStream_3:before {
-    content: "\e806";
+  content: "\e806";
 }
 .VideoClientIcon-LiveStream:before {
-    content: "\e807";
+  content: "\e807";
 }
 .VideoClientIcon-LiveStream_2:before {
-    content: "\e808";
+  content: "\e808";
 }
 .VideoClientIcon-human:before {
-    content: "\e809";
+  content: "\e809";
 }
 .VideoClientIcon-LiveStream_4:before {
-    content: "\e80a";
+  content: "\e80a";
 }
 .VideoClientIcon-Path1:before {
-    content: "\e80b";
+  content: "\e80b";
 }
 .VideoClientIcon-Group:before {
-    content: "\e80c";
+  content: "\e80c";
 }
 .VideoClientIcon-clock:before {
-    content: "\e800";
+  content: "\e800";
 }
 .VideoClientIcon-key:before {
-    content: "\e801";
+  content: "\e801";
 }
 .VideoClientIcon-level:before {
-    content: "\e802";
+  content: "\e802";
 }
 .VideoClientIcon-monitor2:before {
-    content: "\e803";
+  content: "\e803";
 }
 .VideoClientIcon-play-button2:before {
-    content: "\e804";
+  content: "\e804";
 }
 .VideoClientIcon-system:before {
-    content: "\e805";
+  content: "\e805";
 }
 .VideoClientIcon-exitFullscrean:before {
-    content: "\e61b";
+  content: "\e61b";
 }
 .VideoClientIcon-Share2:before {
-    content: "\e619";
+  content: "\e619";
 }
 .VideoClientIcon-exit:before {
-    content: "\e61a";
+  content: "\e61a";
 }
 .VideoClientIcon-stop:before {
-    content: "\e614";
+  content: "\e614";
 }
 .VideoClientIcon-group:before {
-    content: "\e612";
+  content: "\e612";
 }
 .VideoClientIcon-lecture:before {
-    content: "\e613";
+  content: "\e613";
 }
 .VideoClientIcon-Googleplus:before {
-    content: "\e615";
+  content: "\e615";
 }
 .VideoClientIcon-Linkedin:before {
-    content: "\e616";
+  content: "\e616";
 }
 .VideoClientIcon-Twitter:before {
-    content: "\e617";
+  content: "\e617";
 }
 .VideoClientIcon-Facebook:before {
-    content: "\e618";
+  content: "\e618";
 }
 .VideoClientIcon-Notifications:before {
-    content: "\e60b";
+  content: "\e60b";
 }
 .VideoClientIcon-Messages:before {
-    content: "\e60a";
+  content: "\e60a";
 }
 .VideoClientIcon-dashboard:before {
-    content: "\e606";
+  content: "\e606";
 }
 .VideoClientIcon-Edit:before {
-    content: "\e607";
+  content: "\e607";
 }
 .VideoClientIcon-Favorites:before {
-    content: "\e608";
+  content: "\e608";
 }
 .VideoClientIcon-iPlus:before {
-    content: "\e609";
+  content: "\e609";
 }
-.VideoClientIcon-Notifications2:before {
-    content: "\e60b2";
+.VideoClientIcon-Notifications2 .path1:before {
+  content: "\e60b2";
+  color: rgb(68, 68, 68);
+}
+.VideoClientIcon-Notifications2 .path2:before {
+  content: "\e60b3";
+  margin-left: -1em;
+  color: rgb(6, 6, 6);
+}
+.VideoClientIcon-Notifications2 .path3:before {
+  content: "\e60b4";
+  margin-left: -1em;
+  color: rgb(24, 23, 22);
 }
 .VideoClientIcon-People:before {
-    content: "\e60c";
+  content: "\e60c";
 }
 .VideoClientIcon-Ratings:before {
-    content: "\e60d";
+  content: "\e60d";
 }
 .VideoClientIcon-Remove:before {
-    content: "\e60e";
+  content: "\e60e";
 }
 .VideoClientIcon-Search:before {
-    content: "\e60f";
+  content: "\e60f";
 }
 .VideoClientIcon-Share:before {
-    content: "\e610";
+  content: "\e610";
 }
 .VideoClientIcon-Views:before {
-    content: "\e611";
+  content: "\e611";
 }
 .VideoClientIcon-q6:before {
-    content: "\e600";
+  content: "\e600";
 }
 .VideoClientIcon-q5:before {
-    content: "\e601";
+  content: "\e601";
 }
 .VideoClientIcon-q4:before {
-    content: "\e602";
+  content: "\e602";
 }
 .VideoClientIcon-q3:before {
-    content: "\e603";
+  content: "\e603";
 }
 .VideoClientIcon-q2:before {
-    content: "\e604";
+  content: "\e604";
 }
 .VideoClientIcon-q1:before {
-    content: "\e605";
+  content: "\e605";
 }
 .VideoClientIcon-glyph:before {
-    content: "\ea81";
+  content: "\ea81";
 }
 .VideoClientIcon-glyph-1:before {
-    content: "\ea82";
+  content: "\ea82";
 }
 .VideoClientIcon-glyph-2:before {
-    content: "\ea83";
+  content: "\ea83";
 }
 .VideoClientIcon-glyph-3:before {
-    content: "\ea84";
+  content: "\ea84";
 }
 .VideoClientIcon-glyph-4:before {
-    content: "\ea85";
+  content: "\ea85";
 }
 .VideoClientIcon-glyph-5:before {
-    content: "\ea86";
+  content: "\ea86";
 }
 .VideoClientIcon-glyph-6:before {
-    content: "\ea87";
+  content: "\ea87";
 }
 .VideoClientIcon-glyph-7:before {
-    content: "\ea88";
+  content: "\ea88";
 }
 .VideoClientIcon-glyph-8:before {
-    content: "\ea89";
+  content: "\ea89";
 }
 

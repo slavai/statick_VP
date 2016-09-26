@@ -1,0 +1,24 @@
+
+
+.V-right-panel{
+  opacity: 0;
+  position: absolute;
+  top: $header-height;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  height: calc(100% - #{$header-height});
+  overflow: hidden;
+  width: $sideBar-width;
+  transform: translateX($sideBar-width);
+  -webkit-transform: translateX($sideBar-width);
+  @include transition(600ms);
+  background: blue;
+}
+.showVideo{
+  .V-right-panel{
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    opacity: 1;
+  }
+}

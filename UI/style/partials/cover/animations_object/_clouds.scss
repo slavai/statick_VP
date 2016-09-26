@@ -4,6 +4,7 @@
   top: 0rem;
   background-image: url("img/clouds.png") ;
   background-repeat: repeat-x;
+  background-size: contain;
   -webkit-animation: backgroundScroll 60s linear infinite;
   animation: backgroundScroll 60s linear infinite;
   z-index: 1;
