@@ -12,8 +12,8 @@
   width: $sideBar-width;
   transform: translateX($sideBar-width);
   -webkit-transform: translateX($sideBar-width);
-  @include transition(600ms);
-  background: blue;
+  @include transition($transitionProperty);
+  background: #3a3a3a;
 }
 .showVideo{
   .V-right-panel{

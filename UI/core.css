@@ -353,6 +353,33 @@ svg:not(:root) {
 .VideoClientIcon-remove:before {
   content: "\e92e"; }
 
+.VideoClientIcon-group2:before {
+  content: "\e923"; }
+
+.VideoClientIcon-layout1:before {
+  content: "\e924"; }
+
+.VideoClientIcon-layout2:before {
+  content: "\e925"; }
+
+.VideoClientIcon-layout3:before {
+  content: "\e926"; }
+
+.VideoClientIcon-layout4:before {
+  content: "\e927"; }
+
+.VideoClientIcon-lecture2:before {
+  content: "\e928"; }
+
+.VideoClientIcon-microphone:before {
+  content: "\e929"; }
+
+.VideoClientIcon-sound:before {
+  content: "\e92a"; }
+
+.VideoClientIcon-video:before {
+  content: "\e92b"; }
+
 .VideoClientIcon-addparticipant:before {
   content: "\e916"; }
 
@@ -545,8 +572,19 @@ svg:not(:root) {
 .VideoClientIcon-iPlus:before {
   content: "\e609"; }
 
-.VideoClientIcon-Notifications2:before {
-  content: "\e60b2"; }
+.VideoClientIcon-Notifications2 .path1:before {
+  content: "\e60b2";
+  color: #444444; }
+
+.VideoClientIcon-Notifications2 .path2:before {
+  content: "\e60b3";
+  margin-left: -1em;
+  color: #060606; }
+
+.VideoClientIcon-Notifications2 .path3:before {
+  content: "\e60b4";
+  margin-left: -1em;
+  color: #181716; }
 
 .VideoClientIcon-People:before {
   content: "\e60c"; }
@@ -610,6 +648,156 @@ svg:not(:root) {
 
 .VideoClientIcon-glyph-8:before {
   content: "\ea89"; }
+
+.VideoClientIcon-warning:before {
+  content: "\ea07"; }
+
+.VideoClientIcon-notification:before {
+  content: "\ea08"; }
+
+.VideoClientIcon-question:before {
+  content: "\ea09"; }
+
+.VideoClientIcon-plus:before {
+  content: "\ea0a"; }
+
+.VideoClientIcon-minus:before {
+  content: "\ea0b"; }
+
+.VideoClientIcon-cross:before {
+  content: "\ea0f"; }
+
+.VideoClientIcon-checkmark:before {
+  content: "\ea10"; }
+
+.VideoClientIcon-play3:before {
+  content: "\ea1c"; }
+
+.VideoClientIcon-pause2:before {
+  content: "\ea1d"; }
+
+.VideoClientIcon-stop2:before {
+  content: "\ea1e"; }
+
+.VideoClientIcon-mail4:before {
+  content: "\ea8a"; }
+
+.VideoClientIcon-google:before {
+  content: "\ea8b"; }
+
+.VideoClientIcon-google3:before {
+  content: "\ea8c"; }
+
+.VideoClientIcon-google-plus:before {
+  content: "\ea8d"; }
+
+.VideoClientIcon-google-plus3:before {
+  content: "\ea8e"; }
+
+.VideoClientIcon-hangouts:before {
+  content: "\ea8f"; }
+
+.VideoClientIcon-google-drive:before {
+  content: "\ea90"; }
+
+.VideoClientIcon-facebook:before {
+  content: "\ea91"; }
+
+.VideoClientIcon-facebook2:before {
+  content: "\ea92"; }
+
+.VideoClientIcon-instagram:before {
+  content: "\ea93"; }
+
+.VideoClientIcon-whatsapp:before {
+  content: "\ea94"; }
+
+.VideoClientIcon-spotify:before {
+  content: "\ea95"; }
+
+.VideoClientIcon-telegram:before {
+  content: "\ea96"; }
+
+.VideoClientIcon-twitter2:before {
+  content: "\ea97"; }
+
+.VideoClientIcon-vine:before {
+  content: "\ea98"; }
+
+.VideoClientIcon-vk:before {
+  content: "\ea99"; }
+
+.VideoClientIcon-renren:before {
+  content: "\ea9a"; }
+
+.VideoClientIcon-sina-weibo:before {
+  content: "\ea9b"; }
+
+.VideoClientIcon-rss2:before {
+  content: "\ea9c"; }
+
+.VideoClientIcon-youtube:before {
+  content: "\ea9d"; }
+
+.VideoClientIcon-youtube2:before {
+  content: "\ea9e"; }
+
+.VideoClientIcon-twitch:before {
+  content: "\ea9f"; }
+
+.VideoClientIcon-vimeo:before {
+  content: "\eaa0"; }
+
+.VideoClientIcon-vimeo2:before {
+  content: "\eaa1"; }
+
+.VideoClientIcon-lanyrd:before {
+  content: "\eaa2"; }
+
+.VideoClientIcon-flickr:before {
+  content: "\eaa3"; }
+
+.VideoClientIcon-flickr2:before {
+  content: "\eaa4"; }
+
+.VideoClientIcon-flickr3:before {
+  content: "\eaa5"; }
+
+.VideoClientIcon-flickr4:before {
+  content: "\eaa6"; }
+
+.VideoClientIcon-dribbble:before {
+  content: "\eaa7"; }
+
+.VideoClientIcon-behance:before {
+  content: "\eaa8"; }
+
+.VideoClientIcon-behance2:before {
+  content: "\eaa9"; }
+
+.VideoClientIcon-dropbox:before {
+  content: "\eaae"; }
+
+.VideoClientIcon-appleinc:before {
+  content: "\eabe"; }
+
+.VideoClientIcon-android:before {
+  content: "\eac0"; }
+
+.VideoClientIcon-chrome:before {
+  content: "\ead9"; }
+
+.VideoClientIcon-firefox:before {
+  content: "\eada"; }
+
+.VideoClientIcon-edge:before {
+  content: "\eadc"; }
+
+.VideoClientIcon-safari:before {
+  content: "\eadd"; }
+
+.VideoClientIcon-opera:before {
+  content: "\eade"; }
 
 .bluButon {
   background: #10b0e6 none repeat scroll 0 0;
@@ -1013,19 +1201,341 @@ body {
   height: 3.5rem;
   transform: translateY(-3.5rem);
   -webkit-transform: translateY(-3.5rem);
-  -webkit-transition: all 600ms ease-in-out;
-  -moz-transition: all 600ms ease-in-out;
-  -o-transition: all 600ms ease-in-out;
-  transition: all 600ms ease-in-out;
-  background: red; }
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  background: #3a3a3a; }
+  .V-header:before, .V-header:after {
+    content: " ";
+    display: table; }
+  .V-header:after {
+    clear: both; }
   .V-header .logo {
     background-color: #272727;
     background-image: url("img/logo/logo_small.png");
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: 1.75rem auto;
+    background-size: 2.1rem auto;
     width: 3.5rem;
-    height: 3.5rem; }
+    height: 3.5rem;
+    float: left; }
+
+.oneThird {
+  display: inline-block; }
+
+.MainVideoButton {
+  display: block;
+  margin: 0 auto 1.5rem;
+  vertical-align: middle;
+  position: relative;
+  width: 44px;
+  height: 44px;
+  border-radius: 22px;
+  -webkit-border-radius: 22px;
+  border: 0.2rem solid transparent;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-name: pulse-1-light-border;
+  animation-name: pulse-1-light-border;
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  -o-animation-delay: 1s;
+  animation-delay: 1s; }
+  .MainVideoButton .playButton {
+    display: none;
+    z-index: 19;
+    margin: 0 auto 1.5rem;
+    text-align: center;
+    vertical-align: middle;
+    width: 44px;
+    height: 44px;
+    border-radius: 22px;
+    -webkit-border-radius: 22px;
+    border: 0.2rem solid #40d6ff;
+    background-color: #40d6ff;
+    position: absolute;
+    left: -0.2rem;
+    top: -0.2rem; }
+    .MainVideoButton .playButton span {
+      color: #ffffff;
+      font-size: 2.1rem;
+      line-height: 40px; }
+      .MainVideoButton .playButton span.icon-play {
+        margin-left: 0.6rem; }
+  .MainVideoButton .circleButton {
+    padding: 7.33333px;
+    position: relative;
+    z-index: 9;
+    height: 44px;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-name: pulse-1-light-border;
+    animation-name: pulse-1-light-border;
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    -o-animation-delay: 1s;
+    animation-delay: 1s; }
+    .MainVideoButton .circleButton span {
+      text-align: center;
+      display: inline-block;
+      vertical-align: middle;
+      position: absolute;
+      top: 22px;
+      left: 22px;
+      -webkit-animation-duration: 3s;
+      animation-duration: 3s;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
+      -webkit-animation-timing-function: ease-in-out;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: infinite;
+      -webkit-animation-iteration-count: infinite;
+      -webkit-transition: all 0.2s ease-in-out;
+      -moz-transition: all 0.2s ease-in-out;
+      -o-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out; }
+      .MainVideoButton .circleButton span:nth-child(1) {
+        width: 0.6rem;
+        height: 0.6rem;
+        border-radius: 0.3rem;
+        -webkit-border-radius: 0.3rem;
+        background-color: #636a6f;
+        margin-top: -0.5rem;
+        margin-left: -0.5rem;
+        -webkit-animation-name: pulse-2-light;
+        animation-name: pulse-2-light;
+        -webkit-animation-delay: 1s;
+        -moz-animation-delay: 1s;
+        -o-animation-delay: 1s;
+        animation-delay: 1s; }
+      .MainVideoButton .circleButton span:nth-child(2) {
+        width: 2rem;
+        height: 2rem;
+        border-radius: 1rem;
+        -webkit-border-radius: 1rem;
+        margin-top: -1.2rem;
+        margin-left: -1.2rem;
+        border-color: transparent #252f37;
+        border-style: solid;
+        border-width: 0.2rem;
+        -webkit-animation-name: pulse-1-light;
+        animation-name: pulse-1-light;
+        -webkit-animation-delay: 1s;
+        -moz-animation-delay: 1s;
+        -o-animation-delay: 1s;
+        animation-delay: 1s; }
+      .MainVideoButton .circleButton span:nth-child(3) {
+        width: 3.2rem;
+        height: 3.2rem;
+        border-radius: 1.6rem;
+        -webkit-border-radius: 1.6rem;
+        margin-top: -1.8rem;
+        margin-left: -1.8rem;
+        border-color: transparent #252f37;
+        border-style: solid;
+        border-width: 0.2rem;
+        -webkit-animation-name: pulse-1-light;
+        animation-name: pulse-1-light;
+        -webkit-animation-delay: 1s;
+        -moz-animation-delay: 1s;
+        -o-animation-delay: 1s;
+        animation-delay: 1s; }
+  .MainVideoButton.INTRdefault .playButton {
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-name: pulse-4-widh-border-background;
+    animation-name: pulse-4-widh-border-background; }
+  .MainVideoButton.PlayINTR {
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-name: pulse-3;
+    animation-name: pulse-3;
+    -webkit-animation-delay: 0.8s;
+    -moz-animation-delay: 0.8s;
+    -o-animation-delay: 0.8s;
+    animation-delay: 0.8s; }
+    .MainVideoButton.PlayINTR .circleButton span:nth-child(1) {
+      -webkit-animation-name: pulse-2;
+      animation-name: pulse-2;
+      -webkit-animation-delay: 0.2s;
+      -moz-animation-delay: 0.2s;
+      -o-animation-delay: 0.2s;
+      animation-delay: 0.2s; }
+    .MainVideoButton.PlayINTR .circleButton span:nth-child(2) {
+      -webkit-animation-name: pulse-1;
+      animation-name: pulse-1;
+      -webkit-animation-delay: 0.4s;
+      -moz-animation-delay: 0.4s;
+      -o-animation-delay: 0.4s;
+      animation-delay: 0.4s; }
+    .MainVideoButton.PlayINTR .circleButton span:nth-child(3) {
+      -webkit-animation-name: pulse-1;
+      animation-name: pulse-1;
+      -webkit-animation-delay: 0.6s;
+      -moz-animation-delay: 0.6s;
+      -o-animation-delay: 0.6s;
+      animation-delay: 0.6s; }
+  .MainVideoButton:hover .playButton, .MainVideoButton.INTRdefault .playButton {
+    display: block; }
+    .MainVideoButton:hover .playButton .icon-pause, .MainVideoButton.INTRdefault .playButton .icon-pause {
+      display: none; }
+  .MainVideoButton:hover.PlayINTR .playButton, .MainVideoButton.INTRdefault.PlayINTR .playButton {
+    display: block; }
+    .MainVideoButton:hover.PlayINTR .playButton .icon-pause, .MainVideoButton.INTRdefault.PlayINTR .playButton .icon-pause {
+      display: inline-block; }
+    .MainVideoButton:hover.PlayINTR .playButton .icon-play, .MainVideoButton.INTRdefault.PlayINTR .playButton .icon-play {
+      display: none; }
+  .MainVideoButton.waitResponse {
+    border-color: transparent #40d6ff !important;
+    -webkit-animation-name: spinnerRotate;
+    animation-name: spinnerRotate;
+    -webkit-animation-delay: 0.8s;
+    -moz-animation-delay: 0.8s;
+    -o-animation-delay: 0.8s;
+    animation-delay: 0.8s; }
+    .MainVideoButton.waitResponse span {
+      border-color: transparent #40d6ff !important; }
+      .MainVideoButton.waitResponse span:nth-child(1) {
+        background-color: #40d6ff !important; }
+      .MainVideoButton.waitResponse span:nth-child(2) {
+        -webkit-animation-name: spinnerRotate;
+        animation-name: spinnerRotate;
+        -webkit-animation-delay: 0.2s;
+        -moz-animation-delay: 0.2s;
+        -o-animation-delay: 0.2s;
+        animation-delay: 0.2s; }
+      .MainVideoButton.waitResponse span:nth-child(3) {
+        -webkit-animation-name: spinnerRotate;
+        animation-name: spinnerRotate;
+        -webkit-animation-delay: 0.6s;
+        -moz-animation-delay: 0.6s;
+        -o-animation-delay: 0.6s;
+        animation-delay: 0.6s; }
+
+@-webkit-keyframes pulse-1 {
+  0% {
+    border-color: transparent #40d6ff; }
+  100% {
+    border-color: transparent #0f7199; } }
+@keyframes pulse-1 {
+  0% {
+    border-color: transparent #40d6ff; }
+  100% {
+    border-color: transparent #0f7199; } }
+@-webkit-keyframes pulse-2 {
+  0% {
+    background-color: #40d6ff; }
+  100% {
+    background-color: #0f7199; } }
+@keyframes pulse-2 {
+  0% {
+    background-color: #40d6ff; }
+  100% {
+    background-color: #0f7199; } }
+@-webkit-keyframes pulse-3 {
+  0% {
+    border-color: #40d6ff; }
+  100% {
+    border-color: #0f7199; } }
+@keyframes pulse-3 {
+  0% {
+    border-color: #40d6ff; }
+  100% {
+    border-color: #0f7199; } }
+@-webkit-keyframes pulse-2-light {
+  0% {
+    background-color: #bbbec1; }
+  100% {
+    background-color: #636a6f; } }
+@keyframes pulse-2-light {
+  0% {
+    background-color: #bbbec1; }
+  100% {
+    background-color: #636a6f; } }
+@-webkit-keyframes pulse-1-light {
+  0% {
+    border-color: transparent #bbbec1; }
+  100% {
+    border-color: transparent #636a6f; } }
+@keyframes pulse-1-light {
+  0% {
+    border-color: transparent #bbbec1; }
+  100% {
+    border-color: transparent #636a6f; } }
+@-webkit-keyframes pulse-4-widh-border-background {
+  0% {
+    background-color: #40d6ff;
+    border-color: #40d6ff; }
+  100% {
+    background-color: #0f7199;
+    border-color: #0f7199; } }
+@keyframes pulse-4-widh-border-background {
+  0% {
+    background-color: #40d6ff;
+    border-color: #40d6ff; }
+  100% {
+    background-color: #0f7199;
+    border-color: #0f7199; } }
+@-webkit-keyframes pulse-1-light-border {
+  0% {
+    border-color: #bbbec1; }
+  100% {
+    border-color: #636a6f; } }
+@keyframes pulse-1-light-border {
+  0% {
+    border-color: #bbbec1; }
+  100% {
+    border-color: #636a6f; } }
+@-webkit-keyframes spinnerRotate {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+@keyframes spinnerRotate {
+  from {
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  to {
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+.hiddenButtonsVideo a {
+  position: relative; }
+  .hiddenButtonsVideo a#inCallButtonStopStreaming i {
+    font-size: 2.5rem;
+    padding-left: 0; }
 
 .showVideo .V-header {
   transform: translateY(0);
@@ -1044,11 +1554,11 @@ body {
   width: 3.5rem;
   transform: translateX(3.5rem);
   -webkit-transform: translateX(3.5rem);
-  -webkit-transition: all 600ms ease-in-out;
-  -moz-transition: all 600ms ease-in-out;
-  -o-transition: all 600ms ease-in-out;
-  transition: all 600ms ease-in-out;
-  background: blue; }
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  background: #3a3a3a; }
 
 .showVideo .V-right-panel {
   transform: translateY(0);

@@ -122,6 +122,33 @@
 .VideoClientIcon-remove:before {
   content: "\e92e";
 }
+.VideoClientIcon-group2:before {
+  content: "\e923";
+}
+.VideoClientIcon-layout1:before {
+  content: "\e924";
+}
+.VideoClientIcon-layout2:before {
+  content: "\e925";
+}
+.VideoClientIcon-layout3:before {
+  content: "\e926";
+}
+.VideoClientIcon-layout4:before {
+  content: "\e927";
+}
+.VideoClientIcon-lecture2:before {
+  content: "\e928";
+}
+.VideoClientIcon-microphone:before {
+  content: "\e929";
+}
+.VideoClientIcon-sound:before {
+  content: "\e92a";
+}
+.VideoClientIcon-video:before {
+  content: "\e92b";
+}
 .VideoClientIcon-addparticipant:before {
   content: "\e916";
 }
@@ -314,8 +341,19 @@
 .VideoClientIcon-iPlus:before {
   content: "\e609";
 }
-.VideoClientIcon-Notifications2:before {
+.VideoClientIcon-Notifications2 .path1:before {
   content: "\e60b2";
+  color: rgb(68, 68, 68);
+}
+.VideoClientIcon-Notifications2 .path2:before {
+  content: "\e60b3";
+  margin-left: -1em;
+  color: rgb(6, 6, 6);
+}
+.VideoClientIcon-Notifications2 .path3:before {
+  content: "\e60b4";
+  margin-left: -1em;
+  color: rgb(24, 23, 22);
 }
 .VideoClientIcon-People:before {
   content: "\e60c";
@@ -379,4 +417,154 @@
 }
 .VideoClientIcon-glyph-8:before {
   content: "\ea89";
+}
+.VideoClientIcon-warning:before {
+  content: "\ea07";
+}
+.VideoClientIcon-notification:before {
+  content: "\ea08";
+}
+.VideoClientIcon-question:before {
+  content: "\ea09";
+}
+.VideoClientIcon-plus:before {
+  content: "\ea0a";
+}
+.VideoClientIcon-minus:before {
+  content: "\ea0b";
+}
+.VideoClientIcon-cross:before {
+  content: "\ea0f";
+}
+.VideoClientIcon-checkmark:before {
+  content: "\ea10";
+}
+.VideoClientIcon-play3:before {
+  content: "\ea1c";
+}
+.VideoClientIcon-pause2:before {
+  content: "\ea1d";
+}
+.VideoClientIcon-stop2:before {
+  content: "\ea1e";
+}
+.VideoClientIcon-mail4:before {
+  content: "\ea8a";
+}
+.VideoClientIcon-google:before {
+  content: "\ea8b";
+}
+.VideoClientIcon-google3:before {
+  content: "\ea8c";
+}
+.VideoClientIcon-google-plus:before {
+  content: "\ea8d";
+}
+.VideoClientIcon-google-plus3:before {
+  content: "\ea8e";
+}
+.VideoClientIcon-hangouts:before {
+  content: "\ea8f";
+}
+.VideoClientIcon-google-drive:before {
+  content: "\ea90";
+}
+.VideoClientIcon-facebook:before {
+  content: "\ea91";
+}
+.VideoClientIcon-facebook2:before {
+  content: "\ea92";
+}
+.VideoClientIcon-instagram:before {
+  content: "\ea93";
+}
+.VideoClientIcon-whatsapp:before {
+  content: "\ea94";
+}
+.VideoClientIcon-spotify:before {
+  content: "\ea95";
+}
+.VideoClientIcon-telegram:before {
+  content: "\ea96";
+}
+.VideoClientIcon-twitter2:before {
+  content: "\ea97";
+}
+.VideoClientIcon-vine:before {
+  content: "\ea98";
+}
+.VideoClientIcon-vk:before {
+  content: "\ea99";
+}
+.VideoClientIcon-renren:before {
+  content: "\ea9a";
+}
+.VideoClientIcon-sina-weibo:before {
+  content: "\ea9b";
+}
+.VideoClientIcon-rss2:before {
+  content: "\ea9c";
+}
+.VideoClientIcon-youtube:before {
+  content: "\ea9d";
+}
+.VideoClientIcon-youtube2:before {
+  content: "\ea9e";
+}
+.VideoClientIcon-twitch:before {
+  content: "\ea9f";
+}
+.VideoClientIcon-vimeo:before {
+  content: "\eaa0";
+}
+.VideoClientIcon-vimeo2:before {
+  content: "\eaa1";
+}
+.VideoClientIcon-lanyrd:before {
+  content: "\eaa2";
+}
+.VideoClientIcon-flickr:before {
+  content: "\eaa3";
+}
+.VideoClientIcon-flickr2:before {
+  content: "\eaa4";
+}
+.VideoClientIcon-flickr3:before {
+  content: "\eaa5";
+}
+.VideoClientIcon-flickr4:before {
+  content: "\eaa6";
+}
+.VideoClientIcon-dribbble:before {
+  content: "\eaa7";
+}
+.VideoClientIcon-behance:before {
+  content: "\eaa8";
+}
+.VideoClientIcon-behance2:before {
+  content: "\eaa9";
+}
+.VideoClientIcon-dropbox:before {
+  content: "\eaae";
+}
+.VideoClientIcon-appleinc:before {
+  content: "\eabe";
+}
+.VideoClientIcon-android:before {
+  content: "\eac0";
+}
+.VideoClientIcon-chrome:before {
+  content: "\ead9";
+}
+.VideoClientIcon-firefox:before {
+  content: "\eada";
+}
+.VideoClientIcon-edge:before {
+  content: "\eadc";
+}
+.VideoClientIcon-safari:before {
+  content: "\eadd";
+}
+.VideoClientIcon-opera:before {
+  content: "\eade";
 }

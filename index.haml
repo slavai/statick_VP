@@ -110,6 +110,16 @@
       .V-header
         .logo
         .oneThird
+          %section.play
+            %a.INTRdefault.MainVideoButton.ensure-link-style{'data-tippause' => "Pause", 'data-tipstart' =>"Start"}
+              .circleButton
+                %span
+                %span
+                %span
+              .playButton
+                %span.icon-play.disabled#inCallButtonStartStreaming
+                %span.icon-pause{style:'display:none'}
+                %span.icon-play#inCalButtonBrbOff{style:'display:none'}
         .twoThird
         .threeThird
       .V-right-panel
