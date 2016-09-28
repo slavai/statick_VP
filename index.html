@@ -122,7 +122,7 @@
           <div class='font-bold fs18'>
             Welcome to Immerss
             <div class='div'>
-              <a class='bluButon bigBtn' onclick="$('body').addClass('showVideo')">
+              <a class='bluButon bigBtn'>
                 start demo
               </a>
             </div>
@@ -138,7 +138,7 @@
       </div>
     </div>
     <div class='main-section'>
-      <div class='V-header'>
+      <div class='V-header clearfix'>
         <div class='logo'></div>
         <div class='oneThird'>
           <section class='play'>
@@ -149,11 +149,59 @@
                 <span></span>
               </div>
               <div class='playButton'>
-                <span class='icon-play disabled' id='inCallButtonStartStreaming'></span>
-                <span class='icon-pause' style='display:none'></span>
-                <span class='icon-play' id='inCalButtonBrbOff' style='display:none'></span>
+                <span class='VideoClientIcon-play3 disabled' id='inCallButtonStartStreaming'></span>
+                <span class='VideoClientIcon-pause2' style='display:none'></span>
               </div>
             </a>
+            <a class='recordBytton' href='#' onclick="$(this).addClass('active')">
+              <i class='VideoClientIcon-dot-and-circle'></i>
+            </a>
+          </section>
+          <section class='state live' onclick="$(this).toggleClass('live').toggleClass('GreenRoom')">
+            <span class='live'>live</span>
+            <span class='GreenRoom'>Green Room</span>
+          </section>
+          <section class='timeCounterWrapp'>
+            <div class='d-inline-block timeCountericon'>
+              <i class='VideoClientIcon-three-quarters-of-an-hour'></i>
+              <div class='hoverSection'>
+                <a href='#'>
+                  15min
+                  <i class='VideoClientIcon-add'></i>
+                </a>
+                <i class='VideoClientIcon-three-quarters-of-an-hour'></i>
+                <a href='#'>
+                  <i class='VideoClientIcon-remove'></i>
+                  15min
+                </a>
+                <div class='d-inline-block timeCounter' onclick="$('.timeCounter span').toggleClass('hide')">
+                  <span class='hide'>
+                    &#45
+                  </span>
+                  01:30:16
+                </div>
+              </div>
+            </div>
+            <div class='d-inline-block timeCounter' onclick="$('.timeCounter span').toggleClass('hide')">
+              <span class='hide'>
+                &#45
+              </span>
+              01:30:16
+            </div>
+          </section>
+          <section class='userCount'>
+            <div class='d-inline-block active'>
+              <i class='VideoClientIcon-three-users'></i>
+              <span>
+                22
+              </span>
+            </div>
+            <div class='d-inline-block'>
+              <i class='VideoClientIcon-Views'></i>
+              <span>
+                0
+              </span>
+            </div>
           </section>
         </div>
         <div class='twoThird'></div>
@@ -164,7 +212,21 @@
     </div>
     <script crossorigin='anonymous' integrity='sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=' src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
     <script>
+      jQuery(document).ready(function(){
+      
+        $('.MainVideoButton').click(function(){
+          if($( this ).hasClass('INTRdefault')){
+            $(this).removeClass('INTRdefault').addClass('waitResponse');
+            setTimeout(function() {
+              $('.waitResponse').removeClass('waitResponse').addClass('PlayINTR');
+              $('section.play').addClass('record');
+            }, 4500);
+          }
+        });
+      });
       $(function(){
+      
+      
       
         var winHeight;
         var field = $(".field_for_buble");

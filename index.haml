@@ -98,7 +98,7 @@
           .font-bold.fs18
             Welcome to Immerss
             .div
-              %a.bluButon.bigBtn{onclick: "$('body').addClass('showVideo')"}
+              %a.bluButon.bigBtn
                 start demo
           .mb20
           %small Please wait...
@@ -107,19 +107,53 @@
             %span.circleG#circleG_2
             %span.circleG#circleG_3
     .main-section
-      .V-header
+      .V-header.clearfix
         .logo
         .oneThird
           %section.play
+            -#add .record for showing record button
             %a.INTRdefault.MainVideoButton.ensure-link-style{'data-tippause' => "Pause", 'data-tipstart' =>"Start"}
               .circleButton
                 %span
                 %span
                 %span
               .playButton
-                %span.icon-play.disabled#inCallButtonStartStreaming
-                %span.icon-pause{style:'display:none'}
-                %span.icon-play#inCalButtonBrbOff{style:'display:none'}
+                %span.VideoClientIcon-play3.disabled#inCallButtonStartStreaming
+                %span.VideoClientIcon-pause2{style:'display:none'}
+            %a.recordBytton{href:'#', onclick: "$(this).addClass('active')"}
+              %i.VideoClientIcon-dot-and-circle
+          %section.state.live{onclick: "$(this).toggleClass('live').toggleClass('GreenRoom')"}
+            %span.live live
+            %span.GreenRoom Green Room
+          %section.timeCounterWrapp
+            .d-inline-block.timeCountericon
+              %i.VideoClientIcon-three-quarters-of-an-hour
+              .hoverSection
+                %a{href:'#'}
+                  15min
+                  %i.VideoClientIcon-add
+                %i.VideoClientIcon-three-quarters-of-an-hour
+                %a{href:'#'}
+                  %i.VideoClientIcon-remove
+                  15min
+                .d-inline-block.timeCounter{onclick: "$('.timeCounter span').toggleClass('hide')"}
+                  %span.hide
+                    &#45
+                  01:30:16
+            .d-inline-block.timeCounter{onclick: "$('.timeCounter span').toggleClass('hide')"}
+              %span.hide
+                &#45
+              01:30:16
+          %section.userCount
+            .d-inline-block.active
+              %i.VideoClientIcon-three-users
+              %span
+                22
+            .d-inline-block
+              %i.VideoClientIcon-Views
+              %span
+                0
+
         .twoThird
         .threeThird
       .V-right-panel
@@ -128,7 +162,21 @@
 
     %script{:crossorigin => "anonymous", :integrity => "sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=", :src => "https://code.jquery.com/jquery-2.2.4.min.js"}
     :javascript
+      jQuery(document).ready(function(){
+
+        $('.MainVideoButton').click(function(){
+          if($( this ).hasClass('INTRdefault')){
+            $(this).removeClass('INTRdefault').addClass('waitResponse');
+            setTimeout(function() {
+              $('.waitResponse').removeClass('waitResponse').addClass('PlayINTR');
+              $('section.play').addClass('record');
+            }, 4500);
+          }
+        });
+      });
       $(function(){
+
+
 
         var winHeight;
         var field = $(".field_for_buble");
