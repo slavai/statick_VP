@@ -204,14 +204,65 @@
             </div>
           </section>
         </div>
-        <div class='twoThird'></div>
-        <div class='threeThird'></div>
+        <div class='twoThird'>
+          <section class='sessionName'>
+            Nulla vitae elit libero, a pharetra augue.
+          </section>
+          <section class='presenters hide'></section>
+          <section class='flashMessage hide'>
+            <div class='info hide'>
+              Nulla vitae elit libero, a pharetra augue.
+            </div>
+            <div class='alert hide'>
+              Nulla vitae elit libero, a pharetra augue.
+            </div>
+            <div class='error hide'>
+              Nulla vitae elit libero, a pharetra augue.
+            </div>
+          </section>
+        </div>
+        <div class='threeThird'>
+          <section class='light'>
+            <a href='#'>
+              <i class='VideoClientIcon-share2'></i>
+            </a>
+            <a href='#'>
+              <i class='VideoClientIcon-live-share'>
+                <span class='path1'></span>
+                <span class='path2'></span>
+                <span class='path3'></span>
+              </i>
+            </a>
+          </section>
+          <section class='d-inline-block vertical-midle'>
+            <span class='SignalLevel level-1'>
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+            <a class='d-inline-block vertical-midle headerHeight headerWidth text-center' href='#'>
+              <i class='VideoClientIcon-float'></i>
+            </a>
+            <div class='d-inline-block vertical-midle headerHeight headerWidth text-center'></div>
+            <a class='d-inline-block vertical-midle headerHeight headerWidth text-center' href='#'>
+              <i class='VideoClientIcon-expand2'></i>
+            </a>
+            <a class='d-inline-block vertical-midle headerHeight headerWidth text-center' href='#'>
+              <i class='VideoClientIcon-log-out rotate180'></i>
+            </a>
+            <a class='d-inline-block vertical-midle headerHeight headerWidth text-center' href='#'>
+              <i class='VideoClientIcon-unlock'></i>
+            </a>
+          </section>
+          <section></section>
+        </div>
       </div>
       <div class='V-right-panel'></div>
       <div class='V-VideoContainer'></div>
     </div>
     <script crossorigin='anonymous' integrity='sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=' src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
     <script>
+      //DEMO
       jQuery(document).ready(function(){
       
         $('.MainVideoButton').click(function(){
@@ -224,6 +275,9 @@
           }
         });
       });
+      //DEMO end
+      
+      //animation
       $(function(){
       
       
@@ -240,7 +294,6 @@
           field.height(winHeight);
         }
       
-      
         var items = 100;
         for (var i=0; i<=items; i++) {
           var move = Math.ceil( Math.random()*50 );
@@ -252,6 +305,7 @@
         }
       
       });
+      //animation end
     </script>
   </body>
 </html>

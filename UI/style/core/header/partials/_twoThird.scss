@@ -1,0 +1,17 @@
+.twoThird{
+  section{
+    width: 100%;
+    height: $header-height;
+    line-height: $header-height;
+    padding: 0 10px;
+  }
+
+  .sessionName{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 16px;
+    font-weight: bold;
+    color: $siteColorMain;
+  }
+}

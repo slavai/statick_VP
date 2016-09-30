@@ -155,13 +155,49 @@
                 0
 
         .twoThird
+          %section.sessionName
+            Nulla vitae elit libero, a pharetra augue.
+          %section.presenters.hide
+          %section.flashMessage.hide
+            .info.hide
+              Nulla vitae elit libero, a pharetra augue.
+            .alert.hide
+              Nulla vitae elit libero, a pharetra augue.
+            .error.hide
+              Nulla vitae elit libero, a pharetra augue.
         .threeThird
+          %section.light
+            %a{href:'#'}
+              %i.VideoClientIcon-share2
+            %a{href:'#'}
+              %i.VideoClientIcon-live-share
+                %span.path1
+                %span.path2
+                %span.path3
+          %section.d-inline-block.vertical-midle
+            %span.SignalLevel.level-1
+              %span
+              %span
+              %span
+            %a.d-inline-block.vertical-midle.headerHeight.headerWidth.text-center{href:'#'}
+              %i.VideoClientIcon-float
+            .d-inline-block.vertical-midle.headerHeight.headerWidth.text-center
+            %a.d-inline-block.vertical-midle.headerHeight.headerWidth.text-center{href:'#'}
+              %i.VideoClientIcon-expand2
+            %a.d-inline-block.vertical-midle.headerHeight.headerWidth.text-center{href:'#'}
+              %i.VideoClientIcon-log-out.rotate180
+            %a.d-inline-block.vertical-midle.headerHeight.headerWidth.text-center{href:'#'}
+              %i.VideoClientIcon-unlock
+          %section
       .V-right-panel
       .V-VideoContainer
 
 
     %script{:crossorigin => "anonymous", :integrity => "sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=", :src => "https://code.jquery.com/jquery-2.2.4.min.js"}
     :javascript
+
+
+      //DEMO
       jQuery(document).ready(function(){
 
         $('.MainVideoButton').click(function(){
@@ -174,6 +210,9 @@
           }
         });
       });
+      //DEMO end
+
+      //animation
       $(function(){
 
 
@@ -190,7 +229,6 @@
           field.height(winHeight);
         }
 
-
         var items = 100;
         for (var i=0; i<=items; i++) {
           var move = Math.ceil( Math.random()*50 );
@@ -202,3 +240,4 @@
         }
 
       });
+      //animation end

@@ -10,36 +10,7 @@
   left: 0;
   top: 0;
 }
-$oneThirdWidth:41rem;
-$threeThirdWidth:28rem;
 
-.oneThird, .twoThird, .threeThird{
-  float: left;
-}
-.oneThird{
-  width:$oneThirdWidth ;
-  padding-left: 4rem;
-  padding-top: 0.7rem;
-  height: 100%;
-  section{
-    display: inline-block;
-    vertical-align: top;
-  }
-  section.play{
-    width: 6.5rem;
-  }
-  .timeCounterWrapp{
-    min-width: 10.5rem;
-  }
-}
-.twoThird{
-  width: calc(100% - #{$oneThirdWidth + $threeThirdWidth});
-  background: #272727;
-  height: $header-height;
-}
-.threeThird{
-  width: $threeThirdWidth;
-}
 .showVideo{
   .main-section{
     opacity: 1;

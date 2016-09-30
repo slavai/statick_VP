@@ -83,6 +83,17 @@ $length: length(5);
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+.headerHeight{
+  height: $header-height;
+}
+.headerWidth{
+  width: $header-height;
+}
+.rotate180{
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+}
 @include generate-fontSize();
 
 @include generate-margin-bottom();
