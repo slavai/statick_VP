@@ -43,7 +43,7 @@
 
         .step1.active
           .diver_block.DRpos1
-            .diver
+            %a.diver{href:'panels.html'}
             .yyykor-wrapp
               .yyykor{onclick: "$('body').addClass('showVideo')"}
           %p.mb20.fs20.font-bold Immerss extension is required to continue.
@@ -158,13 +158,12 @@
           %section.sessionName
             Nulla vitae elit libero, a pharetra augue.
           %section.presenters.hide
-          %section.flashMessage.hide
-            .info.hide
-              Nulla vitae elit libero, a pharetra augue.
-            .alert.hide
-              Nulla vitae elit libero, a pharetra augue.
-            .error.hide
-              Nulla vitae elit libero, a pharetra augue.
+          %section.flashMessage
+            -#for flashMessage add class info/error for show flash message
+            .info
+              info Nulla vitae elit libero, a pharetra augue.
+            .error
+              error Nulla vitae elit libero, a pharetra augue.
         .threeThird
           %section.light
             %a{href:'#'}
@@ -186,58 +185,35 @@
               %i.VideoClientIcon-expand2
             %a.d-inline-block.vertical-midle.headerHeight.headerWidth.text-center{href:'#'}
               %i.VideoClientIcon-log-out.rotate180
-            %a.d-inline-block.vertical-midle.headerHeight.headerWidth.text-center{href:'#'}
+            %a.d-inline-block.vertical-midle.headerHeight.headerWidth.text-center.btn-HidePanel-toggle{href:'#'}
               %i.VideoClientIcon-unlock
+              %i.VideoClientIcon-lock
           %section
       .V-right-panel
+        .sectionWrapp
+          %section#containerChat
+            .WLS-title
+              .pull-right
+                %a.WLS-close{href:'#'}
+                  olololo chat
+        .ShowLine
+        .V-right-panel-contaiver
+          .WLS-right-sideBar
+            .userAvatar{'style': 'background:url(http://lorempixel.com/400/200/)  '}
+            %a.Chat{href:'#', "data-id":"containerChat", "onclick":"appendBar(this)"}
+              %i.VideoClientIcon-speechbubble
       .V-VideoContainer
+        #bar2.connectedBar
+        #bar1.connectedBar
 
 
     %script{:crossorigin => "anonymous", :integrity => "sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=", :src => "https://code.jquery.com/jquery-2.2.4.min.js"}
-    :javascript
-
-
-      //DEMO
-      jQuery(document).ready(function(){
-
-        $('.MainVideoButton').click(function(){
-          if($( this ).hasClass('INTRdefault')){
-            $(this).removeClass('INTRdefault').addClass('waitResponse');
-            setTimeout(function() {
-              $('.waitResponse').removeClass('waitResponse').addClass('PlayINTR');
-              $('section.play').addClass('record');
-            }, 4500);
-          }
-        });
-      });
-      //DEMO end
-
-      //animation
-      $(function(){
+    %script{:crossorigin => "anonymous", :integrity => "sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E=", :src => "http://code.jquery.com/ui/1.12.0/jquery-ui.min.js"}
+    %script{src:'UI/scripts/demo.js'}
+    %script{src:'UI/scripts/animation.js'}
+    %script{src:'UI/scripts/rightSideBAr.js'}
+    %script{src:'UI/scripts/sideBarToggle.js'}
 
 
 
-        var winHeight;
-        var field = $(".field_for_buble");
 
-        winRsize();
-        $(window).resize(function() {
-          winRsize();
-        });
-        function winRsize() {
-          winHeight = $(window).height();
-          field.height(winHeight);
-        }
-
-        var items = 100;
-        for (var i=0; i<=items; i++) {
-          var move = Math.ceil( Math.random()*50 );
-          var pos = Math.ceil( Math.random()*50 );
-          var scale = Math.ceil( Math.random()*10 );
-          var stretch = Math.ceil( Math.random()*5 );
-          var shake = Math.ceil( Math.random()*5 );
-          field.append('<div class="bubble move'+move+' pos'+pos+'"><div class="scale'+scale+'"><div class="shake'+shake+'"><span class="item stretch'+stretch+'"></span></div></div>');
-        }
-
-      });
-      //animation end

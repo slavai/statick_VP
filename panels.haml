@@ -1,0 +1,44 @@
+!!!
+%html
+  %head
+    %link{rel:'stylesheet', href:'UI/core.css'}
+    %link{href:"https://fonts.googleapis.com/css?family=Lato:300,400,700",  rel:"stylesheet"}
+  %body.VideoClient
+    %h1
+      %a.mr20.text-color-white{href:'index.html'}
+        %i.VideoClientIcon-exit 
+      demo for panels
+    .sectionWrapp
+      %section#Profile
+        .Avatar{'style': 'background:url(http://lorempixel.com/400/200/)  '}
+        %a.Name.fs16.mb10{href:'#'} Samantha Brandson
+        .social.mb10
+          .social-f
+            %i.VideoClientIcon-facebook
+          .social-tw
+            %i.VideoClientIcon-twitter2
+          .social-g
+            %i.VideoClientIcon-google
+        .desc
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus.
+        .clearfix.btnGroup
+          .half-width.d-inline-block.vertical-midle.pr5
+            %a.greanBtn{href:'#'} Vieew Profile
+          .half-width.d-inline-block.vertical-midle.pl5
+            %a.bluButon{href:'#'} Follow
+    -#style for demo
+    :css
+      .VideoClient > h1{border-bottom: 1px solid #fff;padding-bottom: 1rem}
+      .sectionWrapp{padding: 1rem 2rem}
+      .sectionWrapp section{display:inline-block;width:17.5rem;margin: 0 2rem 1rem 0}
+
+    %script{:crossorigin => "anonymous", :integrity => "sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=", :src => "https://code.jquery.com/jquery-2.2.4.min.js"}
+    %script{:crossorigin => "anonymous", :integrity => "sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E=", :src => "http://code.jquery.com/ui/1.12.0/jquery-ui.min.js"}
+    %script{src:'UI/scripts/demo.js'}
+    %script{src:'UI/scripts/animation.js'}
+    %script{src:'UI/scripts/rightSideBAr.js'}
+    %script{src:'UI/scripts/sideBarToggle.js'}
+
+
+
+

@@ -105,14 +105,14 @@ $spaceamounts: (0.5, 1, 1.5, 2, 2.5, 3, 5, 10, 20);
 }
 @mixin generate-padding-left() {
   @each $space in $spaceamounts {
-    .pt#{$space * 10} {
+    .pl#{$space * 10} {
       padding-left: #{$space}rem;
     }
   }
 }
 @mixin generate-padding-right() {
   @each $space in $spaceamounts {
-    .pb#{$space * 10} {
+    .pr#{$space * 10} {
       padding-right: #{$space}rem;
     }
   }

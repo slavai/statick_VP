@@ -1,16 +1,17 @@
 .twoThird{
+  position: relative;
   section{
     width: 100%;
     height: $header-height;
     line-height: $header-height;
-    padding: 0 10px;
+    padding: 0 1rem;
   }
 
   .sessionName{
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: bold;
     color: $siteColorMain;
   }

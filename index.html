@@ -47,7 +47,7 @@
         </div>
         <div class='step1 active'>
           <div class='diver_block DRpos1'>
-            <div class='diver'></div>
+            <a class='diver' href='panels.html'></a>
             <div class='yyykor-wrapp'>
               <div class='yyykor' onclick="$('body').addClass('showVideo')"></div>
             </div>
@@ -209,15 +209,12 @@
             Nulla vitae elit libero, a pharetra augue.
           </section>
           <section class='presenters hide'></section>
-          <section class='flashMessage hide'>
-            <div class='info hide'>
-              Nulla vitae elit libero, a pharetra augue.
+          <section class='flashMessage'>
+            <div class='info'>
+              info Nulla vitae elit libero, a pharetra augue.
             </div>
-            <div class='alert hide'>
-              Nulla vitae elit libero, a pharetra augue.
-            </div>
-            <div class='error hide'>
-              Nulla vitae elit libero, a pharetra augue.
+            <div class='error'>
+              error Nulla vitae elit libero, a pharetra augue.
             </div>
           </section>
         </div>
@@ -250,62 +247,46 @@
             <a class='d-inline-block vertical-midle headerHeight headerWidth text-center' href='#'>
               <i class='VideoClientIcon-log-out rotate180'></i>
             </a>
-            <a class='d-inline-block vertical-midle headerHeight headerWidth text-center' href='#'>
+            <a class='d-inline-block vertical-midle headerHeight headerWidth text-center btn-HidePanel-toggle' href='#'>
               <i class='VideoClientIcon-unlock'></i>
+              <i class='VideoClientIcon-lock'></i>
             </a>
           </section>
           <section></section>
         </div>
       </div>
-      <div class='V-right-panel'></div>
-      <div class='V-VideoContainer'></div>
+      <div class='V-right-panel'>
+        <div class='sectionWrapp'>
+          <section id='containerChat'>
+            <div class='WLS-title'>
+              <div class='pull-right'>
+                <a class='WLS-close' href='#'>
+                  olololo chat
+                </a>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class='ShowLine'></div>
+        <div class='V-right-panel-contaiver'>
+          <div class='WLS-right-sideBar'>
+            <div class='userAvatar' style='background:url(http://lorempixel.com/400/200/)  '></div>
+            <a class='Chat' data-id='containerChat' href='#' onclick='appendBar(this)'>
+              <i class='VideoClientIcon-speechbubble'></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class='V-VideoContainer'>
+        <div class='connectedBar' id='bar2'></div>
+        <div class='connectedBar' id='bar1'></div>
+      </div>
     </div>
     <script crossorigin='anonymous' integrity='sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=' src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
-    <script>
-      //DEMO
-      jQuery(document).ready(function(){
-      
-        $('.MainVideoButton').click(function(){
-          if($( this ).hasClass('INTRdefault')){
-            $(this).removeClass('INTRdefault').addClass('waitResponse');
-            setTimeout(function() {
-              $('.waitResponse').removeClass('waitResponse').addClass('PlayINTR');
-              $('section.play').addClass('record');
-            }, 4500);
-          }
-        });
-      });
-      //DEMO end
-      
-      //animation
-      $(function(){
-      
-      
-      
-        var winHeight;
-        var field = $(".field_for_buble");
-      
-        winRsize();
-        $(window).resize(function() {
-          winRsize();
-        });
-        function winRsize() {
-          winHeight = $(window).height();
-          field.height(winHeight);
-        }
-      
-        var items = 100;
-        for (var i=0; i<=items; i++) {
-          var move = Math.ceil( Math.random()*50 );
-          var pos = Math.ceil( Math.random()*50 );
-          var scale = Math.ceil( Math.random()*10 );
-          var stretch = Math.ceil( Math.random()*5 );
-          var shake = Math.ceil( Math.random()*5 );
-          field.append('<div class="bubble move'+move+' pos'+pos+'"><div class="scale'+scale+'"><div class="shake'+shake+'"><span class="item stretch'+stretch+'"></span></div></div>');
-        }
-      
-      });
-      //animation end
-    </script>
+    <script crossorigin='anonymous' integrity='sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E=' src='http://code.jquery.com/ui/1.12.0/jquery-ui.min.js'></script>
+    <script src='UI/scripts/demo.js'></script>
+    <script src='UI/scripts/animation.js'></script>
+    <script src='UI/scripts/rightSideBAr.js'></script>
+    <script src='UI/scripts/sideBarToggle.js'></script>
   </body>
 </html>

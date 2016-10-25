@@ -2,16 +2,16 @@
 @import "style/core/mixin";
 @import "style/core/core_reset";
 @import "style/core/fonts";
-@import "style/partials/buttons";
+@import "style/sub_partials/buttons";
 @import "style/core/grid";
 @import "style/core/helpers_class";
 @import "style/core/main";
 @import "style/core/header/core-header";
 @import "style/core/right_Sidebar/core-rightSideBar";
 @import "style/core/video_container/core_videoContainer";
-@import "style/partials/cover/cover";
-@import "style/partials/loader";
-@import "style/partials/SUB_page/before_start/before_start_sub_page";
+@import "style/sub_partials/cover/cover";
+@import "style/sub_partials/loader";
+@import "style/sub_partials/SUB_page/before_start/before_start_sub_page";
 
-
+@import "style/core/right_Sidebar/partials/panels";
 @import "style/core/mixin";

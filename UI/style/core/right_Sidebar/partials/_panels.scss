@@ -1,0 +1,17 @@
+@import "panels/profile";
+@import "panels/Chat";
+@import "panels/Donation";
+@import "panels/InviteParticipants";
+@import "panels/LiveShare";
+@import "panels/ManageAllParticipants";
+@import "panels/MenuType";
+@import "panels/Poll";
+@import "panels/ShareAWindow";
+@import "panels/Shop";
+@import "panels/TwitterFeed";
+
+
+.sectionWrapp section{
+  background:$panelBackground ;
+  padding: 0.5rem;
+}
