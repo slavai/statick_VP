@@ -9,28 +9,164 @@
         %i.VideoClientIcon-exit 
       demo for panels
     .sectionWrapp
-      %section#Profile
-        .Avatar{'style': 'background:url(http://lorempixel.com/400/200/)  '}
-        %a.Name.fs16.mb10{href:'#'} Samantha Brandson
+
+      -# Profile panel
+      %section#Profile.text-center
+        %div
+          %a.Avatar{'style': 'background:url(http://lorempixel.com/400/200/)', href:'#'}
+        %a.Name.fs16.mb10.d-block{href:'#'} Samantha Brandson
         .social.mb10
-          .social-f
+          %a.social-f{href:'#'}
             %i.VideoClientIcon-facebook
-          .social-tw
+          %a.social-tw{href:'#'}
             %i.VideoClientIcon-twitter2
-          .social-g
+          %a.social-g{href:'#'}
             %i.VideoClientIcon-google
         .desc
           Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus.
         .clearfix.btnGroup
           .half-width.d-inline-block.vertical-midle.pr5
-            %a.greanBtn{href:'#'} Vieew Profile
-          .half-width.d-inline-block.vertical-midle.pl5
-            %a.bluButon{href:'#'} Follow
+            %a.greanBtn.full-width{href:'#'} Vieew Profile
+          .half-width.d-inline-block.vertical-midle.pl5.pr5
+            %a.bluButon.full-width{href:'#'} Follow
+      -# Profile panel end
+
+
+      -# Profile panel
+      %section#Profile
+        .sectionHeader
+          %a.pull-right.sectionHeader-close{href:'#'}
+            x
+          live Share
+        .AvailablePlatforms.text-left.mb10
+          .mb10
+            Available Platforms
+          .row.mb10.clearfix
+            .col-md-6
+              Facebook
+            .col-md-6.text-right
+              %a.lightGreyBtn.w-90.d-inline-block.vertical-midle.text-center{href:'#'}
+                Start Sharing
+          .row.active.clearfix
+            .col-md-6
+              Youtube
+            .col-md-6.text-right
+              %a.bluButon.w-90.d-inline-block.vertical-midle.text-center{href:'#'}
+                Stop Sharing
+        .sectionTitle
+          Latest Scene
+        .LatestScene.text-left
+          .row.mb10.clearfix
+            .col-md-6
+              Twitter
+            .col-md-6.text-right
+              %a.greanBtn.w-40.d-inline-block.vertical-midle.text-center{href:'#'}
+                Sent
+          .row.active.clearfix.mb10
+            .col-md-6
+              Instagram
+            .col-md-6.text-right
+              %a.bluButon.w-40.d-inline-block.vertical-midle.text-center{href:'#'}
+                Send
+        .sectionTitle
+          Social Share
+        .socialIconBox
+          %a.socialIcon.circle{href:'#'}
+            %i.VideoClientIcon-facebook
+          %a.socialIcon.circle{href:'#'}
+            %i.VideoClientIcon-map-marker
+          %a.socialIcon{href:'#'}
+            %i.VideoClientIcon-youtube
+          %a.socialIcon.circle{href:'#'}
+            %i.VideoClientIcon-snapchat-ghost
+          %a.socialIcon{href:'#'}
+            %i.VideoClientIcon-instagram
+          %a.socialIcon{href:'#'}
+            %i.VideoClientIcon-linkedin_2
+          %a.socialIcon{href:'#'}
+            %i.VideoClientIcon-google_2
+          %a.socialIcon{href:'#'}
+            %i.VideoClientIcon-twitter_2
+      -# Profile panel end
+
+      -# Menu Type
+      %section#MenuType
+        .sectionHeader
+          %a.pull-right.sectionHeader-close{href:'#'}
+            x
+          Menu Type
+        .switcher.double.mb20
+          %div
+            %input{type:'radio', id:'MenuTypeBasic', name:'MenuType'}
+            %label{for:'MenuTypeBasic'}
+              Basic
+          %div
+            %input{type:'radio', id:'MenuTypeAdvanced', name:'MenuType', checked:'checked'}
+            %label{for:'MenuTypeAdvanced'}
+              Advanced
+        .sectionTitle
+          Configuration
+        .switcher.double.mb20
+          %div
+            %input{type:'radio', id:'ConfigurationBasic', name:'Configuration', checked:'checked'}
+            %label{for:'ConfigurationBasic'}
+              Basic
+          %div
+            %input{type:'radio', id:'ConfigurationAdvanced', name:'Configuration'}
+            %label{for:'ConfigurationAdvanced'}
+              Advanced
+        .selectWrapp
+          %label
+            Camera
+            %select.d-block.full-width
+              %option test 1
+              %option test 2
+              %option test 3
+              %option test 4
+        .selectWrapp
+          %label
+            Speaker
+            %select.d-block.full-width
+              %option test 1
+              %option test 2
+              %option test 3
+              %option test 4
+        .selectWrapp
+          %label
+            Microphone
+            %select.d-block.full-width
+              %option test 1
+              %option test 2
+              %option test 3
+              %option test 4
+        .mb10
+        .radio-type1
+          %label
+            %input{type:'radio', name:'name1'}
+            %span
+              Euismod Ornare
+        .radio-type1
+          %label
+            %input{type:'radio', name:'name1'}
+            %span
+              Euismod Ornare
+      -# Menu Type end
+
+      %section#InviteParticipants
+        .sectionHeader
+          %a.pull-right.sectionHeader-close{href:'#'}
+            x
+          Invite Participants
+        %input.searchInput.full-width{type:'text', placeholder:'Search your Contacts'}
+        .row
+          .col-md-3
+            .Avatar.small{'style': 'background:url(http://lorempixel.com/400/200/)  '}
+          .col-md-9
     -#style for demo
     :css
       .VideoClient > h1{border-bottom: 1px solid #fff;padding-bottom: 1rem}
       .sectionWrapp{padding: 1rem 2rem}
-      .sectionWrapp section{display:inline-block;width:17.5rem;margin: 0 2rem 1rem 0}
+      .sectionWrapp section{display:inline-block;width:24.5rem;margin: 0 2rem 1rem 0;vertical-align: top; }
 
     %script{:crossorigin => "anonymous", :integrity => "sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=", :src => "https://code.jquery.com/jquery-2.2.4.min.js"}
     %script{:crossorigin => "anonymous", :integrity => "sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E=", :src => "http://code.jquery.com/ui/1.12.0/jquery-ui.min.js"}

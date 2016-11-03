@@ -4,10 +4,12 @@
     margin-bottom: 1rem;
     width:10.5rem ;
     height:10.5rem ;
-    display: inline-block;
-    border-radius: 50%;
     border:3px solid #fff;
-    background-size: cover;
-    background-position: center center;
+  }
+  .desc{
+    background: #272727;
+    margin: 0 0.5rem 10px;
+    padding: 0.5rem;
+    color: #a1a1a1;
   }
 }

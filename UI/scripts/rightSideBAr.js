@@ -12,8 +12,8 @@ function Video_onSessionPage_UI_Init(){
         $( "#bar1, #bar2" ).sortable({
             helper: 'clone',
             connectWith: ".connectedBar",
-            handle: ".WLS-title",
-            placeholder: "WLS-placeholder",
+            handle: ".sectionHeader",
+            placeholder: "sectionHeader-placeholder",
             start: function(event, ui) {
                 jQuery('.sideBarWrapper').addClass('sortingStart');
             },

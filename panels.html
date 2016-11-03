@@ -12,37 +12,230 @@
       demo for panels
     </h1>
     <div class='sectionWrapp'>
-      <section id='Profile'>
-        <div class='Avatar' style='background:url(http://lorempixel.com/400/200/)  '></div>
-        <a class='Name fs16 mb10' href='#'>Samantha Brandson</a>
+      <section class='text-center' id='Profile'>
+        <div>
+          <a class='Avatar' href='#' style='background:url(http://lorempixel.com/400/200/)'></a>
+        </div>
+        <a class='Name fs16 mb10 d-block' href='#'>Samantha Brandson</a>
         <div class='social mb10'>
-          <div class='social-f'>
+          <a class='social-f' href='#'>
             <i class='VideoClientIcon-facebook'></i>
-          </div>
-          <div class='social-tw'>
+          </a>
+          <a class='social-tw' href='#'>
             <i class='VideoClientIcon-twitter2'></i>
-          </div>
-          <div class='social-g'>
+          </a>
+          <a class='social-g' href='#'>
             <i class='VideoClientIcon-google'></i>
-          </div>
+          </a>
         </div>
         <div class='desc'>
           Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus.
         </div>
         <div class='clearfix btnGroup'>
           <div class='half-width d-inline-block vertical-midle pr5'>
-            <a class='greanBtn' href='#'>Vieew Profile</a>
+            <a class='greanBtn full-width' href='#'>Vieew Profile</a>
           </div>
-          <div class='half-width d-inline-block vertical-midle pl5'>
-            <a class='bluButon' href='#'>Follow</a>
+          <div class='half-width d-inline-block vertical-midle pl5 pr5'>
+            <a class='bluButon full-width' href='#'>Follow</a>
           </div>
+        </div>
+      </section>
+      <section id='Profile'>
+        <div class='sectionHeader'>
+          <a class='pull-right sectionHeader-close' href='#'>
+            x
+          </a>
+          live Share
+        </div>
+        <div class='AvailablePlatforms text-left mb10'>
+          <div class='mb10'>
+            Available Platforms
+          </div>
+          <div class='row mb10 clearfix'>
+            <div class='col-md-6'>
+              Facebook
+            </div>
+            <div class='col-md-6 text-right'>
+              <a class='lightGreyBtn w-90 d-inline-block vertical-midle text-center' href='#'>
+                Start Sharing
+              </a>
+            </div>
+          </div>
+          <div class='row active clearfix'>
+            <div class='col-md-6'>
+              Youtube
+            </div>
+            <div class='col-md-6 text-right'>
+              <a class='bluButon w-90 d-inline-block vertical-midle text-center' href='#'>
+                Stop Sharing
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class='sectionTitle'>
+          Latest Scene
+        </div>
+        <div class='LatestScene text-left'>
+          <div class='row mb10 clearfix'>
+            <div class='col-md-6'>
+              Twitter
+            </div>
+            <div class='col-md-6 text-right'>
+              <a class='greanBtn w-40 d-inline-block vertical-midle text-center' href='#'>
+                Sent
+              </a>
+            </div>
+          </div>
+          <div class='row active clearfix mb10'>
+            <div class='col-md-6'>
+              Instagram
+            </div>
+            <div class='col-md-6 text-right'>
+              <a class='bluButon w-40 d-inline-block vertical-midle text-center' href='#'>
+                Send
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class='sectionTitle'>
+          Social Share
+        </div>
+        <div class='socialIconBox'>
+          <a class='socialIcon circle' href='#'>
+            <i class='VideoClientIcon-facebook'></i>
+          </a>
+          <a class='socialIcon circle' href='#'>
+            <i class='VideoClientIcon-map-marker'></i>
+          </a>
+          <a class='socialIcon' href='#'>
+            <i class='VideoClientIcon-youtube'></i>
+          </a>
+          <a class='socialIcon circle' href='#'>
+            <i class='VideoClientIcon-snapchat-ghost'></i>
+          </a>
+          <a class='socialIcon' href='#'>
+            <i class='VideoClientIcon-instagram'></i>
+          </a>
+          <a class='socialIcon' href='#'>
+            <i class='VideoClientIcon-linkedin_2'></i>
+          </a>
+          <a class='socialIcon' href='#'>
+            <i class='VideoClientIcon-google_2'></i>
+          </a>
+          <a class='socialIcon' href='#'>
+            <i class='VideoClientIcon-twitter_2'></i>
+          </a>
+        </div>
+      </section>
+      <section id='MenuType'>
+        <div class='sectionHeader'>
+          <a class='pull-right sectionHeader-close' href='#'>
+            x
+          </a>
+          Menu Type
+        </div>
+        <div class='switcher double mb20'>
+          <div>
+            <input id='MenuTypeBasic' name='MenuType' type='radio'>
+            <label for='MenuTypeBasic'>
+              Basic
+            </label>
+          </div>
+          <div>
+            <input checked='checked' id='MenuTypeAdvanced' name='MenuType' type='radio'>
+            <label for='MenuTypeAdvanced'>
+              Advanced
+            </label>
+          </div>
+        </div>
+        <div class='sectionTitle'>
+          Configuration
+        </div>
+        <div class='switcher double mb20'>
+          <div>
+            <input checked='checked' id='ConfigurationBasic' name='Configuration' type='radio'>
+            <label for='ConfigurationBasic'>
+              Basic
+            </label>
+          </div>
+          <div>
+            <input id='ConfigurationAdvanced' name='Configuration' type='radio'>
+            <label for='ConfigurationAdvanced'>
+              Advanced
+            </label>
+          </div>
+        </div>
+        <div class='selectWrapp'>
+          <label>
+            Camera
+            <select class='d-block full-width'>
+              <option>test 1</option>
+              <option>test 2</option>
+              <option>test 3</option>
+              <option>test 4</option>
+            </select>
+          </label>
+        </div>
+        <div class='selectWrapp'>
+          <label>
+            Speaker
+            <select class='d-block full-width'>
+              <option>test 1</option>
+              <option>test 2</option>
+              <option>test 3</option>
+              <option>test 4</option>
+            </select>
+          </label>
+        </div>
+        <div class='selectWrapp'>
+          <label>
+            Microphone
+            <select class='d-block full-width'>
+              <option>test 1</option>
+              <option>test 2</option>
+              <option>test 3</option>
+              <option>test 4</option>
+            </select>
+          </label>
+        </div>
+        <div class='mb10'></div>
+        <div class='radio-type1'>
+          <label>
+            <input name='name1' type='radio'>
+            <span>
+              Euismod Ornare
+            </span>
+          </label>
+        </div>
+        <div class='radio-type1'>
+          <label>
+            <input name='name1' type='radio'>
+            <span>
+              Euismod Ornare
+            </span>
+          </label>
+        </div>
+      </section>
+      <section id='InviteParticipants'>
+        <div class='sectionHeader'>
+          <a class='pull-right sectionHeader-close' href='#'>
+            x
+          </a>
+          Invite Participants
+        </div>
+        <input class='searchInput full-width' placeholder='Search your Contacts' type='text'>
+        <div class='row'>
+          <div class='col-md-3'>
+            <div class='Avatar small' style='background:url(http://lorempixel.com/400/200/)  '></div>
+          </div>
+          <div class='col-md-9'></div>
         </div>
       </section>
     </div>
     <style>
       .VideoClient > h1{border-bottom: 1px solid #fff;padding-bottom: 1rem}
       .sectionWrapp{padding: 1rem 2rem}
-      .sectionWrapp section{display:inline-block;width:17.5rem;margin: 0 2rem 1rem 0}
+      .sectionWrapp section{display:inline-block;width:24.5rem;margin: 0 2rem 1rem 0;vertical-align: top; }
     </style>
     <script crossorigin='anonymous' integrity='sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=' src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
     <script crossorigin='anonymous' integrity='sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E=' src='http://code.jquery.com/ui/1.12.0/jquery-ui.min.js'></script>

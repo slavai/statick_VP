@@ -1,9 +1,9 @@
 @font-face {
   font-family: 'VideoClientIcon-V2';
   src:
-    url('fonts/VideoClientIcon-V2.ttf?rezt45') format('truetype'),
-    url('fonts/VideoClientIcon-V2.woff?rezt45') format('woff'),
-    url('fonts/VideoClientIcon-V2.svg?rezt45#VideoClientIcon-V2') format('svg');
+    url('fonts/VideoClientIcon-V2.ttf?x8j4ey') format('truetype'),
+    url('fonts/VideoClientIcon-V2.woff?x8j4ey') format('woff'),
+    url('fonts/VideoClientIcon-V2.svg?x8j4ey#VideoClientIcon-V2') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -23,6 +23,21 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.VideoClientIcon-pinterest:before {
+  content: "\e94b";
+}
+.VideoClientIcon-map-marker:before {
+  content: "\f041";
+}
+.VideoClientIcon-youtube3:before {
+  content: "\f167";
+}
+.VideoClientIcon-snapchat-ghost:before {
+  content: "\f2ac";
+}
+.VideoClientIcon-group3:before {
+  content: "\e94a";
+}
 .VideoClientIcon-dot-and-circle:before {
   content: "\e938";
 }
