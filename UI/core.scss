@@ -1,3 +1,7 @@
+//importPlugins
+@import "style/plugin/scroll_styler/scrollStyle";
+
+//import main styles
 @import "style/variables";
 @import "style/core/mixin";
 @import "style/core/core_reset";
@@ -13,6 +17,9 @@
 @import "style/sub_partials/loader";
 @import "style/sub_partials/SUB_page/before_start/before_start_sub_page";
 
+
+
 @import "style/core/right_Sidebar/partials/panels";
 @import "style/core/social";
 @import "style/core/mixin";
+

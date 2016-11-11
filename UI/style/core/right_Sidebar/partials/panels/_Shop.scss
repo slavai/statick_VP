@@ -1,0 +1,90 @@
+#shop{
+  padding: 0;
+  .styledScroll{
+    padding-right: 0 !important;
+  }
+  .redBG{
+    background: #94323e;
+    color: #fff;
+    padding: 0.5rem 0.5rem 0 0.5rem;
+    .sectionHeader{
+      color: #FFFFFF;
+    }
+    & + .sectionTitle{
+      margin: 0 0.5rem 1rem;
+    }
+  }
+  .siteUrl{
+    color: #fff;
+    display: block;
+    background: rgba(0,0,0,0.3);
+    margin: 1rem -0.5rem 0 -0.5rem;
+    padding: 0.5rem 0.5rem 0.6rem;
+  }
+  .description{
+    padding-top: 2rem;
+    opacity: 0.6;
+  }
+  .sectionTitle, .Products-wrapp{
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+  .Products-wrapp{
+    max-height: 300px;
+    padding: 0.5rem;
+  }
+}
+.productTile{
+  img{
+    width: 3.7rem;
+    height: 3.7rem;
+    background-size: cover;
+    background-position: center center;
+    display: inline-block;
+    vertical-align: top;
+  }
+  .productTile-short-description{
+    width: calc(100% - 4rem);
+    display: inline-block;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    vertical-align: top;
+    margin-bottom: 1rem;
+    &>a{
+      cursor: default;
+      color: #ffffff;
+    }
+  }
+  .price{
+    color: #17d381;
+  }
+  .productTile-long-description{
+    display: none;
+  }
+  &.active{
+    .productTile-long-description{
+      display: block;
+      margin: 1rem -0.5rem 1rem -0.5rem;
+      padding: 1rem 0.5rem;
+      background: #404040;
+    }
+  }
+}
+.BAG{
+  .bag-title{
+    margin: -0.5rem -0.5rem 1rem -0.5rem;
+    padding: 0 0.5rem 0 0.5rem;
+    background: #17d381;
+    line-height: 2;
+  }
+  .subtotal{
+    background: #272727;
+    color: #6d6d6d;
+    line-height: 1.5rem;
+    font-size: 1.2rem;
+    padding: 0 0.5rem;
+  }
+  .bluButon{
+    margin-left: 0 !important;
+  }
+}

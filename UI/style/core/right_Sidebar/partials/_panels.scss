@@ -11,6 +11,9 @@
 @import "panels/TwitterFeed";
 
 
+.sectionWrapp{
+  display: none;
+}
 .sectionWrapp section{
   background:$panelBackground ;
   padding: 0.5rem;

@@ -1,11 +1,11 @@
 
 function Video_onSessionPage_UI_Init(){
     $(window).resize(function() {
-        videoIframeWidthSet();
+        resizeInit();
     });
 
     $(function() {
-        var $mainWrapper = jQuery('#WholeLivestreamDiv'),
+        var $mainWrapper = jQuery('.V-VideoContainer'),
             wrapperHeight = jQuery('.MainVideoFrame-wrapper').height();
         $mainWrapper.height(wrapperHeight);
 
@@ -90,14 +90,14 @@ function appendBar(element){
         cloneSubject.appendTo(BarId);
         console.log(cloneSubject);
         console.log(BarId);
-        $('VideoClient').addClass('showSidebarLine- ' + colCount);
+        $('.VideoClient').addClass('showSidebarLine-'+colCount);
         resizeInit();
     }else{
         jQuery('.connectedBar #' + subjectId).remove();
         jQuery("[data-id='"+ subjectId +"']").removeClass('active');
-        videoIframeWidthSet();
 
     }
+    $('.styledScroll').scrollbar();
 
 };
 function CloseBar(element){
@@ -106,24 +106,10 @@ function CloseBar(element){
 
     jQuery('.connectedBar #' + closedTab_id).remove();
     jQuery("[data-id='"+ closedTab_id +"']").removeClass('active');
-    videoIframeWidthSet();
 
 };
-function videoIframeWidthSet(){
-    var $wrapper = jQuery('.WholeLivestreamDivWrapp'),
-        wrapperWidth = $wrapper.width(),
-        $iframeWrapper = jQuery('.MainVideoFrame-wrapper'),
-        iframeWrapperWidth = $iframeWrapper.width(),
-        $sideBarWrapper = jQuery('.sideBarWrapper'),
-        sideBarWrapperrWidth = $sideBarWrapper.width();
-
-    var maxWidth = wrapperWidth - sideBarWrapperrWidth - 50;
-    if((iframeWrapperWidth + sideBarWrapperrWidth + 50) > wrapperWidth || iframeWrapperWidth < 1170 ){
-        $iframeWrapper.width(maxWidth)
-    }
-}
 function resizeInit(){
-    var wrapperHeight = jQuery('.sideBarWrapper').height();
+    var wrapperHeight = jQuery('.V-VideoContainer').height();
     $( ".connectedBar section" ).filter(function(index){
         var parent = jQuery(this).parents('.connectedBar'),
             parentHeight = jQuery(parent).height();
@@ -136,8 +122,8 @@ function resizeInit(){
     }).resizable({
         handles: 's',
         distance: 0,
-        minHeight: wrapperHeight * 0.1,
-        maxHeight: wrapperHeight * 0.9,
+        minHeight: 41,
+        maxHeight: wrapperHeight - 41,
         start: function (event, ui) {
             // just remember the total width of self + neighbor
             this.heightWithNeighbor = ui.originalSize.height + ui.element.next().outerHeight();
@@ -156,10 +142,20 @@ function resizeInit(){
     }).on('resize', function (event) {
         event.stopPropagation();
     });
-    videoIframeWidthSet();
+    $('.styledScroll').scrollbar();
 }
 
 
 jQuery(document).ready(function(){
-    Video_onSessionPage_UI_Init()
+    Video_onSessionPage_UI_Init();
+    //add stilization for scroll
+    //DONT WORK FOR FF or OPERA ON MAC OSX, osx scrollbars settings fuck not webkit browsers (OSX sucks, Jobs come back to us)
+    $('.styledScroll').scrollbar();
+    resizeInit();
 });
+
+function ManageAllParticipants_dropDownOpen(e){
+    console.log('1');
+    $(e).parents('.userWrapp').toggleClass('active');
+    return false;
+}

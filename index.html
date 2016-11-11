@@ -4,7 +4,7 @@
     <link href='UI/core.css' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet'>
   </head>
-  <body class='VideoClient'>
+  <body class='VideoClient showSidebarLine-1'>
     <div class='cover full_size'>
       <div class='left-part'></div>
       <div class='right-part'></div>
@@ -49,7 +49,7 @@
           <div class='diver_block DRpos1'>
             <a class='diver' href='panels.html'></a>
             <div class='yyykor-wrapp'>
-              <div class='yyykor' onclick="$('body').addClass('showVideo')"></div>
+              <div class='yyykor' onclick="$('body').addClass('showVideo');$('.styledScroll').scrollbar();"></div>
             </div>
           </div>
           <p class='mb20 fs20 font-bold'>Immerss extension is required to continue.</p>
@@ -257,21 +257,95 @@
       </div>
       <div class='V-right-panel'>
         <div class='sectionWrapp'>
-          <section id='containerChat'>
-            <div class='WLS-title'>
-              <div class='pull-right'>
-                <a class='WLS-close' href='#'>
-                  olololo chat
+          <section class='text-center' id='Profile'>
+            <div class='styledScroll'>
+              <div>
+                <a class='Avatar' href='#' style='background:url(http://lorempixel.com/400/200/)'></a>
+                <a class='pull-right sectionHeader-close' href='#' onclick='CloseBar(this)'>
+                  x
                 </a>
               </div>
+              <a class='Name fs16 mb10 d-block' href='#'>Samantha Brandson</a>
+              <div class='social mb10'>
+                <a class='social-f' href='#'>
+                  <i class='VideoClientIcon-facebook'></i>
+                </a>
+                <a class='social-tw' href='#'>
+                  <i class='VideoClientIcon-twitter2'></i>
+                </a>
+                <a class='social-g' href='#'>
+                  <i class='VideoClientIcon-google'></i>
+                </a>
+              </div>
+              <div class='desc'>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus.
+              </div>
+              <div class='clearfix btnGroup mb10'>
+                <div class='half-width d-inline-block vertical-midle pr5'>
+                  <a class='greanBtn full-width' href='#'>Vieew Profile</a>
+                </div>
+                <div class='half-width d-inline-block vertical-midle pl5 pr5'>
+                  <a class='bluButon full-width' href='#'>Follow</a>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section id='chat'>
+            <div class='sectionHeader'>
+              <a class='pull-right sectionHeader-close' href='#'>
+                x
+              </a>
+              chat
+            </div>
+            <div class='switcher double mb20'>
+              <div>
+                <input id='chatComments' name='chat' type='radio'>
+                <label for='chatComments'>
+                  Comments
+                </label>
+              </div>
+              <div>
+                <input checked='checked' id='chatQuestions' name='chat' type='radio'>
+                <label for='chatQuestions'>
+                  Questions
+                </label>
+              </div>
+            </div>
+            <div class='styledScroll'>
+              <div class='message'>
+                <div class='subject'>
+                  <div class='Avatar small' style='background:url(http://lorempixel.com/400/200/)  '></div>
+                  Kelley Moss
+                </div>
+                <div class='message-body'>
+                  Donec id elit non mi porta gravida at eget metus. Morbi leo risus,
+                  porta ac consectetur ac, vestibulum at eros. Nullam quis risus eget urna mollis ornare vel eu leo.
+                  Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
+                </div>
+              </div>
+              <div class='message owner'>
+                <div class='subject'>
+                  <div class='Avatar small' style='background:url(http://lorempixel.com/400/200/)  '></div>
+                  Kelley Moss
+                </div>
+                <div class='message-body'>
+                  Donec id elit non mi porta gravida at eget metus. Morbi leo risus,
+                  porta ac consectetur ac, vestibulum at eros. Nullam quis risus eget urna mollis ornare vel eu leo.
+                  Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
+                </div>
+              </div>
+            </div>
+            <div class='newMessage'>
+              <textarea class='full-width' placeholder='Type your comment...'></textarea>
+              <a class='bluButon d-block full-width fs14 uppercase' href='#'>send</a>
             </div>
           </section>
         </div>
         <div class='ShowLine'></div>
         <div class='V-right-panel-contaiver'>
           <div class='WLS-right-sideBar'>
-            <div class='userAvatar' style='background:url(http://lorempixel.com/400/200/)  '></div>
-            <a class='Chat' data-id='containerChat' href='#' onclick='appendBar(this)'>
+            <a class='userAvatar' data-id='Profile' href='#' onclick='appendBar(this)' style='background:url(http://lorempixel.com/400/200/)  '></a>
+            <a class='Chat' data-id='chat' href='#' onclick='appendBar(this)'>
               <i class='VideoClientIcon-speechbubble'></i>
             </a>
           </div>
@@ -279,8 +353,93 @@
       </div>
       <div class='V-VideoContainer'>
         <div class='connectedBar' id='bar2'></div>
-        <div class='connectedBar' id='bar1'></div>
+        <div class='connectedBar' id='bar1'>
+          <section class='text-center' id='Profile'>
+            <div class='styledScroll'>
+              <div>
+                <a class='Avatar' href='#' style='background:url(http://lorempixel.com/400/200/)'></a>
+                <a class='pull-right sectionHeader-close' href='#' onclick='CloseBar(this)'>
+                  x
+                </a>
+              </div>
+              <a class='Name fs16 mb10 d-block' href='#'>Samantha Brandson</a>
+              <div class='social mb10'>
+                <a class='social-f' href='#'>
+                  <i class='VideoClientIcon-facebook'></i>
+                </a>
+                <a class='social-tw' href='#'>
+                  <i class='VideoClientIcon-twitter2'></i>
+                </a>
+                <a class='social-g' href='#'>
+                  <i class='VideoClientIcon-google'></i>
+                </a>
+              </div>
+              <div class='desc'>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus.
+              </div>
+              <div class='clearfix btnGroup mb10'>
+                <div class='half-width d-inline-block vertical-midle pr5'>
+                  <a class='greanBtn full-width' href='#'>Vieew Profile</a>
+                </div>
+                <div class='half-width d-inline-block vertical-midle pl5 pr5'>
+                  <a class='bluButon full-width' href='#'>Follow</a>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section id='chat'>
+            <div class='sectionHeader'>
+              <a class='pull-right sectionHeader-close' href='#' onclick='CloseBar(this)'>
+                x
+              </a>
+              chat
+            </div>
+            <div class='switcher double mb20'>
+              <div>
+                <input id='chatComments' name='chat' type='radio'>
+                <label for='chatComments'>
+                  Comments
+                </label>
+              </div>
+              <div>
+                <input checked='checked' id='chatQuestions' name='chat' type='radio'>
+                <label for='chatQuestions'>
+                  Questions
+                </label>
+              </div>
+            </div>
+            <div class='styledScroll'>
+              <div class='message'>
+                <div class='subject'>
+                  <div class='Avatar small' style='background:url(http://lorempixel.com/400/200/)  '></div>
+                  Kelley Moss
+                </div>
+                <div class='message-body'>
+                  Donec id elit non mi porta gravida at eget metus. Morbi leo risus,
+                  porta ac consectetur ac, vestibulum at eros. Nullam quis risus eget urna mollis ornare vel eu leo.
+                  Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
+                </div>
+              </div>
+              <div class='message owner'>
+                <div class='subject'>
+                  <div class='Avatar small' style='background:url(http://lorempixel.com/400/200/)  '></div>
+                  Kelley Moss
+                </div>
+                <div class='message-body'>
+                  Donec id elit non mi porta gravida at eget metus. Morbi leo risus,
+                  porta ac consectetur ac, vestibulum at eros. Nullam quis risus eget urna mollis ornare vel eu leo.
+                  Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
+                </div>
+              </div>
+            </div>
+            <div class='newMessage'>
+              <textarea class='full-width' placeholder='Type your comment...'></textarea>
+              <a class='bluButon d-block full-width fs14 uppercase' href='#'>send</a>
+            </div>
+          </section>
+        </div>
       </div>
+      <div class='videoWrapper'></div>
     </div>
     <script crossorigin='anonymous' integrity='sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=' src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
     <script crossorigin='anonymous' integrity='sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E=' src='http://code.jquery.com/ui/1.12.0/jquery-ui.min.js'></script>
@@ -288,5 +447,6 @@
     <script src='UI/scripts/animation.js'></script>
     <script src='UI/scripts/rightSideBAr.js'></script>
     <script src='UI/scripts/sideBarToggle.js'></script>
+    <script src='UI/scripts/plugin/jquery.scrollbar.min.js'></script>
   </body>
 </html>

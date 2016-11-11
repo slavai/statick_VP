@@ -3,7 +3,7 @@
   %head
     %link{rel:'stylesheet', href:'UI/core.css'}
     %link{href:"https://fonts.googleapis.com/css?family=Lato:300,400,700",  rel:"stylesheet"}
-  %body.VideoClient
+  %body.VideoClient.showSidebarLine-1
     -#.showVideo add to body for remove cover
     .cover.full_size
       .left-part
@@ -45,7 +45,7 @@
           .diver_block.DRpos1
             %a.diver{href:'panels.html'}
             .yyykor-wrapp
-              .yyykor{onclick: "$('body').addClass('showVideo')"}
+              .yyykor{onclick: "$('body').addClass('showVideo');$('.styledScroll').scrollbar();"}
           %p.mb20.fs20.font-bold Immerss extension is required to continue.
           %div.mb20
             %a.bluButon.bigBtn{onclick: "$('.step1').removeClass('active');$('.step2').addClass('active');"}
@@ -191,20 +191,129 @@
           %section
       .V-right-panel
         .sectionWrapp
-          %section#containerChat
-            .WLS-title
-              .pull-right
-                %a.WLS-close{href:'#'}
-                  olololo chat
+          %section.text-center#Profile
+            .styledScroll
+              %div
+                %a.Avatar{'style': 'background:url(http://lorempixel.com/400/200/)', href:'#'}
+                %a.pull-right.sectionHeader-close{href:'#', "onclick":"CloseBar(this)"}
+                  x
+              %a.Name.fs16.mb10.d-block{href:'#'} Samantha Brandson
+              .social.mb10
+                %a.social-f{href:'#'}
+                  %i.VideoClientIcon-facebook
+                %a.social-tw{href:'#'}
+                  %i.VideoClientIcon-twitter2
+                %a.social-g{href:'#'}
+                  %i.VideoClientIcon-google
+              .desc
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus.
+              .clearfix.btnGroup.mb10
+                .half-width.d-inline-block.vertical-midle.pr5
+                  %a.greanBtn.full-width{href:'#'} Vieew Profile
+                .half-width.d-inline-block.vertical-midle.pl5.pr5
+                  %a.bluButon.full-width{href:'#'} Follow
+          -#chat
+          %section#chat
+            .sectionHeader
+              %a.pull-right.sectionHeader-close{href:'#'}
+                x
+              chat
+            .switcher.double.mb20
+              %div
+                %input{type:'radio', id:'chatComments', name:'chat'}
+                %label{for:'chatComments'}
+                  Comments
+              %div
+                %input{type:'radio', id:'chatQuestions', name:'chat', checked:'checked'}
+                %label{for:'chatQuestions'}
+                  Questions
+            .styledScroll
+              .message
+                .subject
+                  .Avatar.small{'style': 'background:url(http://lorempixel.com/400/200/)  '}
+                  Kelley Moss
+                .message-body
+                  Donec id elit non mi porta gravida at eget metus. Morbi leo risus,
+                  porta ac consectetur ac, vestibulum at eros. Nullam quis risus eget urna mollis ornare vel eu leo.
+                  Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
+
+              .message.owner
+                .subject
+                  .Avatar.small{'style': 'background:url(http://lorempixel.com/400/200/)  '}
+                  Kelley Moss
+                .message-body
+                  Donec id elit non mi porta gravida at eget metus. Morbi leo risus,
+                  porta ac consectetur ac, vestibulum at eros. Nullam quis risus eget urna mollis ornare vel eu leo.
+                  Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
+            .newMessage
+              %textarea.full-width{placeholder:'Type your comment...'}
+              %a.bluButon.d-block.full-width.fs14.uppercase{href:'#'} send
         .ShowLine
         .V-right-panel-contaiver
           .WLS-right-sideBar
-            .userAvatar{'style': 'background:url(http://lorempixel.com/400/200/)  '}
-            %a.Chat{href:'#', "data-id":"containerChat", "onclick":"appendBar(this)"}
+            %a.userAvatar{'style': 'background:url(http://lorempixel.com/400/200/)  ', href:'#', "data-id":"Profile", "onclick":"appendBar(this)"}
+            %a.Chat{href:'#', "data-id":"chat", "onclick":"appendBar(this)"}
               %i.VideoClientIcon-speechbubble
       .V-VideoContainer
         #bar2.connectedBar
         #bar1.connectedBar
+          %section.text-center#Profile
+            .styledScroll
+              %div
+                %a.Avatar{'style': 'background:url(http://lorempixel.com/400/200/)', href:'#'}
+                %a.pull-right.sectionHeader-close{href:'#', "onclick":"CloseBar(this)"}
+                  x
+              %a.Name.fs16.mb10.d-block{href:'#'} Samantha Brandson
+              .social.mb10
+                %a.social-f{href:'#'}
+                  %i.VideoClientIcon-facebook
+                %a.social-tw{href:'#'}
+                  %i.VideoClientIcon-twitter2
+                %a.social-g{href:'#'}
+                  %i.VideoClientIcon-google
+              .desc
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus.
+              .clearfix.btnGroup.mb10
+                .half-width.d-inline-block.vertical-midle.pr5
+                  %a.greanBtn.full-width{href:'#'} Vieew Profile
+                .half-width.d-inline-block.vertical-midle.pl5.pr5
+                  %a.bluButon.full-width{href:'#'} Follow
+          %section#chat
+            .sectionHeader
+              %a.pull-right.sectionHeader-close{href:'#', "onclick":"CloseBar(this)"}
+                x
+              chat
+            .switcher.double.mb20
+              %div
+                %input{type:'radio', id:'chatComments', name:'chat'}
+                %label{for:'chatComments'}
+                  Comments
+              %div
+                %input{type:'radio', id:'chatQuestions', name:'chat', checked:'checked'}
+                %label{for:'chatQuestions'}
+                  Questions
+            .styledScroll
+              .message
+                .subject
+                  .Avatar.small{'style': 'background:url(http://lorempixel.com/400/200/)  '}
+                  Kelley Moss
+                .message-body
+                  Donec id elit non mi porta gravida at eget metus. Morbi leo risus,
+                  porta ac consectetur ac, vestibulum at eros. Nullam quis risus eget urna mollis ornare vel eu leo.
+                  Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
+
+              .message.owner
+                .subject
+                  .Avatar.small{'style': 'background:url(http://lorempixel.com/400/200/)  '}
+                  Kelley Moss
+                .message-body
+                  Donec id elit non mi porta gravida at eget metus. Morbi leo risus,
+                  porta ac consectetur ac, vestibulum at eros. Nullam quis risus eget urna mollis ornare vel eu leo.
+                  Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
+            .newMessage
+              %textarea.full-width{placeholder:'Type your comment...'}
+              %a.bluButon.d-block.full-width.fs14.uppercase{href:'#'} send
+      .videoWrapper
 
 
     %script{:crossorigin => "anonymous", :integrity => "sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=", :src => "https://code.jquery.com/jquery-2.2.4.min.js"}
@@ -213,6 +322,7 @@
     %script{src:'UI/scripts/animation.js'}
     %script{src:'UI/scripts/rightSideBAr.js'}
     %script{src:'UI/scripts/sideBarToggle.js'}
+    %script{src:'UI/scripts/plugin/jquery.scrollbar.min.js'}
 
 
 

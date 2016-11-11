@@ -20,9 +20,17 @@
 .V-VideoContainer{
   background: #000;
   position: absolute;
-  left: 0;
+  top: $header-height + 0.5;
+  right: $header-height  + 0.5;
+  height: calc(100% - #{$header-height});
+  z-index: 1;
+}
+.videoWrapper{
+  position: absolute;
   top: $header-height;
   right: $header-height;
-  width: calc(100% - #{$header-height});
-  height: calc(100% - #{$header-height});
+  width:calc(100% - #{$header-height}) ;
+  height:calc(100% - #{$header-height}) ;
+  background: red;
+  z-index: 99;
 }

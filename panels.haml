@@ -8,86 +8,90 @@
       %a.mr20.text-color-white{href:'index.html'}
         %i.VideoClientIcon-exit 
       demo for panels
-    .sectionWrapp
+    .sectionWrapp{style:'display:block'}
 
       -# Profile panel
-      %section#Profile.text-center
-        %div
-          %a.Avatar{'style': 'background:url(http://lorempixel.com/400/200/)', href:'#'}
-        %a.Name.fs16.mb10.d-block{href:'#'} Samantha Brandson
-        .social.mb10
-          %a.social-f{href:'#'}
-            %i.VideoClientIcon-facebook
-          %a.social-tw{href:'#'}
-            %i.VideoClientIcon-twitter2
-          %a.social-g{href:'#'}
-            %i.VideoClientIcon-google
-        .desc
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus.
-        .clearfix.btnGroup
-          .half-width.d-inline-block.vertical-midle.pr5
-            %a.greanBtn.full-width{href:'#'} Vieew Profile
-          .half-width.d-inline-block.vertical-midle.pl5.pr5
-            %a.bluButon.full-width{href:'#'} Follow
-      -# Profile panel end
+      %section.text-center#Profile
+        .styledScroll
+          %div
+            %a.Avatar{'style': 'background:url(http://lorempixel.com/400/200/)', href:'#'}
+            %a.pull-right.sectionHeader-close{href:'#'}
+              x
+          %a.Name.fs16.mb10.d-block{href:'#'} Samantha Brandson
+          .social.mb10
+            %a.social-f{href:'#'}
+              %i.VideoClientIcon-facebook
+            %a.social-tw{href:'#'}
+              %i.VideoClientIcon-twitter2
+            %a.social-g{href:'#'}
+              %i.VideoClientIcon-google
+          .desc
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus.
+          .clearfix.btnGroup.mb10
+            .half-width.d-inline-block.vertical-midle.pr5
+              %a.greanBtn.full-width{href:'#'} Vieew Profile
+            .half-width.d-inline-block.vertical-midle.pl5.pr5
+              %a.bluButon.full-width{href:'#'} Follow
+        -# Profile panel end
 
 
-      -# Profile panel
-      %section#Profile
+      -# liveShare panel
+      %section#liveShare
         .sectionHeader
           %a.pull-right.sectionHeader-close{href:'#'}
             x
           live Share
-        .AvailablePlatforms.text-left.mb10
-          .mb10
-            Available Platforms
-          .row.mb10.clearfix
-            .col-md-6
-              Facebook
-            .col-md-6.text-right
-              %a.lightGreyBtn.w-90.d-inline-block.vertical-midle.text-center{href:'#'}
-                Start Sharing
-          .row.active.clearfix
-            .col-md-6
-              Youtube
-            .col-md-6.text-right
-              %a.bluButon.w-90.d-inline-block.vertical-midle.text-center{href:'#'}
-                Stop Sharing
-        .sectionTitle
-          Latest Scene
-        .LatestScene.text-left
-          .row.mb10.clearfix
-            .col-md-6
-              Twitter
-            .col-md-6.text-right
-              %a.greanBtn.w-40.d-inline-block.vertical-midle.text-center{href:'#'}
-                Sent
-          .row.active.clearfix.mb10
-            .col-md-6
-              Instagram
-            .col-md-6.text-right
-              %a.bluButon.w-40.d-inline-block.vertical-midle.text-center{href:'#'}
-                Send
-        .sectionTitle
-          Social Share
-        .socialIconBox
-          %a.socialIcon.circle{href:'#'}
-            %i.VideoClientIcon-facebook
-          %a.socialIcon.circle{href:'#'}
-            %i.VideoClientIcon-map-marker
-          %a.socialIcon{href:'#'}
-            %i.VideoClientIcon-youtube
-          %a.socialIcon.circle{href:'#'}
-            %i.VideoClientIcon-snapchat-ghost
-          %a.socialIcon{href:'#'}
-            %i.VideoClientIcon-instagram
-          %a.socialIcon{href:'#'}
-            %i.VideoClientIcon-linkedin_2
-          %a.socialIcon{href:'#'}
-            %i.VideoClientIcon-google_2
-          %a.socialIcon{href:'#'}
-            %i.VideoClientIcon-twitter_2
-      -# Profile panel end
+        .styledScroll
+          .AvailablePlatforms.text-left.mb10
+            .mb10
+              Available Platforms
+            .row.mb10.clearfix
+              .col-md-6
+                Facebook
+              .col-md-6.text-right
+                %a.lightGreyBtn.w-90.d-inline-block.vertical-midle.text-center{href:'#'}
+                  Start Sharing
+            .row.active.clearfix
+              .col-md-6
+                Youtube
+              .col-md-6.text-right
+                %a.bluButon.w-90.d-inline-block.vertical-midle.text-center{href:'#'}
+                  Stop Sharing
+          .sectionTitle
+            Latest Scene
+          .LatestScene.text-left
+            .row.mb10.clearfix
+              .col-md-6
+                Twitter
+              .col-md-6.text-right
+                %a.greanBtn.w-40.d-inline-block.vertical-midle.text-center{href:'#'}
+                  Sent
+            .row.active.clearfix.mb10
+              .col-md-6
+                Instagram
+              .col-md-6.text-right
+                %a.bluButon.w-40.d-inline-block.vertical-midle.text-center{href:'#'}
+                  Send
+          .sectionTitle
+            Social Share
+          .socialIconBox
+            %a.socialIcon.circle{href:'#'}
+              %i.VideoClientIcon-facebook
+            %a.socialIcon.circle{href:'#'}
+              %i.VideoClientIcon-map-marker
+            %a.socialIcon{href:'#'}
+              %i.VideoClientIcon-youtube
+            %a.socialIcon.circle{href:'#'}
+              %i.VideoClientIcon-snapchat-ghost
+            %a.socialIcon{href:'#'}
+              %i.VideoClientIcon-instagram
+            %a.socialIcon{href:'#'}
+              %i.VideoClientIcon-linkedin_2
+            %a.socialIcon{href:'#'}
+              %i.VideoClientIcon-google_2
+            %a.socialIcon{href:'#'}
+              %i.VideoClientIcon-twitter_2
+      -# liveShare panel end
 
       -# Menu Type
       %section#MenuType
@@ -95,85 +99,562 @@
           %a.pull-right.sectionHeader-close{href:'#'}
             x
           Menu Type
-        .switcher.double.mb20
-          %div
-            %input{type:'radio', id:'MenuTypeBasic', name:'MenuType'}
-            %label{for:'MenuTypeBasic'}
-              Basic
-          %div
-            %input{type:'radio', id:'MenuTypeAdvanced', name:'MenuType', checked:'checked'}
-            %label{for:'MenuTypeAdvanced'}
-              Advanced
-        .sectionTitle
-          Configuration
-        .switcher.double.mb20
-          %div
-            %input{type:'radio', id:'ConfigurationBasic', name:'Configuration', checked:'checked'}
-            %label{for:'ConfigurationBasic'}
-              Basic
-          %div
-            %input{type:'radio', id:'ConfigurationAdvanced', name:'Configuration'}
-            %label{for:'ConfigurationAdvanced'}
-              Advanced
-        .selectWrapp
-          %label
-            Camera
-            %select.d-block.full-width
-              %option test 1
-              %option test 2
-              %option test 3
-              %option test 4
-        .selectWrapp
-          %label
-            Speaker
-            %select.d-block.full-width
-              %option test 1
-              %option test 2
-              %option test 3
-              %option test 4
-        .selectWrapp
-          %label
-            Microphone
-            %select.d-block.full-width
-              %option test 1
-              %option test 2
-              %option test 3
-              %option test 4
-        .mb10
-        .radio-type1
-          %label
-            %input{type:'radio', name:'name1'}
-            %span
-              Euismod Ornare
-        .radio-type1
-          %label
-            %input{type:'radio', name:'name1'}
-            %span
-              Euismod Ornare
+        .styledScroll
+          .switcher.double.mb20
+            %div
+              %input{type:'radio', id:'MenuTypeBasic', name:'MenuType'}
+              %label{for:'MenuTypeBasic'}
+                Basic
+            %div
+              %input{type:'radio', id:'MenuTypeAdvanced', name:'MenuType', checked:'checked'}
+              %label{for:'MenuTypeAdvanced'}
+                Advanced
+          .sectionTitle
+            Configuration
+          .switcher.double.mb20
+            %div
+              %input{type:'radio', id:'ConfigurationBasic', name:'Configuration', checked:'checked'}
+              %label{for:'ConfigurationBasic'}
+                Basic
+            %div
+              %input{type:'radio', id:'ConfigurationAdvanced', name:'Configuration'}
+              %label{for:'ConfigurationAdvanced'}
+                Advanced
+          .selectWrapp
+            %label
+              Camera
+              %select.d-block.full-width
+                %option test 1
+                %option test 2
+                %option test 3
+                %option test 4
+          .selectWrapp
+            %label
+              Speaker
+              %select.d-block.full-width
+                %option test 1
+                %option test 2
+                %option test 3
+                %option test 4
+          .selectWrapp
+            %label
+              Microphone
+              %select.d-block.full-width
+                %option test 1
+                %option test 2
+                %option test 3
+                %option test 4
+          .mb10
+          .radio-type1
+            %label
+              %input{type:'radio', name:'name1'}
+              %span
+                Euismod Ornare
+          .radio-type1
+            %label
+              %input{type:'radio', name:'name1'}
+              %span
+                Euismod Ornare
       -# Menu Type end
 
-      %section#InviteParticipants
+      -#Invite Participants
+      %section#InviteParticipants{style:'height:400px'}
         .sectionHeader
           %a.pull-right.sectionHeader-close{href:'#'}
             x
           Invite Participants
-        %input.searchInput.full-width{type:'text', placeholder:'Search your Contacts'}
-        .row
-          .col-md-3
-            .Avatar.small{'style': 'background:url(http://lorempixel.com/400/200/)  '}
-          .col-md-9
-    -#style for demo
+        .content-blockWrapp
+          .searchUserBlock
+            %input.searchInput.full-width.mb10{type:'text', placeholder:'Search your contacts'}
+            .item-wrapp.styledScroll
+              %a.d-block.text-color-white.clearfix.item{href:'#'}
+                .row
+                  .col-md-2.pr0
+                    .Avatar.small{'style': 'background:url(http://lorempixel.com/400/200/)  '}
+                  .col-md-10.pl0
+                    %i.VideoClientIcon-iPlus
+                    test name
+              %a.d-block.text-color-white.clearfix.item{href:'#'}
+                .row
+                  .col-md-2.pr0
+                    .Avatar.small{'style': 'background:url(http://lorempixel.com/400/200/)  '}
+                  .col-md-10.pl0
+                    %i.VideoClientIcon-iPlus
+                    test name awdawdawdadwaesdfas`fa`df
+              %a.d-block.text-color-white.clearfix.item{href:'#'}
+                .row
+                  .col-md-2.pr0
+                    .Avatar.small{'style': 'background:url(http://lorempixel.com/400/200/)  '}
+                  .col-md-10.pl0
+                    %i.VideoClientIcon-iPlus
+                    test name
+              %a.d-block.text-color-white.clearfix.item{href:'#'}
+                .row
+                  .col-md-2.pr0
+                    .Avatar.small{'style': 'background:url(http://lorempixel.com/400/200/)  '}
+                  .col-md-10.pl0
+                    %i.VideoClientIcon-iPlus
+                    test name
+              %a.d-block.text-color-white.clearfix.item{href:'#'}
+                .row
+                  .col-md-2.pr0
+                    .Avatar.small{'style': 'background:url(http://lorempixel.com/400/200/)  '}
+                  .col-md-10.pl0
+                    %i.VideoClientIcon-iPlus
+                    test name
+              %a.d-block.text-color-white.clearfix.item{href:'#'}
+                .row
+                  .col-md-2.pr0
+                    .Avatar.small{'style': 'background:url(http://lorempixel.com/400/200/)  '}
+                  .col-md-10.pl0
+                    %i.VideoClientIcon-iPlus
+                    test name
+              %a.d-block.text-color-white.clearfix.item{href:'#'}
+                .row
+                  .col-md-2.pr0
+                    .Avatar.small{'style': 'background:url(http://lorempixel.com/400/200/)  '}
+                  .col-md-10.pl0
+                    %i.VideoClientIcon-iPlus
+                    test name
+              %a.d-block.text-color-white.clearfix.item{href:'#'}
+                .row
+                  .col-md-2.pr0
+                    .Avatar.small{'style': 'background:url(http://lorempixel.com/400/200/)  '}
+                  .col-md-10.pl0
+                    %i.VideoClientIcon-iPlus
+                    test name
+              %a.d-block.text-color-white.clearfix.item{href:'#'}
+                .row
+                  .col-md-2.pr0
+                    .Avatar.small{'style': 'background:url(http://lorempixel.com/400/200/)  '}
+                  .col-md-10.pl0
+                    %i.VideoClientIcon-iPlus
+                    test name
+
+          .ParticipantsList
+            .inputWidthButton.clearfix.mb10
+              %input{type:'text', placeholder:'Invite by Email'}
+              %a{href:'#'}
+                %i.VideoClientIcon-iPlus
+            .sectionTitle
+              Participants
+            .item-wrapp.styledScroll
+              %a.d-block.text-color-white.clearfix.item{href:'#'}
+                .row
+                  .col-md-2.pr0
+                    .Avatar.small{'style': 'background:url(http://lorempixel.com/400/200/)  '}
+                  .col-md-10.pl0
+                    test name
+              %a.d-block.text-color-white.clearfix.item{href:'#'}
+                .row
+                  .col-md-2.pr0
+                    .Avatar.small{'style': 'background:url(http://lorempixel.com/400/200/)  '}
+                  .col-md-10.pl0
+                    test name awdawdawdadwaesdfas`fa`df
+              %a.d-block.text-color-white.clearfix.item{href:'#'}
+                .row
+                  .col-md-2.pr0
+                    .Avatar.small{'style': 'background:url(http://lorempixel.com/400/200/)  '}
+                  .col-md-10.pl0
+                    test name
+              %a.d-block.text-color-white.clearfix.item{href:'#'}
+                .row
+                  .col-md-2.pr0
+                    .Avatar.small{'style': 'background:url(http://lorempixel.com/400/200/)  '}
+                  .col-md-10.pl0
+                    test name
+              %a.d-block.text-color-white.clearfix.item{href:'#'}
+                .row
+                  .col-md-2.pr0
+                    .Avatar.small{'style': 'background:url(http://lorempixel.com/400/200/)  '}
+                  .col-md-10.pl0
+                    test name
+              %a.d-block.text-color-white.clearfix.item{href:'#'}
+                .row
+                  .col-md-2.pr0
+                    .Avatar.small{'style': 'background:url(http://lorempixel.com/400/200/)  '}
+                  .col-md-10.pl0
+                    test name
+              %a.d-block.text-color-white.clearfix.item{href:'#'}
+                .row
+                  .col-md-2.pr0
+                    .Avatar.small{'style': 'background:url(http://lorempixel.com/400/200/)  '}
+                  .col-md-10.pl0
+                    test name
+              %a.d-block.text-color-white.clearfix.item{href:'#'}
+                .row
+                  .col-md-2.pr0
+                    .Avatar.small{'style': 'background:url(http://lorempixel.com/400/200/)  '}
+                  .col-md-10.pl0
+                    test name
+              %a.d-block.text-color-white.clearfix.item{href:'#'}
+                .row
+                  .col-md-2.pr0
+                    .Avatar.small{'style': 'background:url(http://lorempixel.com/400/200/)  '}
+                  .col-md-10.pl0
+                    test name
+      -#Invite Participants
+
+
+      -# Share a Window
+      %section#ShareAWindow
+        .sectionHeader
+          %a.pull-right.sectionHeader-close{href:'#'}
+            x
+          Share a Window
+        .styledScroll
+          .switcher.double.mb20
+            %div
+              %input{type:'radio', id:'ShareAWindowOn', name:'ShareAWindow'}
+              %label{for:'ShareAWindowOn'}
+                On
+            %div
+              %input{type:'radio', id:'ShareAWindowOff', name:'ShareAWindow', checked:'checked'}
+              %label{for:'ShareAWindowOff'}
+                Off
+          .radio-type1
+            %label
+              %input{type:'radio', name:'name2'}
+              %span
+                .pull-right (1920 x 1080)
+                Display 1
+          .radio-type1
+            %label
+              %input{type:'radio', name:'name2'}
+              %span
+                .pull-right (1920 x 1080)
+                Display 2
+          .radio-type1
+            %label
+              %input{type:'radio', name:'name2'}
+              %span
+                .pull-right (1440 x 900)
+                Display 3
+          %hr
+
+          .radio-type1
+            %label
+              %input{type:'radio', name:'name2'}
+              %span
+                Immerss: Test Session for
+                alexwilner - Microsoft Edge
+          %hr
+
+          .radio-type1
+            %label
+              %input{type:'radio', name:'name2'}
+              %span
+                Snagit Editor
+                Dec. 3. 2015. 1:09:16 PM
+          %hr
+
+          .radio-type1
+            %label
+              %input{type:'radio', name:'name2'}
+              %span
+                Fringilla Ligula Porta
+          %hr
+
+          .radio-type1
+            %label
+              %input{type:'radio', name:'name2'}
+              %span
+                Egestas Tortor Mattis Commodo
+      -# Share a Window end
+
+      -#Manage all Participants
+      %section#ManageAllParticipants
+        .sectionHeader
+          %a.pull-right.sectionHeader-close{href:'#'}
+            x
+          Manage all Participants
+        .btnMasivGroup.mb10
+          %a{href:'#'}
+            %i.VideoClientIcon-video
+          %a{href:'#'}
+            %i.VideoClientIcon-sound
+          %a{href:'#'}
+            %i.VideoClientIcon-microphone
+          %a{href:'#'}
+            %i.VideoClientIcon-hand-showing-palm-outline
+        .sectionTitle
+          Manage Participants
+        .styledScroll
+          .userWrapp
+            %a.d-block.text-color-white.clearfix.item{href:'#', onclick:'ManageAllParticipants_dropDownOpen(this)'}
+              .row
+                .col-md-2.pr0
+                  .Avatar.small{'style': 'background:url(http://lorempixel.com/400/200/)  '}
+                .col-md-10.pl0.pr40
+                  %i.VideoClientIcon-navigate-up-arrow
+                  %i.VideoClientIcon-navigate-down-arrow
+                  test name
+            .btnMasivGroup
+              %a.pull-right{href:'#'}
+                %i.VideoClientIcon-q4
+              %a{href:'#'}
+                %i.VideoClientIcon-video
+              %a{href:'#'}
+                %i.VideoClientIcon-sound
+              %a{href:'#'}
+                %i.VideoClientIcon-microphone
+              %a{href:'#'}
+                %i.VideoClientIcon-stanchios
+          .userWrapp
+            %a.d-bloc.text-color-white.clearfix.item{href:'#', onclick:'ManageAllParticipants_dropDownOpen(this)'}
+              .row
+                .col-md-2.pr0
+                  .Avatar.small{'style': 'background:url(http://lorempixel.com/400/200/)  '}
+                .col-md-10.pl0.pr40
+                  %i.VideoClientIcon-navigate-up-arrow
+                  %i.VideoClientIcon-navigate-down-arrow
+                  test name
+            .btnMasivGroup
+              %a.pull-right{href:'#'}
+                %i.VideoClientIcon-q4
+              %a{href:'#'}
+                %i.VideoClientIcon-video
+              %a{href:'#'}
+                %i.VideoClientIcon-sound
+              %a{href:'#'}
+                %i.VideoClientIcon-microphone
+              %a{href:'#'}
+                %i.VideoClientIcon-stanchios
+          .userWrapp
+            %a.d-block.text-color-white.clearfix.item{href:'#', onclick:'ManageAllParticipants_dropDownOpen(this)'}
+              .row
+                .col-md-2.pr0
+                  .Avatar.small{'style': 'background:url(http://lorempixel.com/400/200/)  '}
+                .col-md-10.pl0.pr40
+                  %i.VideoClientIcon-navigate-up-arrow
+                  %i.VideoClientIcon-navigate-down-arrow
+                  test name
+            .btnMasivGroup
+              %a.pull-right{href:'#'}
+                %i.VideoClientIcon-q4
+              %a{href:'#'}
+                %i.VideoClientIcon-video
+              %a{href:'#'}
+                %i.VideoClientIcon-sound
+              %a{href:'#'}
+                %i.VideoClientIcon-microphone
+              %a{href:'#'}
+                %i.VideoClientIcon-stanchios
+          .userWrapp
+            %a.d-block.text-color-white.clearfix.item{href:'#', onclick:'ManageAllParticipants_dropDownOpen(this)'}
+              .row
+                .col-md-2.pr0
+                  .Avatar.small{'style': 'background:url(http://lorempixel.com/400/200/)  '}
+                .col-md-10.pl0.pr40
+                  %i.VideoClientIcon-navigate-up-arrow
+                  %i.VideoClientIcon-navigate-down-arrow
+                  test name
+            .btnMasivGroup
+              %a.pull-right{href:'#'}
+                %i.VideoClientIcon-q4
+              %a{href:'#'}
+                %i.VideoClientIcon-video
+              %a{href:'#'}
+                %i.VideoClientIcon-sound
+              %a{href:'#'}
+                %i.VideoClientIcon-microphone
+              %a{href:'#'}
+                %i.VideoClientIcon-stanchios
+          .userWrapp
+            %a.d-block.text-color-white.clearfix.item{href:'#', onclick:'ManageAllParticipants_dropDownOpen(this)'}
+              .row
+                .col-md-2.pr0
+                  .Avatar.small{'style': 'background:url(http://lorempixel.com/400/200/)  '}
+                .col-md-10.pl0.pr40
+                  %i.VideoClientIcon-navigate-up-arrow
+                  %i.VideoClientIcon-navigate-down-arrow
+                  test name
+            .btnMasivGroup
+              %a.pull-right{href:'#'}
+                %i.VideoClientIcon-q4
+              %a{href:'#'}
+                %i.VideoClientIcon-video
+              %a{href:'#'}
+                %i.VideoClientIcon-sound
+              %a{href:'#'}
+                %i.VideoClientIcon-microphone
+              %a{href:'#'}
+                %i.VideoClientIcon-stanchios
+          .userWrapp
+            %a.d-block.text-color-white.clearfix.item{href:'#', onclick:'ManageAllParticipants_dropDownOpen(this)'}
+              .row
+                .col-md-2.pr0
+                  .Avatar.small{'style': 'background:url(http://lorempixel.com/400/200/)  '}
+                .col-md-10.pl0.pr40
+                  %i.VideoClientIcon-navigate-up-arrow
+                  %i.VideoClientIcon-navigate-down-arrow
+                  test name
+            .btnMasivGroup
+              %a.pull-right{href:'#'}
+                %i.VideoClientIcon-q4
+              %a{href:'#'}
+                %i.VideoClientIcon-video
+              %a{href:'#'}
+                %i.VideoClientIcon-sound
+              %a{href:'#'}
+                %i.VideoClientIcon-microphone
+              %a{href:'#'}
+                %i.VideoClientIcon-stanchios
+      -#Manage all Participants end
+
+      -#chat
+      %section#chat
+        .sectionHeader
+          %a.pull-right.sectionHeader-close{href:'#'}
+            x
+          chat
+        .switcher.double.mb20
+          %div
+            %input{type:'radio', id:'chatComments', name:'chat'}
+            %label{for:'chatComments'}
+              Comments
+          %div
+            %input{type:'radio', id:'chatQuestions', name:'chat', checked:'checked'}
+            %label{for:'chatQuestions'}
+              Questions
+        .styledScroll
+          .message
+            .subject
+              .Avatar.small{'style': 'background:url(http://lorempixel.com/400/200/)  '}
+              Kelley Moss
+            .message-body
+              Donec id elit non mi porta gravida at eget metus. Morbi leo risus,
+              porta ac consectetur ac, vestibulum at eros. Nullam quis risus eget urna mollis ornare vel eu leo.
+              Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
+
+          .message.owner
+            .subject
+              .Avatar.small{'style': 'background:url(http://lorempixel.com/400/200/)  '}
+              Kelley Moss
+            .message-body
+              Donec id elit non mi porta gravida at eget metus. Morbi leo risus,
+              porta ac consectetur ac, vestibulum at eros. Nullam quis risus eget urna mollis ornare vel eu leo.
+              Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
+        .newMessage
+          %textarea.full-width{placeholder:'Type your comment...'}
+          %a.bluButon.d-block.full-width.fs14.uppercase{href:'#'} send
+
+      -#chat end
+
+      -#shop
+      %section#shop
+        .styledScroll{style:'height:100%'}
+          .redBG
+            .sectionHeader
+              %a.pull-right.sectionHeader-close{href:'#'}
+                x
+              shop
+            .shopName
+              Disney Store - Halloween Shop
+            .description.styledScroll
+              Loem ipsum dolor sit amet, consectetur adipiscing elit.
+              Maecenas faucibus mollis interdum. Duis mollis, est non commodo
+              luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+              Vestibulum id ligula porta felis euismod semper.
+            %a.siteUrl{href:'#', target:"_blank"}
+              www.olololo.com
+
+          .sectionTitle
+            .text-color-white.pt10
+              Products
+          .Products-wrapp
+            .prodctTileList
+              .productTile
+                %img.productTile-img{src:'http://lorempixel.com/400/200/'}
+                .productTile-short-description
+                  %a{href:'#', onclick:"jQuery(this).parents('.productTile').toggleClass('active')"}
+                    Kylo Ren Costume for Kids Star Wars: The Force Awakens
+                  %div
+                    .price.pull-right
+                      $34.12
+                    %a.productLink{href:'#', target:"_blank"}
+                      http://bit.ly/2eiCz66
+                .productTile-long-description
+                  Cras mattis consectetur purus sit amet fermentum.
+                  Donec sed odio dui. Integer posuere erat a ante venenatis
+                  dapibus posuere velit aliquet. Nullam quis risus eget urna
+                  mollis ornare vel eu leo. Vestibulum id ligula porta felis euismod semper.
+              .productTile
+                %img.productTile-img{src:'http://lorempixel.com/400/200/'}
+                .productTile-short-description
+                  %a{href:'#', onclick:"jQuery(this).parents('.productTile').toggleClass('active')"}
+                    Kylo Ren Costume for Kids Star Wars: The Force Awakens
+                  %div
+                    .price.pull-right
+                      $34.12
+                    %a.productLink{href:'#', target:"_blank"}
+                      http://bit.ly/2eiCz66
+                .productTile-long-description
+                  Cras mattis consectetur purus sit amet fermentum.
+                  Donec sed odio dui. Integer posuere erat a ante venenatis
+                  dapibus posuere velit aliquet. Nullam quis risus eget urna
+                  mollis ornare vel eu leo. Vestibulum id ligula porta felis euismod semper.
+              .productTile
+                %img.productTile-img{src:'http://lorempixel.com/400/200/'}
+                .productTile-short-description
+                  %a{href:'#', onclick:"jQuery(this).parents('.productTile').toggleClass('active')"}
+                    Kylo Ren Costume for Kids Star Wars: The Force Awakens
+                  %div
+                    .price.pull-right
+                      $34.12
+                    %a.productLink{href:'#', target:"_blank"}
+                      http://bit.ly/2eiCz66
+                .productTile-long-description
+                  Cras mattis consectetur purus sit amet fermentum.
+                  Donec sed odio dui. Integer posuere erat a ante venenatis
+                  dapibus posuere velit aliquet. Nullam quis risus eget urna
+                  mollis ornare vel eu leo. Vestibulum id ligua porta felis euismod semper.
+            .BAG.pb20
+              .bag-title.mb10
+                My Bag
+              .productTile
+                %img.productTile-img{src:'http://lorempixel.com/400/200/'}
+                .productTile-short-description
+                  %a{href:'#', onclick:"jQuery(this).parents('.productTile').toggleClass('active')"}
+                    Kylo Ren Costume for Kids Star Wars: The Force Awakens
+                  %div
+                    .price.pull-right
+                      $34.12
+                    %a.productLink{href:'#', target:"_blank"}
+                      http://bit.ly/2eiCz66
+                .productTile-long-description
+                  Cras mattis consectetur purus sit amet fermentum.
+                  Donec sed odio dui. Integer posuere erat a ante venenatis
+                  dapibus posuere velit aliquet. Nullam quis risus eget urna
+                  mollis ornare vel eu leo. Vestibulum id ligula porta felis euismod semper.
+              .subtotal.mb10
+                .pull-right
+                  $40.00
+                Subtotal
+              %a.bluButon.d-block.full-width.fs14.uppercase{href:'#'} proceed to checkout
+      -#style for demo
     :css
+      body{overflow: auto}
       .VideoClient > h1{border-bottom: 1px solid #fff;padding-bottom: 1rem}
       .sectionWrapp{padding: 1rem 2rem}
-      .sectionWrapp section{display:inline-block;width:24.5rem;margin: 0 2rem 1rem 0;vertical-align: top; }
+      .sectionWrapp section{overflow-x:hidden !important;padding-bottom:1rem;display:inline-block;width:24.5rem;margin: 0 2rem 1rem 0;vertical-align: top;position: relative }
+      section
 
     %script{:crossorigin => "anonymous", :integrity => "sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=", :src => "https://code.jquery.com/jquery-2.2.4.min.js"}
-    %script{:crossorigin => "anonymous", :integrity => "sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E=", :src => "http://code.jquery.com/ui/1.12.0/jquery-ui.min.js"}
+    %script{src:'UI/scripts/plugin/jQuery_UI.js'}
     %script{src:'UI/scripts/demo.js'}
     %script{src:'UI/scripts/animation.js'}
     %script{src:'UI/scripts/rightSideBAr.js'}
     %script{src:'UI/scripts/sideBarToggle.js'}
+    %script{src:'UI/scripts/plugin/jquery.scrollbar.min.js'}
+
+
+    :javascript
+      $('.sectionWrapp section').resizable({
+        handles: 's',
+        distance: 0,
+        minHeight: 41
+      });
 
 
 

@@ -57,6 +57,7 @@
   hyphens: $mode;
 
 }
+
 $fontSizeMounts: (0.8, 1, 1.2, 1.4, 1.8, 1.6, 2, 2.4);
 @mixin generate-fontSize() {
   @each $fontSize in $fontSizeMounts {
@@ -65,15 +66,17 @@ $fontSizeMounts: (0.8, 1, 1.2, 1.4, 1.8, 1.6, 2, 2.4);
     }
   }
 }
+
+
 $widthmounts: (4, 5, 6, 9, 10, 15, 20, 30);
-@mixin generate-fontSize() {
+@mixin generate-widt() {
   @each $width in $widthmounts {
     .w-#{$width * 10} {
       width: #{$width}rem;
     }
   }
 }
-$spaceamounts: (0.5, 1, 1.5, 2, 2.5, 3, 5, 10, 20);
+$spaceamounts: (0, 0.5, 1, 1.5, 2, 2.5, 3, 5, 10, 20);
 
 @mixin generate-margin-bottom() {
   @each $space in $spaceamounts {

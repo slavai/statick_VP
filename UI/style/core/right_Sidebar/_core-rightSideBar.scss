@@ -141,12 +141,9 @@
     height: 50%;
     padding-bottom: 1rem;
     color: #fff;
-    font-size: 1.2rem;
-    line-height: 1.1rem;
     background: #2d2d2d;
-    text-align: left;
     overflow: auto;
-    width: 25rem;
+    width: $connectedBarWidth;
     position: relative;
     box-shadow: 0 -1.2rem 0 0 #929292 inset;
     -webkit-box-shadow: 0 -1.2rem 0 0 #929292 inset;
@@ -177,7 +174,6 @@
   }
 }
 .sectionHeader, .sectionTitle{
-  cursor: move;
   color: $siteColorMain;
   font-size: 1.4rem;
   line-height: 2.5rem;

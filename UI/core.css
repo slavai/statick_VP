@@ -1,3 +1,122 @@
+/*************** SCROLLBAR BASE CSS ***************/
+.scroll-wrapper {
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: relative; }
+  .scroll-wrapper > .scroll-content {
+    border: none !important;
+    box-sizing: content-box !important;
+    height: auto;
+    left: 0;
+    margin: 0;
+    max-height: none;
+    max-width: none !important;
+    overflow: scroll !important;
+    padding: 0;
+    position: relative !important;
+    top: 0;
+    width: auto !important; }
+    .scroll-wrapper > .scroll-content::-webkit-scrollbar {
+      height: 0;
+      width: 0; }
+  .scroll-wrapper.scroll--rtl {
+    direction: rtl; }
+
+.scroll-element {
+  box-sizing: content-box;
+  display: none; }
+  .scroll-element div {
+    box-sizing: content-box; }
+  .scroll-element .scroll-bar,
+  .scroll-element .scroll-arrow {
+    cursor: default; }
+  .scroll-element.scroll-x.scroll-scrollx_visible, .scroll-element.scroll-y.scroll-scrolly_visible {
+    display: block; }
+
+.scroll-textarea {
+  border: 1px solid #cccccc;
+  border-top-color: #999999; }
+  .scroll-textarea > .scroll-content {
+    overflow: hidden !important; }
+    .scroll-textarea > .scroll-content > textarea {
+      border: none !important;
+      box-sizing: border-box;
+      height: 100% !important;
+      margin: 0;
+      max-height: none !important;
+      max-width: none !important;
+      overflow: scroll !important;
+      outline: none;
+      padding: 2px;
+      position: relative !important;
+      top: 0;
+      width: 100% !important; }
+      .scroll-textarea > .scroll-content > textarea::-webkit-scrollbar {
+        height: 0;
+        width: 0; }
+
+/*************** SIMPLE INNER SCROLLBAR ***************/
+.styledScroll > .scroll-element {
+  border: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  z-index: 10; }
+  .styledScroll > .scroll-element div {
+    border: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    z-index: 10;
+    display: block;
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 100%; }
+  .styledScroll > .scroll-element.scroll-x {
+    bottom: 2px;
+    height: 8px;
+    left: 0;
+    width: 100%; }
+  .styledScroll > .scroll-element.scroll-y {
+    height: 100%;
+    opacity: 0.3;
+    right: 0;
+    top: 0;
+    width: 3px;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out; }
+  .styledScroll > .scroll-element .scroll-element_outer {
+    overflow: hidden; }
+  .styledScroll > .scroll-element .scroll-element_track {
+    background-color: #272727; }
+  .styledScroll > .scroll-element .scroll-bar {
+    background-color: #fff; }
+  .styledScroll > .scroll-element.scroll-draggable .scroll-bar {
+    background-color: #b7b7b7; }
+  .styledScroll > .scroll-element.scroll-x.scroll-scrolly_visible .scroll-element_track {
+    left: -12px; }
+  .styledScroll > .scroll-element.scroll-y.scroll-scrollx_visible .scroll-element_track {
+    top: -12px; }
+  .styledScroll > .scroll-element.scroll-x.scroll-scrolly_visible .scroll-element_size {
+    left: -12px; }
+  .styledScroll > .scroll-element.scroll-y.scroll-scrollx_visible .scroll-element_size {
+    top: -12px; }
+
+.styledScroll:hover > .scroll-element.scroll-y {
+  opacity: 0.5;
+  width: 5px; }
+  .styledScroll:hover > .scroll-element.scroll-y:hover {
+    opacity: 0.6 !important;
+    width: 12px !important; }
+
+.scroll-element.scroll-y.scroll-draggable {
+  opacity: 0.6 !important;
+  width: 12px !important; }
+
+/* update scrollbar offset if both scrolls are visible */
 .STATICK_DATA {
   outline: 0.1rem solid red !important; }
 
@@ -971,6 +1090,9 @@ svg:not(:root) {
 .vertical-top {
   vertical-align: top !important; }
 
+.uppercase {
+  text-transform: uppercase; }
+
 .clearfix:before, .clearfix:after {
   content: " ";
   display: table; }
@@ -1041,6 +1163,30 @@ svg:not(:root) {
   transform: rotate(180deg);
   -webkit-transform: rotate(180deg); }
 
+.fs8 {
+  font-size: 0.8rem; }
+
+.fs10 {
+  font-size: 1rem; }
+
+.fs12 {
+  font-size: 1.2rem; }
+
+.fs14 {
+  font-size: 1.4rem; }
+
+.fs18 {
+  font-size: 1.8rem; }
+
+.fs16 {
+  font-size: 1.6rem; }
+
+.fs20 {
+  font-size: 2rem; }
+
+.fs24 {
+  font-size: 2.4rem; }
+
 .w-40 {
   width: 4rem; }
 
@@ -1064,6 +1210,9 @@ svg:not(:root) {
 
 .w-300 {
   width: 30rem; }
+
+.mb0 {
+  margin-bottom: 0rem; }
 
 .mb5 {
   margin-bottom: 0.5rem; }
@@ -1092,6 +1241,9 @@ svg:not(:root) {
 .mb200 {
   margin-bottom: 20rem; }
 
+.mr0 {
+  margin-right: 0rem; }
+
 .mr5 {
   margin-right: 0.5rem; }
 
@@ -1118,6 +1270,9 @@ svg:not(:root) {
 
 .mr200 {
   margin-right: 20rem; }
+
+.mt0 {
+  margin-top: 0rem; }
 
 .mt5 {
   margin-top: 0.5rem; }
@@ -1146,6 +1301,9 @@ svg:not(:root) {
 .mt200 {
   margin-top: 20rem; }
 
+.pb0 {
+  padding-bottom: 0rem; }
+
 .pb5 {
   padding-bottom: 0.5rem; }
 
@@ -1172,6 +1330,9 @@ svg:not(:root) {
 
 .pb200 {
   padding-bottom: 20rem; }
+
+.pt0 {
+  padding-top: 0rem; }
 
 .pt5 {
   padding-top: 0.5rem; }
@@ -1200,6 +1361,9 @@ svg:not(:root) {
 .pt200 {
   padding-top: 20rem; }
 
+.pl0 {
+  padding-left: 0rem; }
+
 .pl5 {
   padding-left: 0.5rem; }
 
@@ -1227,6 +1391,9 @@ svg:not(:root) {
 .pl200 {
   padding-left: 20rem; }
 
+.pr0 {
+  padding-right: 0rem; }
+
 .pr5 {
   padding-right: 0.5rem; }
 
@@ -1253,6 +1420,28 @@ svg:not(:root) {
 
 .pr200 {
   padding-right: 20rem; }
+
+html, body {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background: #000;
+  font-family: 'Lato', sans-serif;
+  font-weight: 200;
+  color: #fff; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  font-weight: 200; }
+
+hr {
+  border: none;
+  border-top: 1px solid #969696; }
 
 .switcher {
   position: relative; }
@@ -1392,29 +1581,81 @@ select {
   background-size: cover;
   background-position: center center; }
   .Avatar.small {
-    width: 2rem;
-    height: 2px; }
+    height: 2rem;
+    width: 2rem; }
   .Avatar.active, .Avatar:hover {
     border-color: #10b0e6;
     cursor: pointer; }
 
-html, body {
-  height: 100%;
+.styledScroll {
+  padding-right: 2px !important;
+  overflow: auto; }
+  .styledScroll .scroll-element_track {
+    background: #272727; }
+    .styledScroll .scroll-element_track .scroll-bar {
+      background: #fff;
+      border-radius: 0;
+      -webkit-border-radius: 0; }
+
+.ui-resizable-handle {
+  background: none repeat scroll 0 0 #90abb1;
+  display: block;
+  font-size: 0.1px;
+  height: 30px !important;
+  position: absolute;
+  margin-top: 0 !important; }
+
+.ui-resizable-s {
+  bottom: 0 !important;
+  height: 12px !important;
+  background: #929292;
+  z-index: 999;
   width: 100%;
-  position: relative;
-  overflow: hidden;
-  background: #000;
-  font-family: 'Lato', sans-serif;
-  font-weight: 200;
+  left: 0; }
+
+.inputWidthButton {
+  background-color: #272727;
   color: #fff; }
+  .inputWidthButton input[type='text'] {
+    padding: 0.3rem 3rem 0.3rem 0.5rem;
+    background: transparent;
+    color: #fff;
+    border: none;
+    font-size: 1.3rem;
+    width: calc(100% - 3rem);
+    float: left; }
+  .inputWidthButton a {
+    width: 3rem;
+    float: right;
+    color: #fff;
+    text-align: center;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out; }
+    .inputWidthButton a:hover {
+      color: #10b0e6; }
 
-html {
-  font-size: 62.5%; }
+section > .sectionHeader + .styledScroll {
+  height: calc( 100% - 4.1rem );
+  overflow: hidden !important; }
 
-body {
-  font-size: 1.5rem;
-  line-height: 1.6;
-  font-weight: 200; }
+.scroll-x {
+  display: none !important; }
+
+.connectedBar section {
+  overflow: hidden !important; }
+  .connectedBar section > .styledScroll {
+    height: 100%;
+    overflow-x: hidden !important; }
+
+.showSidebarLine-1 .videoWrapper {
+  width: calc(100% - 29.5rem);
+  right: 29.5rem; }
+
+.showSidebarLine-2 .videoWrapper {
+  width: calc(100% - 55rem);
+  right: 55rem; }
 
 .flashMessage {
   display: block;
@@ -2202,10 +2443,7 @@ body.hidePanels .V-VideoContainer {
     height: 50%;
     padding-bottom: 1rem;
     color: #fff;
-    font-size: 1.2rem;
-    line-height: 1.1rem;
     background: #2d2d2d;
-    text-align: left;
     overflow: auto;
     width: 25rem;
     position: relative;
@@ -2232,7 +2470,6 @@ body.hidePanels .V-VideoContainer {
     height: 33%; }
 
 .sectionHeader, .sectionTitle {
-  cursor: move;
   color: #10b0e6;
   font-size: 1.4rem;
   line-height: 2.5rem;
@@ -2291,11 +2528,19 @@ body.hidePanels .V-VideoContainer {
 .V-VideoContainer {
   background: #000;
   position: absolute;
-  left: 0;
+  top: 4rem;
+  right: 4rem;
+  height: calc(100% - 3.5rem);
+  z-index: 1; }
+
+.videoWrapper {
+  position: absolute;
   top: 3.5rem;
   right: 3.5rem;
   width: calc(100% - 3.5rem);
-  height: calc(100% - 3.5rem); }
+  height: calc(100% - 3.5rem);
+  background: red;
+  z-index: 99; }
 
 .animatedObject .sunshine span {
   opacity: 0.2;
@@ -4730,17 +4975,259 @@ body.hidePanels .V-VideoContainer {
     height: 6.6rem;
     left: calc(50% - 2.1rem); }
 
-.sectionWrapp #Profile .Avatar {
+#Profile .Avatar {
   margin-top: 1rem;
   margin-bottom: 1rem;
   width: 10.5rem;
   height: 10.5rem;
   border: 3px solid #fff; }
-.sectionWrapp #Profile .desc {
+#Profile .desc {
+  line-height: 1.6rem;
+  font-size: 1.3rem;
   background: #272727;
   margin: 0 0.5rem 10px;
   padding: 0.5rem;
   color: #a1a1a1; }
+
+#chat .message {
+  padding-top: 1rem;
+  padding-bottom: 2rem; }
+  #chat .message .subject {
+    position: relative;
+    height: 2rem;
+    padding: 0 0.5rem 0 2.5rem;
+    border-radius: 2rem 0.6rem 0.6rem 2rem;
+    background: #6c6c6c;
+    margin-bottom: 0.6rem;
+    display: inline-block;
+    vertical-align: top;
+    line-height: 2rem;
+    font-size: 1.2rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 100%; }
+    #chat .message .subject .Avatar {
+      width: 2rem;
+      height: 2rem;
+      position: absolute;
+      left: 0;
+      top: 0; }
+  #chat .message .message-body {
+    background: #327b94;
+    padding: 0.5rem;
+    border-radius: 0.6rem;
+    line-height: 1.8rem;
+    font-size: 1.4rem;
+    text-align: left !important; }
+    #chat .message .message-body:before, #chat .message .message-body:after {
+      content: " ";
+      display: table; }
+    #chat .message .message-body:after {
+      clear: both; }
+  #chat .message.owner {
+    text-align: right; }
+    #chat .message.owner .subject {
+      padding: 0 2.5rem 0 0.5rem;
+      border-radius: 0.6rem 2rem 2rem 0.6rem; }
+    #chat .message.owner .Avatar {
+      width: 2rem;
+      height: 2rem;
+      position: absolute;
+      left: auto;
+      top: 0;
+      right: 0; }
+    #chat .message.owner .message-body {
+      background: #35c084; }
+#chat .newMessage {
+  padding-top: 1rem;
+  padding-bottom: 1rem; }
+  #chat .newMessage textarea {
+    background: #272727;
+    color: #fff;
+    border: none;
+    min-height: 6rem;
+    max-height: 6rem;
+    height: 6rem;
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%; }
+    #chat .newMessage textarea::-webkit-input-placeholder {
+      /* Chrome/Opera/Safari */
+      color: #6d6d6d; }
+    #chat .newMessage textarea::-moz-placeholder {
+      /* Firefox 19+ */
+      color: #6d6d6d; }
+    #chat .newMessage textarea:-ms-input-placeholder {
+      /* IE 10+ */
+      color: #6d6d6d; }
+    #chat .newMessage textarea:-moz-placeholder {
+      /* Firefox 18- */
+      color: #6d6d6d; }
+#chat .styledScroll {
+  height: calc(100% - 20rem); }
+
+#InviteParticipants {
+  position: relative; }
+  #InviteParticipants .Avatar.small {
+    margin-top: 0.4rem; }
+  #InviteParticipants .content-blockWrapp {
+    height: calc(100% - 4.1rem); }
+  #InviteParticipants .searchUserBlock {
+    height: 50%; }
+    #InviteParticipants .searchUserBlock .item-wrapp {
+      max-height: calc(100% - 3.6rem);
+      height: 100%; }
+  #InviteParticipants .ParticipantsList {
+    margin-top: 1rem;
+    height: calc(50% - 1rem); }
+    #InviteParticipants .ParticipantsList .item-wrapp {
+      max-height: calc(100% - 7.7rem);
+      height: 100%; }
+  #InviteParticipants .item {
+    padding-right: 20px;
+    cursor: pointer; }
+    #InviteParticipants .item .col-md-10 {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap; }
+    #InviteParticipants .item .VideoClientIcon-iPlus {
+      position: absolute;
+      right: 3px;
+      top: 9px;
+      font-size: 8px;
+      -webkit-transition: all 0.2s ease-in-out;
+      -moz-transition: all 0.2s ease-in-out;
+      -o-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out; }
+    #InviteParticipants .item:hover {
+      color: #10b0e6; }
+      #InviteParticipants .item:hover .Avatar {
+        border-color: #10b0e6; }
+      #InviteParticipants .item:hover .VideoClientIcon-iPlus {
+        transform: scale(2);
+        -webkit-transform: scale(2); }
+
+#ManageAllParticipants .btnMasivGroup {
+  background: #272727;
+  padding: 0 0.5rem;
+  position: relative; }
+  #ManageAllParticipants .btnMasivGroup a {
+    display: inline-block;
+    vertical-align: middle;
+    width: 20%;
+    color: #939393;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out; }
+    #ManageAllParticipants .btnMasivGroup a:hover {
+      color: #dadada; }
+    #ManageAllParticipants .btnMasivGroup a.pull-right {
+      position: absolute;
+      right: 5px;
+      top: 0;
+      width: 1.5rem;
+      color: #ef2064; }
+#ManageAllParticipants .styledScroll {
+  height: calc(100% - 11.8rem); }
+#ManageAllParticipants .userWrapp .btnMasivGroup {
+  display: none; }
+#ManageAllParticipants .userWrapp.active .btnMasivGroup {
+  display: block;
+  margin-bottom: 1.2rem; }
+#ManageAllParticipants .userWrapp.active .VideoClientIcon-navigate-down-arrow {
+  display: none !important; }
+#ManageAllParticipants .userWrapp.active .VideoClientIcon-navigate-up-arrow {
+  display: block !important; }
+#ManageAllParticipants .userWrapp .VideoClientIcon-navigate-up-arrow {
+  display: none; }
+#ManageAllParticipants .userWrapp .col-md-10 {
+  position: relative; }
+  #ManageAllParticipants .userWrapp .col-md-10 i {
+    position: absolute;
+    top: 0.7rem;
+    right: 2.2rem;
+    font-size: 0.9rem;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out; }
+#ManageAllParticipants .userWrapp:hover i {
+  transform: scale(1.8);
+  -webkit-transform: scale(1.8); }
+
+#shop {
+  padding: 0; }
+  #shop .styledScroll {
+    padding-right: 0 !important; }
+  #shop .redBG {
+    background: #94323e;
+    color: #fff;
+    padding: 0.5rem 0.5rem 0 0.5rem; }
+    #shop .redBG .sectionHeader {
+      color: #FFFFFF; }
+    #shop .redBG + .sectionTitle {
+      margin: 0 0.5rem 1rem; }
+  #shop .siteUrl {
+    color: #fff;
+    display: block;
+    background: rgba(0, 0, 0, 0.3);
+    margin: 1rem -0.5rem 0 -0.5rem;
+    padding: 0.5rem 0.5rem 0.6rem; }
+  #shop .description {
+    padding-top: 2rem;
+    opacity: 0.6; }
+  #shop .sectionTitle, #shop .Products-wrapp {
+    padding-right: 0.5rem;
+    padding-left: 0.5rem; }
+  #shop .Products-wrapp {
+    max-height: 300px;
+    padding: 0.5rem; }
+
+.productTile img {
+  width: 3.7rem;
+  height: 3.7rem;
+  background-size: cover;
+  background-position: center center;
+  display: inline-block;
+  vertical-align: top; }
+.productTile .productTile-short-description {
+  width: calc(100% - 4rem);
+  display: inline-block;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  vertical-align: top;
+  margin-bottom: 1rem; }
+  .productTile .productTile-short-description > a {
+    cursor: default;
+    color: #ffffff; }
+.productTile .price {
+  color: #17d381; }
+.productTile .productTile-long-description {
+  display: none; }
+.productTile.active .productTile-long-description {
+  display: block;
+  margin: 1rem -0.5rem 1rem -0.5rem;
+  padding: 1rem 0.5rem;
+  background: #404040; }
+
+.BAG .bag-title {
+  margin: -0.5rem -0.5rem 1rem -0.5rem;
+  padding: 0 0.5rem 0 0.5rem;
+  background: #17d381;
+  line-height: 2; }
+.BAG .subtotal {
+  background: #272727;
+  color: #6d6d6d;
+  line-height: 1.5rem;
+  font-size: 1.2rem;
+  padding: 0 0.5rem; }
+.BAG .bluButon {
+  margin-left: 0 !important; }
+
+.sectionWrapp {
+  display: none; }
 
 .sectionWrapp section {
   background: #2d2d2d;

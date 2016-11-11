@@ -1,0 +1,50 @@
+#InviteParticipants{
+  .Avatar.small{
+    margin-top: 0.4rem;
+  }
+  position: relative;
+  .content-blockWrapp{
+    height: calc(100% - 4.1rem);
+  }
+  .searchUserBlock{
+    height:50% ;
+    .item-wrapp{
+      max-height: calc(100% - 3.6rem);
+      height: 100%;
+    }
+  }
+  .ParticipantsList{
+    margin-top: 1rem;
+    height: calc(50% - 1rem);
+    .item-wrapp{
+      max-height: calc(100% - 7.7rem);
+      height: 100%;
+    }
+  }
+  .item{
+    padding-right: 20px;
+    cursor: pointer;
+    .col-md-10{
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .VideoClientIcon-iPlus{
+      position: absolute;
+      right: 3px;
+      top: 9px;
+      font-size: 8px;
+      @include transition();
+    }
+    &:hover{
+      color: $siteColorMain;
+      .Avatar{
+        border-color: $siteColorMain;
+      }
+      .VideoClientIcon-iPlus{
+        transform: scale(2);
+        -webkit-transform: scale(2);
+      }
+    }
+  }
+}

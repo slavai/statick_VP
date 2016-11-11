@@ -1,0 +1,63 @@
+#ManageAllParticipants{
+  .btnMasivGroup{
+    background: #272727;
+    padding: 0 0.5rem;
+    position: relative;
+    a{
+      display: inline-block;
+      vertical-align: middle;
+      width: 20%;
+      color: #939393;
+      @include transition();
+      &:hover{
+        color: #dadada;
+      }
+      &.pull-right{
+        position: absolute;
+        right: 5px;
+        top: 0;
+        width: 1.5rem;
+        color: $video-volor-red;
+      }
+    }
+  }
+  .styledScroll{
+    height: calc(100% - 11.8rem);
+  }
+  .userWrapp{
+    .btnMasivGroup{
+      display: none;
+    }
+    &.active{
+      .btnMasivGroup{
+        display: block;
+        margin-bottom: 1.2rem;
+      }
+      .VideoClientIcon-navigate-down-arrow{
+        display: none !important;
+      }
+      .VideoClientIcon-navigate-up-arrow{
+        display: block !important;
+      }
+    }
+    .VideoClientIcon-navigate-up-arrow{
+      display: none;
+    }
+    .col-md-10{
+      position: relative;
+      i{
+        position: absolute;
+        top: 0.7rem;
+        right: 2.2rem;
+        font-size: 0.9rem;
+        @include transition();
+      }
+    }
+    &:hover{
+      i{
+        transform: scale(1.8);
+        -webkit-transform: scale(1.8);
+      }
+    }
+  }
+}
