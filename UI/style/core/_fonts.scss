@@ -1,4 +1,20 @@
 
+.VideoClientIcon-live-share{
+  position: relative;
+  color: #fff;
+  span{
+    color: inherit;
+    &.path2:before{
+      margin-left: -1.5em;
+    }
+    &.path3:before{
+      margin-left: -1.5em;
+    }
+    &:before{
+      color: #fff !important;
+    }
+  }
+}
 
 @font-face {
   font-family: 'VideoClientIcon';

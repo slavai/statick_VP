@@ -45,7 +45,7 @@
           .diver_block.DRpos1
             %a.diver{href:'panels.html'}
             .yyykor-wrapp
-              .yyykor{onclick: "$('body').addClass('showVideo');$('.styledScroll').scrollbar();"}
+              .yyykor{onclick: "$('body').addClass('showVideo');$('.styledScroll').scrollbar();intoduceInit();"}
           %p.mb20.fs20.font-bold Immerss extension is required to continue.
           %div.mb20
             %a.bluButon.bigBtn{onclick: "$('.step1').removeClass('active');$('.step2').addClass('active');"}
@@ -109,7 +109,7 @@
     .main-section
       .V-header.clearfix
         .logo
-        .oneThird
+        .oneThird{"data-step":"1", "data-intro":'ed posuere consectetur est at lobortis. Fusce dapibus', "data-position":'botom'}
           %section.play
             -#add .record for showing record button
             %a.INTRdefault.MainVideoButton.ensure-link-style{'data-tippause' => "Pause", 'data-tipstart' =>"Start"}
@@ -145,7 +145,7 @@
                 &#45
               01:30:16
           %section.userCount
-            .d-inline-block.active
+            %a.d-inline-block{href:'#', onclick: "jQuery('.presenters-wrapp').toggleClass('active'); jQuery(this).toggleClass('active')"}
               %i.VideoClientIcon-three-users
               %span
                 22
@@ -154,17 +154,69 @@
               %span
                 0
 
-        .twoThird
+        .twoThird{"data-step":"2", "data-intro":'ed posuere consectetur est at lobortis. Fusce dapibus', "data-position":'bottom'}
           %section.sessionName
             Nulla vitae elit libero, a pharetra augue.
-          %section.presenters.hide
+          %section.presenters-wrapp
+            .presenters.styledScroll
+              %a.userAvatar{'style': 'background:url(http://lorempixel.com/400/200/)  ', href:'#', onclick:"OpenParticipantPref(this)" , 'data-name':'Branda Brandovna'}
+              %a.userAvatar{'style': 'background:url(http://lorempixel.com/400/200/)  ', href:'#', onclick:"OpenParticipantPref(this)" , 'data-name':'Branda Brandovna'}
+              %a.userAvatar{'style': 'background:url(http://lorempixel.com/400/200/)  ', href:'#', onclick:"OpenParticipantPref(this)" , 'data-name':'Branda Brandovna'}
+              %a.userAvatar{'style': 'background:url(http://lorempixel.com/400/200/)  ', href:'#', onclick:"OpenParticipantPref(this)" , 'data-name':'Branda Brandovna'}
+              %a.userAvatar{'style': 'background:url(http://lorempixel.com/400/200/)  ', href:'#', onclick:"OpenParticipantPref(this)" , 'data-name':'Branda Brandovna'}
+              %a.userAvatar{'style': 'background:url(http://lorempixel.com/400/200/)  ', href:'#', onclick:"OpenParticipantPref(this)" , 'data-name':'Branda Brandovna'}
+              %a.userAvatar{'style': 'background:url(http://lorempixel.com/400/200/)  ', href:'#', onclick:"OpenParticipantPref(this)" , 'data-name':'Branda Brandovna'}
+              %a.userAvatar{'style': 'background:url(http://lorempixel.com/400/200/)  ', href:'#', onclick:"OpenParticipantPref(this)" , 'data-name':'Branda Brandovna'}
+              %a.userAvatar{'style': 'background:url(http://lorempixel.com/400/200/)  ', href:'#', onclick:"OpenParticipantPref(this)" , 'data-name':'Branda Brandovna'}
+              %a.userAvatar{'style': 'background:url(http://lorempixel.com/400/200/)  ', href:'#', onclick:"OpenParticipantPref(this)" , 'data-name':'Branda Brandovna'}
+              %a.userAvatar{'style': 'background:url(http://lorempixel.com/400/200/)  ', href:'#', onclick:"OpenParticipantPref(this)" , 'data-name':'Branda Brandovna'}
+              %a.userAvatar{'style': 'background:url(http://lorempixel.com/400/200/)  ', href:'#', onclick:"OpenParticipantPref(this)" , 'data-name':'Branda Brandovna'}
+              %a.userAvatar{'style': 'background:url(http://lorempixel.com/400/200/)  ', href:'#', onclick:"OpenParticipantPref(this)" , 'data-name':'Branda Brandovna'}
+              %a.userAvatar{'style': 'background:url(http://lorempixel.com/400/200/)  ', href:'#', onclick:"OpenParticipantPref(this)" , 'data-name':'Branda Brandovna'}
+              %a.userAvatar{'style': 'background:url(http://lorempixel.com/400/200/)  ', href:'#', onclick:"OpenParticipantPref(this)" , 'data-name':'Branda Brandovna'}
+              %a.userAvatar{'style': 'background:url(http://lorempixel.com/400/200/)  ', href:'#', onclick:"OpenParticipantPref(this)" , 'data-name':'Branda Brandovna'}
+              %a.userAvatar{'style': 'background:url(http://lorempixel.com/400/200/)  ', href:'#', onclick:"OpenParticipantPref(this)" , 'data-name':'Branda Brandovna'}
+              %a.userAvatar{'style': 'background:url(http://lorempixel.com/400/200/)  ', href:'#', onclick:"OpenParticipantPref(this)" , 'data-name':'Branda Brandovna'}
+              %a.userAvatar{'style': 'background:url(http://lorempixel.com/400/200/)  ', href:'#', onclick:"OpenParticipantPref(this)" , 'data-name':'Branda Brandovna'}
+              %a.userAvatar{'style': 'background:url(http://lorempixel.com/400/200/)  ', href:'#', onclick:"OpenParticipantPref(this)" , 'data-name':'Branda Brandovna'}
+              %a.userAvatar{'style': 'background:url(http://lorempixel.com/400/200/)  ', href:'#', onclick:"OpenParticipantPref(this)" , 'data-name':'Branda Brandovna'}
+              %a.userAvatar{'style': 'background:url(http://lorempixel.com/400/200/)  ', href:'#', onclick:"OpenParticipantPref(this)" , 'data-name':'Branda Brandovna'}
+              %a.userAvatar{'style': 'background:url(http://lorempixel.com/400/200/)  ', href:'#', onclick:"OpenParticipantPref(this)" , 'data-name':'Branda Brandovna'}
+              %a.userAvatar{'style': 'background:url(http://lorempixel.com/400/200/)  ', href:'#', onclick:"OpenParticipantPref(this)" , 'data-name':'Branda Brandovna'}
+              %a.userAvatar{'style': 'background:url(http://lorempixel.com/400/200/)  ', href:'#', onclick:"OpenParticipantPref(this)" , 'data-name':'Branda Brandovna'}
+              %a.userAvatar{'style': 'background:url(http://lorempixel.com/400/200/)  ', href:'#', onclick:"OpenParticipantPref(this)" , 'data-name':'Branda Brandovna'}
+              %a.userAvatar{'style': 'background:url(http://lorempixel.com/400/200/)  ', href:'#', onclick:"OpenParticipantPref(this)" , 'data-name':'Branda Brandovna'}
+              %a.userAvatar{'style': 'background:url(http://lorempixel.com/400/200/)  ', href:'#', onclick:"OpenParticipantPref(this)" , 'data-name':'Branda Brandovna'}
+              %a.userAvatar{'style': 'background:url(http://lorempixel.com/400/200/)  ', href:'#', onclick:"OpenParticipantPref(this)" , 'data-name':'Branda Brandovna'}
+              %a.userAvatar{'style': 'background:url(http://lorempixel.com/400/200/)  ', href:'#', onclick:"OpenParticipantPref(this)" , 'data-name':'Branda Brandovna'}
+              %a.userAvatar{'style': 'background:url(http://lorempixel.com/400/200/)  ', href:'#', onclick:"OpenParticipantPref(this)" , 'data-name':'Branda Brandovna'}
+              %a.userAvatar{'style': 'background:url(http://lorempixel.com/400/200/)  ', href:'#', onclick:"OpenParticipantPref(this)" , 'data-name':'Branda Brandovna'}
+              %a.userAvatar{'style': 'background:url(http://lorempixel.com/400/200/)  ', href:'#', onclick:"OpenParticipantPref(this)" , 'data-name':'Branda Brandovna'}
+              %a.userAvatar{'style': 'background:url(http://lorempixel.com/400/200/)  ', href:'#', onclick:"OpenParticipantPref(this)" , 'data-name':'Branda Brandovna'}
+              %a.userAvatar{'style': 'background:url(http://lorempixel.com/400/200/)  ', href:'#', onclick:"OpenParticipantPref(this)" , 'data-name':'Branda Brandovna'}
+              %a.userAvatar{'style': 'background:url(http://lorempixel.com/400/200/)  ', href:'#', onclick:"OpenParticipantPref(this)" , 'data-name':'Branda Brandovna'}
+              %a.userAvatar{'style': 'background:url(http://lorempixel.com/400/200/)  ', href:'#', onclick:"OpenParticipantPref(this)" , 'data-name':'Branda Brandovna'}
+              %a.userAvatar{'style': 'background:url(http://lorempixel.com/400/200/)  ', href:'#', onclick:"OpenParticipantPref(this)" , 'data-name':'Branda Brandovna'}
+              %a.userAvatar{'style': 'background:url(http://lorempixel.com/400/200/)  ', href:'#', onclick:"OpenParticipantPref(this)" , 'data-name':'Branda Brandovna'}
+              %a.userAvatar{'style': 'background:url(http://lorempixel.com/400/200/)  ', href:'#', onclick:"OpenParticipantPref(this)" , 'data-name':'Branda Brandovna'}
+              %a.userAvatar{'style': 'background:url(http://lorempixel.com/400/200/)  ', href:'#', onclick:"OpenParticipantPref(this)" , 'data-name':'Branda Brandovna'}
+              %a.userAvatar{'style': 'background:url(http://lorempixel.com/400/200/)  ', href:'#', onclick:"OpenParticipantPref(this)" , 'data-name':'Branda Brandovna'}
+              %a.userAvatar{'style': 'background:url(http://lorempixel.com/400/200/)  ', href:'#', onclick:"OpenParticipantPref(this)" , 'data-name':'Branda Brandovna'}
+              %a.userAvatar{'style': 'background:url(http://lorempixel.com/400/200/)  ', href:'#', onclick:"OpenParticipantPref(this)" , 'data-name':'Branda Brandovna'}
+              %a.userAvatar{'style': 'background:url(http://lorempixel.com/400/200/)  ', href:'#', onclick:"OpenParticipantPref(this)" , 'data-name':'Branda Brandovna'}
+              %a.userAvatar{'style': 'background:url(http://lorempixel.com/400/200/)  ', href:'#', onclick:"OpenParticipantPref(this)" , 'data-name':'Branda Brandovna'}
+              %a.userAvatar{'style': 'background:url(http://lorempixel.com/400/200/)  ', href:'#', onclick:"OpenParticipantPref(this)" , 'data-name':'Branda Brandovna'}
+              %a.userAvatar{'style': 'background:url(http://lorempixel.com/400/200/)  ', href:'#', onclick:"OpenParticipantPref(this)" , 'data-name':'Branda Brandovna'}
+              %a.userAvatar{'style': 'background:url(http://lorempixel.com/400/200/)  ', href:'#', onclick:"OpenParticipantPref(this)" , 'data-name':'Branda Brandovna'}
+              %a.userAvatar{'style': 'background:url(http://lorempixel.com/400/200/)  ', href:'#', onclick:"OpenParticipantPref(this)" , 'data-name':'Branda Brandovna'}
+              %a.userAvatar{'style': 'background:url(http://lorempixel.com/400/200/)  ', href:'#', onclick:"OpenParticipantPref(this)" , 'data-name':'Branda Brandovna'}
           %section.flashMessage
             -#for flashMessage add class info/error for show flash message
             .info
               info Nulla vitae elit libero, a pharetra augue.
             .error
               error Nulla vitae elit libero, a pharetra augue.
-        .threeThird
+        .threeThird{"data-step":"3", "data-intro":'ed posuere consectetur est at lobortis. Fusce dapibus', "data-position":'botom'}
           %section.light
             %a{href:'#'}
               %i.VideoClientIcon-share2
@@ -195,7 +247,7 @@
             .styledScroll
               %div
                 %a.Avatar{'style': 'background:url(http://lorempixel.com/400/200/)', href:'#'}
-                %a.pull-right.sectionHeader-close{href:'#', "onclick":"CloseBar(this)"}
+                %a.pull-right.sectionHeader-close{href:'#', onclick:"CloseBar(this)"}
                   x
               %a.Name.fs16.mb10.d-block{href:'#'} Samantha Brandson
               .social.mb10
@@ -249,19 +301,19 @@
               %textarea.full-width{placeholder:'Type your comment...'}
               %a.bluButon.d-block.full-width.fs14.uppercase{href:'#'} send
         .ShowLine
-        .V-right-panel-contaiver
+        .V-right-panel-contaiver{"data-step":"4", "data-intro":'ed posuere consectetur est at lobortis. Fusce dapibus', "data-position":'left'}
           .WLS-right-sideBar
-            %a.userAvatar{'style': 'background:url(http://lorempixel.com/400/200/)  ', href:'#', "data-id":"Profile", "onclick":"appendBar(this)"}
-            %a.Chat{href:'#', "data-id":"chat", "onclick":"appendBar(this)"}
+            %a.userAvatar{'style': 'background:url(http://lorempixel.com/400/200/)  ', href:'#', "data-id":"Profile", onclick:"appendBar(this)"}
+            %a.Chat{href:'#', "data-id":"chat", onclick:"appendBar(this)"}
               %i.VideoClientIcon-speechbubble
-      .V-VideoContainer
+      .V-VideoContainer{"data-step":"5", "data-intro":'ed posuere consectetur est at lobortis. Fusce dapibus', "data-position":'left'}
         #bar2.connectedBar
         #bar1.connectedBar
           %section.text-center#Profile
             .styledScroll
               %div
                 %a.Avatar{'style': 'background:url(http://lorempixel.com/400/200/)', href:'#'}
-                %a.pull-right.sectionHeader-close{href:'#', "onclick":"CloseBar(this)"}
+                %a.pull-right.sectionHeader-close{href:'#', onclick:"CloseBar(this)"}
                   x
               %a.Name.fs16.mb10.d-block{href:'#'} Samantha Brandson
               .social.mb10
@@ -280,7 +332,7 @@
                   %a.bluButon.full-width{href:'#'} Follow
           %section#chat
             .sectionHeader
-              %a.pull-right.sectionHeader-close{href:'#', "onclick":"CloseBar(this)"}
+              %a.pull-right.sectionHeader-close{href:'#', onclick:"CloseBar(this)"}
                 x
               chat
             .switcher.double.mb20
@@ -320,9 +372,16 @@
     %script{:crossorigin => "anonymous", :integrity => "sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E=", :src => "http://code.jquery.com/ui/1.12.0/jquery-ui.min.js"}
     %script{src:'UI/scripts/demo.js'}
     %script{src:'UI/scripts/animation.js'}
+    %script{src:'UI/scripts/header.js'}
     %script{src:'UI/scripts/rightSideBAr.js'}
     %script{src:'UI/scripts/sideBarToggle.js'}
     %script{src:'UI/scripts/plugin/jquery.scrollbar.min.js'}
+    %script{src:'UI/scripts/plugin/jquery.mousewheel.min.js'}
+    %script{src:'UI/scripts/plugin/intro.min.js'}
+    %script{src:'UI/scripts/intoduce.js'}
+
+
+
 
 
 

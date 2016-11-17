@@ -236,9 +236,9 @@ section > .sectionHeader + .styledScroll{
   height: calc( 100% - 4.1rem );
   overflow:hidden !important;
 }
-.scroll-x{
-  display: none !important
-}
+//.scroll-x{
+//  display: none !important
+//}
 .connectedBar section{
   overflow:hidden !important;
   & > .styledScroll{
@@ -258,4 +258,28 @@ section > .sectionHeader + .styledScroll{
     width: calc(100% - #{($connectedBarWidth * 2) + $header-height + 1.5});
     right: ($connectedBarWidth * 2) + $header-height + 1.5;
   }
+}
+
+.introjs-tooltip{
+  color: #000;
+  .introjs-button{
+    border: none;
+    color: #fff;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    background: $siteColorMain;
+    border-radius: 0;
+    text-shadow: none;
+    -webkit-border-radius: 0;
+    &.introjs-disabled{
+      opacity: 0.3;
+      cursor: no-drop;
+    }
+  }
+}
+.introjs-helperLayer, .introjs-tooltip{
+  background: rgba(255, 255, 255, 0.4) !important;
+}
+.introjs-arrow{
+  opacity: 0.4 !important;
 }

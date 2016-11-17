@@ -49,7 +49,7 @@
           <div class='diver_block DRpos1'>
             <a class='diver' href='panels.html'></a>
             <div class='yyykor-wrapp'>
-              <div class='yyykor' onclick="$('body').addClass('showVideo');$('.styledScroll').scrollbar();"></div>
+              <div class='yyykor' onclick="$('body').addClass('showVideo');$('.styledScroll').scrollbar();intoduceInit();"></div>
             </div>
           </div>
           <p class='mb20 fs20 font-bold'>Immerss extension is required to continue.</p>
@@ -140,7 +140,7 @@
     <div class='main-section'>
       <div class='V-header clearfix'>
         <div class='logo'></div>
-        <div class='oneThird'>
+        <div class='oneThird' data-intro='ed posuere consectetur est at lobortis. Fusce dapibus' data-position='botom' data-step='1'>
           <section class='play'>
             <a class='INTRdefault MainVideoButton ensure-link-style' data-tippause='Pause' data-tipstart='Start'>
               <div class='circleButton'>
@@ -190,12 +190,12 @@
             </div>
           </section>
           <section class='userCount'>
-            <div class='d-inline-block active'>
+            <a class='d-inline-block' href='#' onclick="jQuery('.presenters-wrapp').toggleClass('active'); jQuery(this).toggleClass('active')">
               <i class='VideoClientIcon-three-users'></i>
               <span>
                 22
               </span>
-            </div>
+            </a>
             <div class='d-inline-block'>
               <i class='VideoClientIcon-Views'></i>
               <span>
@@ -204,11 +204,65 @@
             </div>
           </section>
         </div>
-        <div class='twoThird'>
+        <div class='twoThird' data-intro='ed posuere consectetur est at lobortis. Fusce dapibus' data-position='bottom' data-step='2'>
           <section class='sessionName'>
             Nulla vitae elit libero, a pharetra augue.
           </section>
-          <section class='presenters hide'></section>
+          <section class='presenters-wrapp'>
+            <div class='presenters styledScroll'>
+              <a class='userAvatar' data-name='Branda Brandovna' href='#' onclick='OpenParticipantPref(this)' style='background:url(http://lorempixel.com/400/200/)  '></a>
+              <a class='userAvatar' data-name='Branda Brandovna' href='#' onclick='OpenParticipantPref(this)' style='background:url(http://lorempixel.com/400/200/)  '></a>
+              <a class='userAvatar' data-name='Branda Brandovna' href='#' onclick='OpenParticipantPref(this)' style='background:url(http://lorempixel.com/400/200/)  '></a>
+              <a class='userAvatar' data-name='Branda Brandovna' href='#' onclick='OpenParticipantPref(this)' style='background:url(http://lorempixel.com/400/200/)  '></a>
+              <a class='userAvatar' data-name='Branda Brandovna' href='#' onclick='OpenParticipantPref(this)' style='background:url(http://lorempixel.com/400/200/)  '></a>
+              <a class='userAvatar' data-name='Branda Brandovna' href='#' onclick='OpenParticipantPref(this)' style='background:url(http://lorempixel.com/400/200/)  '></a>
+              <a class='userAvatar' data-name='Branda Brandovna' href='#' onclick='OpenParticipantPref(this)' style='background:url(http://lorempixel.com/400/200/)  '></a>
+              <a class='userAvatar' data-name='Branda Brandovna' href='#' onclick='OpenParticipantPref(this)' style='background:url(http://lorempixel.com/400/200/)  '></a>
+              <a class='userAvatar' data-name='Branda Brandovna' href='#' onclick='OpenParticipantPref(this)' style='background:url(http://lorempixel.com/400/200/)  '></a>
+              <a class='userAvatar' data-name='Branda Brandovna' href='#' onclick='OpenParticipantPref(this)' style='background:url(http://lorempixel.com/400/200/)  '></a>
+              <a class='userAvatar' data-name='Branda Brandovna' href='#' onclick='OpenParticipantPref(this)' style='background:url(http://lorempixel.com/400/200/)  '></a>
+              <a class='userAvatar' data-name='Branda Brandovna' href='#' onclick='OpenParticipantPref(this)' style='background:url(http://lorempixel.com/400/200/)  '></a>
+              <a class='userAvatar' data-name='Branda Brandovna' href='#' onclick='OpenParticipantPref(this)' style='background:url(http://lorempixel.com/400/200/)  '></a>
+              <a class='userAvatar' data-name='Branda Brandovna' href='#' onclick='OpenParticipantPref(this)' style='background:url(http://lorempixel.com/400/200/)  '></a>
+              <a class='userAvatar' data-name='Branda Brandovna' href='#' onclick='OpenParticipantPref(this)' style='background:url(http://lorempixel.com/400/200/)  '></a>
+              <a class='userAvatar' data-name='Branda Brandovna' href='#' onclick='OpenParticipantPref(this)' style='background:url(http://lorempixel.com/400/200/)  '></a>
+              <a class='userAvatar' data-name='Branda Brandovna' href='#' onclick='OpenParticipantPref(this)' style='background:url(http://lorempixel.com/400/200/)  '></a>
+              <a class='userAvatar' data-name='Branda Brandovna' href='#' onclick='OpenParticipantPref(this)' style='background:url(http://lorempixel.com/400/200/)  '></a>
+              <a class='userAvatar' data-name='Branda Brandovna' href='#' onclick='OpenParticipantPref(this)' style='background:url(http://lorempixel.com/400/200/)  '></a>
+              <a class='userAvatar' data-name='Branda Brandovna' href='#' onclick='OpenParticipantPref(this)' style='background:url(http://lorempixel.com/400/200/)  '></a>
+              <a class='userAvatar' data-name='Branda Brandovna' href='#' onclick='OpenParticipantPref(this)' style='background:url(http://lorempixel.com/400/200/)  '></a>
+              <a class='userAvatar' data-name='Branda Brandovna' href='#' onclick='OpenParticipantPref(this)' style='background:url(http://lorempixel.com/400/200/)  '></a>
+              <a class='userAvatar' data-name='Branda Brandovna' href='#' onclick='OpenParticipantPref(this)' style='background:url(http://lorempixel.com/400/200/)  '></a>
+              <a class='userAvatar' data-name='Branda Brandovna' href='#' onclick='OpenParticipantPref(this)' style='background:url(http://lorempixel.com/400/200/)  '></a>
+              <a class='userAvatar' data-name='Branda Brandovna' href='#' onclick='OpenParticipantPref(this)' style='background:url(http://lorempixel.com/400/200/)  '></a>
+              <a class='userAvatar' data-name='Branda Brandovna' href='#' onclick='OpenParticipantPref(this)' style='background:url(http://lorempixel.com/400/200/)  '></a>
+              <a class='userAvatar' data-name='Branda Brandovna' href='#' onclick='OpenParticipantPref(this)' style='background:url(http://lorempixel.com/400/200/)  '></a>
+              <a class='userAvatar' data-name='Branda Brandovna' href='#' onclick='OpenParticipantPref(this)' style='background:url(http://lorempixel.com/400/200/)  '></a>
+              <a class='userAvatar' data-name='Branda Brandovna' href='#' onclick='OpenParticipantPref(this)' style='background:url(http://lorempixel.com/400/200/)  '></a>
+              <a class='userAvatar' data-name='Branda Brandovna' href='#' onclick='OpenParticipantPref(this)' style='background:url(http://lorempixel.com/400/200/)  '></a>
+              <a class='userAvatar' data-name='Branda Brandovna' href='#' onclick='OpenParticipantPref(this)' style='background:url(http://lorempixel.com/400/200/)  '></a>
+              <a class='userAvatar' data-name='Branda Brandovna' href='#' onclick='OpenParticipantPref(this)' style='background:url(http://lorempixel.com/400/200/)  '></a>
+              <a class='userAvatar' data-name='Branda Brandovna' href='#' onclick='OpenParticipantPref(this)' style='background:url(http://lorempixel.com/400/200/)  '></a>
+              <a class='userAvatar' data-name='Branda Brandovna' href='#' onclick='OpenParticipantPref(this)' style='background:url(http://lorempixel.com/400/200/)  '></a>
+              <a class='userAvatar' data-name='Branda Brandovna' href='#' onclick='OpenParticipantPref(this)' style='background:url(http://lorempixel.com/400/200/)  '></a>
+              <a class='userAvatar' data-name='Branda Brandovna' href='#' onclick='OpenParticipantPref(this)' style='background:url(http://lorempixel.com/400/200/)  '></a>
+              <a class='userAvatar' data-name='Branda Brandovna' href='#' onclick='OpenParticipantPref(this)' style='background:url(http://lorempixel.com/400/200/)  '></a>
+              <a class='userAvatar' data-name='Branda Brandovna' href='#' onclick='OpenParticipantPref(this)' style='background:url(http://lorempixel.com/400/200/)  '></a>
+              <a class='userAvatar' data-name='Branda Brandovna' href='#' onclick='OpenParticipantPref(this)' style='background:url(http://lorempixel.com/400/200/)  '></a>
+              <a class='userAvatar' data-name='Branda Brandovna' href='#' onclick='OpenParticipantPref(this)' style='background:url(http://lorempixel.com/400/200/)  '></a>
+              <a class='userAvatar' data-name='Branda Brandovna' href='#' onclick='OpenParticipantPref(this)' style='background:url(http://lorempixel.com/400/200/)  '></a>
+              <a class='userAvatar' data-name='Branda Brandovna' href='#' onclick='OpenParticipantPref(this)' style='background:url(http://lorempixel.com/400/200/)  '></a>
+              <a class='userAvatar' data-name='Branda Brandovna' href='#' onclick='OpenParticipantPref(this)' style='background:url(http://lorempixel.com/400/200/)  '></a>
+              <a class='userAvatar' data-name='Branda Brandovna' href='#' onclick='OpenParticipantPref(this)' style='background:url(http://lorempixel.com/400/200/)  '></a>
+              <a class='userAvatar' data-name='Branda Brandovna' href='#' onclick='OpenParticipantPref(this)' style='background:url(http://lorempixel.com/400/200/)  '></a>
+              <a class='userAvatar' data-name='Branda Brandovna' href='#' onclick='OpenParticipantPref(this)' style='background:url(http://lorempixel.com/400/200/)  '></a>
+              <a class='userAvatar' data-name='Branda Brandovna' href='#' onclick='OpenParticipantPref(this)' style='background:url(http://lorempixel.com/400/200/)  '></a>
+              <a class='userAvatar' data-name='Branda Brandovna' href='#' onclick='OpenParticipantPref(this)' style='background:url(http://lorempixel.com/400/200/)  '></a>
+              <a class='userAvatar' data-name='Branda Brandovna' href='#' onclick='OpenParticipantPref(this)' style='background:url(http://lorempixel.com/400/200/)  '></a>
+              <a class='userAvatar' data-name='Branda Brandovna' href='#' onclick='OpenParticipantPref(this)' style='background:url(http://lorempixel.com/400/200/)  '></a>
+              <a class='userAvatar' data-name='Branda Brandovna' href='#' onclick='OpenParticipantPref(this)' style='background:url(http://lorempixel.com/400/200/)  '></a>
+            </div>
+          </section>
           <section class='flashMessage'>
             <div class='info'>
               info Nulla vitae elit libero, a pharetra augue.
@@ -218,7 +272,7 @@
             </div>
           </section>
         </div>
-        <div class='threeThird'>
+        <div class='threeThird' data-intro='ed posuere consectetur est at lobortis. Fusce dapibus' data-position='botom' data-step='3'>
           <section class='light'>
             <a href='#'>
               <i class='VideoClientIcon-share2'></i>
@@ -342,7 +396,7 @@
           </section>
         </div>
         <div class='ShowLine'></div>
-        <div class='V-right-panel-contaiver'>
+        <div class='V-right-panel-contaiver' data-intro='ed posuere consectetur est at lobortis. Fusce dapibus' data-position='left' data-step='4'>
           <div class='WLS-right-sideBar'>
             <a class='userAvatar' data-id='Profile' href='#' onclick='appendBar(this)' style='background:url(http://lorempixel.com/400/200/)  '></a>
             <a class='Chat' data-id='chat' href='#' onclick='appendBar(this)'>
@@ -351,7 +405,7 @@
           </div>
         </div>
       </div>
-      <div class='V-VideoContainer'>
+      <div class='V-VideoContainer' data-intro='ed posuere consectetur est at lobortis. Fusce dapibus' data-position='left' data-step='5'>
         <div class='connectedBar' id='bar2'></div>
         <div class='connectedBar' id='bar1'>
           <section class='text-center' id='Profile'>
@@ -445,8 +499,12 @@
     <script crossorigin='anonymous' integrity='sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E=' src='http://code.jquery.com/ui/1.12.0/jquery-ui.min.js'></script>
     <script src='UI/scripts/demo.js'></script>
     <script src='UI/scripts/animation.js'></script>
+    <script src='UI/scripts/header.js'></script>
     <script src='UI/scripts/rightSideBAr.js'></script>
     <script src='UI/scripts/sideBarToggle.js'></script>
     <script src='UI/scripts/plugin/jquery.scrollbar.min.js'></script>
+    <script src='UI/scripts/plugin/jquery.mousewheel.min.js'></script>
+    <script src='UI/scripts/plugin/intro.min.js'></script>
+    <script src='UI/scripts/intoduce.js'></script>
   </body>
 </html>

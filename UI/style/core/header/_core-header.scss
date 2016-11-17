@@ -60,9 +60,10 @@ $threeThirdWidth:30rem;
     min-width: 10.5rem;
   }
 }
+
 .twoThird{
   width: calc(100% - #{$oneThirdWidth + $threeThirdWidth + $header-height});
-  background: #272727;
+  background: $twoThirdBG;
   height: $header-height;
 }
 .threeThird{

@@ -100,10 +100,12 @@
     width: 100%;
   }
   &.scroll-x {
-    bottom: 2px;
-    height: 8px;
+    bottom: 0rem;
+    height: 0.3rem;
     left: 0;
     width: 100%;
+    opacity: 0.3;
+    @include transition();
   }
   &.scroll-y {
     height: 100%;
@@ -143,10 +145,18 @@
     & > .scroll-element {
       &.scroll-y {
         opacity: 0.5;
-        width: 5px;
+        width: 0.5rem;
         &:hover{
           opacity: 0.6 !important;
-          width: 12px !important;
+          width: 1rem !important;
+        }
+      }
+      &.scroll-x{
+        opacity: 0.5;
+        height: 0.5rem;
+        &:hover{
+          opacity: 0.6 !important;
+          height: 0.8rem !important;
         }
       }
     }
@@ -154,6 +164,10 @@
 }
 .scroll-element.scroll-y.scroll-draggable{
   opacity: 0.6 !important;
-  width: 12px !important;
+  width: 1rem !important;
+}
+.scroll-element.scroll-x.scroll-draggable{
+  opacity: 0.6 !important;
+  height: 0.8rem !important;
 }
 /* update scrollbar offset if both scrolls are visible */
